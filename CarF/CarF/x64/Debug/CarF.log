@@ -1,0 +1,13 @@
+﻿  Reading Qt configuration (D:/software/Qt/Qt5.14.2/5.14.2/msvc2017_64/bin/qmake)
+  uic CarF.ui
+  OrderLog.cpp
+  PictureSave.cpp
+  SystemSetting.cpp
+  CarF.cpp
+  main.cpp
+  qrc_CarF.cpp
+  moc_CarF.cpp
+  moc_SystemSetting.cpp
+  moc_OrderLog.cpp
+  moc_PictureSave.cpp
+  CarF.vcxproj -> D:\Project\CarF\x64\Debug\CarF.exe
