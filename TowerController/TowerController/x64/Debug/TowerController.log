@@ -1,0 +1,5 @@
+﻿  uic TowerController.ui
+  TowerController.cpp
+  main.cpp
+  moc_TowerController.cpp
+  TowerController.vcxproj -> D:\Project\TowerController\x64\Debug\TowerController.exe
