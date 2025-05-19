@@ -1,0 +1,1 @@
+1、添加FFMPEG include 和avcodec avformat avutil swscale swresample等lib
