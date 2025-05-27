@@ -36,7 +36,7 @@
          <item>
           <widget class="QLabel" name="label">
            <property name="text">
-            <string>TextLabel</string>
+            <string>周视雷达</string>
            </property>
           </widget>
          </item>
@@ -61,7 +61,7 @@
          <item>
           <widget class="QLabel" name="label_2">
            <property name="text">
-            <string>TextLabel</string>
+            <string>激光雷达1</string>
            </property>
           </widget>
          </item>
@@ -86,7 +86,7 @@
          <item>
           <widget class="QLabel" name="label_3">
            <property name="text">
-            <string>TextLabel</string>
+            <string>激光雷达2</string>
            </property>
           </widget>
          </item>
@@ -141,14 +141,14 @@
      <item>
       <widget class="QPushButton" name="pushButton_4">
        <property name="text">
-        <string>PushButton</string>
+        <string>取消</string>
        </property>
       </widget>
      </item>
      <item>
       <widget class="QPushButton" name="pushButton_5">
        <property name="text">
-        <string>PushButton</string>
+        <string>确定</string>
        </property>
       </widget>
      </item>

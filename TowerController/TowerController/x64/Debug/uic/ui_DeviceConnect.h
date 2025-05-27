@@ -170,17 +170,17 @@ public:
     void retranslateUi(QDialog *DeviceConnectClass)
     {
         DeviceConnectClass->setWindowTitle(QCoreApplication::translate("DeviceConnectClass", "DeviceConnect", nullptr));
-        label->setText(QCoreApplication::translate("DeviceConnectClass", "TextLabel", nullptr));
+        label->setText(QCoreApplication::translate("DeviceConnectClass", "\345\221\250\350\247\206\351\233\267\350\276\276", nullptr));
         label_4->setText(QCoreApplication::translate("DeviceConnectClass", "TextLabel", nullptr));
         pushButton->setText(QCoreApplication::translate("DeviceConnectClass", "PushButton", nullptr));
-        label_2->setText(QCoreApplication::translate("DeviceConnectClass", "TextLabel", nullptr));
+        label_2->setText(QCoreApplication::translate("DeviceConnectClass", "\346\277\200\345\205\211\351\233\267\350\276\2761", nullptr));
         label_5->setText(QCoreApplication::translate("DeviceConnectClass", "TextLabel", nullptr));
         pushButton_2->setText(QCoreApplication::translate("DeviceConnectClass", "PushButton", nullptr));
-        label_3->setText(QCoreApplication::translate("DeviceConnectClass", "TextLabel", nullptr));
+        label_3->setText(QCoreApplication::translate("DeviceConnectClass", "\346\277\200\345\205\211\351\233\267\350\276\2762", nullptr));
         label_6->setText(QCoreApplication::translate("DeviceConnectClass", "TextLabel", nullptr));
         pushButton_3->setText(QCoreApplication::translate("DeviceConnectClass", "PushButton", nullptr));
-        pushButton_4->setText(QCoreApplication::translate("DeviceConnectClass", "PushButton", nullptr));
-        pushButton_5->setText(QCoreApplication::translate("DeviceConnectClass", "PushButton", nullptr));
+        pushButton_4->setText(QCoreApplication::translate("DeviceConnectClass", "\345\217\226\346\266\210", nullptr));
+        pushButton_5->setText(QCoreApplication::translate("DeviceConnectClass", "\347\241\256\345\256\232", nullptr));
     } // retranslateUi
 
 };
