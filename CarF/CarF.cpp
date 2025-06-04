@@ -38,6 +38,7 @@ CarF::~CarF()
 }
 
 // 在源文件（.cpp）中实现：
+//打开系统设置窗口
 void CarF::on_pushButton_clicked()
 {
     SystemSetting *secondWin = new SystemSetting(this);

@@ -1,14 +1,3 @@
-﻿   Qt/MSBuild: 3.3.1.1
+﻿   Qt/MSBuild: 3.4.0.1
    Qt: 5.14.2
-  OrderLog.cpp
-  PictureSave.cpp
-  SystemSetting.cpp
-  CarF.cpp
-  main.cpp
-D:\project\TCD53\TCD53\CarF\DBHelper.h(25): warning C4715: “DBHelper::open”: 不是所有的控件路径都返回值
-  qrc_CarF.cpp
-  moc_CarF.cpp
-  moc_SystemSetting.cpp
-  moc_OrderLog.cpp
-  moc_PictureSave.cpp
   CarF.vcxproj -> D:\project\TCD53\TCD53\CarF\x64\Debug\CarF.exe

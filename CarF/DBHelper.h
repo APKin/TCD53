@@ -7,6 +7,7 @@
 #include <vector>
 #include <utility>
 
+
 class DBHelper
 {
 	QSqlDatabase db;
