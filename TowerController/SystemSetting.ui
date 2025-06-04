@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>SystemSetting</string>
+   <string>系统设置</string>
   </property>
   <layout class="QGridLayout" name="gridLayout">
    <item row="0" column="0" colspan="2">
@@ -19,17 +19,17 @@
      <item>
       <widget class="QLabel" name="label">
        <property name="text">
-        <string>TextLabel</string>
+        <string>图像存储路径</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QLineEdit" name="lineEdit_7"/>
+      <widget class="QLineEdit" name="txtSavePath"/>
      </item>
      <item>
-      <widget class="QPushButton" name="pushButton">
+      <widget class="QPushButton" name="btnFloderSetting">
        <property name="text">
-        <string>PushButton</string>
+        <string>浏览</string>
        </property>
       </widget>
      </item>
@@ -39,8 +39,15 @@
     <layout class="QVBoxLayout" name="verticalLayout_3">
      <item>
       <widget class="QLabel" name="label_2">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="text">
-        <string>TextLabel</string>
+        <string>主视角图像</string>
        </property>
       </widget>
      </item>
@@ -49,7 +56,7 @@
        <item>
         <widget class="QLabel" name="label_3">
          <property name="text">
-          <string>TextLabel</string>
+          <string>主视角图像位置</string>
          </property>
         </widget>
        </item>
@@ -59,7 +66,7 @@
        <item>
         <widget class="QLabel" name="label_4">
          <property name="text">
-          <string>TextLabel</string>
+          <string>主视角图像尺寸</string>
          </property>
         </widget>
        </item>
@@ -84,8 +91,15 @@
     <layout class="QVBoxLayout" name="verticalLayout_4">
      <item>
       <widget class="QLabel" name="label_5">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="text">
-        <string>TextLabel</string>
+        <string>重点监视区域</string>
        </property>
       </widget>
      </item>
@@ -94,7 +108,7 @@
        <item>
         <widget class="QLabel" name="label_17">
          <property name="text">
-          <string>TextLabel</string>
+          <string>重点监视区域1位置</string>
          </property>
         </widget>
        </item>
@@ -104,7 +118,7 @@
        <item>
         <widget class="QLabel" name="label_18">
          <property name="text">
-          <string>TextLabel</string>
+          <string>重点监视区域1宽度</string>
          </property>
         </widget>
        </item>
@@ -118,7 +132,7 @@
        <item>
         <widget class="QLabel" name="label_20">
          <property name="text">
-          <string>TextLabel</string>
+          <string>重点监视区域2位置</string>
          </property>
         </widget>
        </item>
@@ -128,7 +142,7 @@
        <item>
         <widget class="QLabel" name="label_19">
          <property name="text">
-          <string>TextLabel</string>
+          <string>重点监视区域2宽度</string>
          </property>
         </widget>
        </item>
@@ -155,8 +169,15 @@
       <layout class="QVBoxLayout" name="verticalLayout_5">
        <item>
         <widget class="QLabel" name="label_8">
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
          <property name="text">
-          <string>TextLabel</string>
+          <string>周视雷达</string>
          </property>
         </widget>
        </item>
@@ -190,8 +211,15 @@
       <layout class="QVBoxLayout" name="verticalLayout_6">
        <item>
         <widget class="QLabel" name="label_11">
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
          <property name="text">
-          <string>TextLabel</string>
+          <string>激光雷达</string>
          </property>
         </widget>
        </item>
@@ -225,8 +253,15 @@
       <layout class="QVBoxLayout" name="verticalLayout_7">
        <item>
         <widget class="QLabel" name="label_15">
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
          <property name="text">
-          <string>TextLabel</string>
+          <string>定位模块</string>
          </property>
         </widget>
        </item>

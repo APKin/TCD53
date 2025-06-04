@@ -23,16 +23,16 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <QtRcc Include="CarF.qrc">
+    <QtRcc Include="TowerController.qrc">
       <Filter>Resource Files</Filter>
     </QtRcc>
-    <QtUic Include="CarF.ui">
+    <QtUic Include="TowerController.ui">
       <Filter>Form Files</Filter>
     </QtUic>
-    <QtMoc Include="CarF.h">
+    <QtMoc Include="TowerController.h">
       <Filter>Header Files</Filter>
     </QtMoc>
-    <ClCompile Include="CarF.cpp">
+    <ClCompile Include="TowerController.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -40,40 +40,79 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="DeviceControl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DeviceConnect.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StreamSetting.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HelpWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="SystemSetting.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="OrderLog.cpp">
+    <ClCompile Include="ImageStore.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="PictureSave.cpp">
+    <ClCompile Include="AngleScaleBar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ParkPoliceRecord.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <QtMoc Include="DeviceControl.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="DeviceConnect.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="StreamSetting.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="HelpWidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
     <QtMoc Include="SystemSetting.h">
       <Filter>Header Files</Filter>
     </QtMoc>
-    <QtMoc Include="OrderLog.h">
+    <QtMoc Include="ImageStore.h">
       <Filter>Header Files</Filter>
     </QtMoc>
-    <QtMoc Include="PictureSave.h">
+    <QtMoc Include="AngleScaleBar.h">
       <Filter>Header Files</Filter>
     </QtMoc>
   </ItemGroup>
   <ItemGroup>
+    <QtUic Include="DeviceControl.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="DeviceConnect.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="StreamSetting.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="HelpWidget.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
     <QtUic Include="SystemSetting.ui">
       <Filter>Form Files</Filter>
     </QtUic>
-    <QtUic Include="OrderLog.ui">
-      <Filter>Form Files</Filter>
-    </QtUic>
-    <QtUic Include="PictureSave.ui">
+    <QtUic Include="ImageStore.ui">
       <Filter>Form Files</Filter>
     </QtUic>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DBHelper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ParkPoliceRecord.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

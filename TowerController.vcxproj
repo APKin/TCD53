@@ -11,7 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{7D4EC313-4D45-4D5B-9D5D-B45FE0B6B4F2}</ProjectGuid>
+    <ProjectGuid>{11D2610A-DCFF-48A1-AD36-223177E3086C}</ProjectGuid>
     <Keyword>QtVS_v304</Keyword>
     <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">10.0</WindowsTargetPlatformVersion>
     <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">10.0</WindowsTargetPlatformVersion>
@@ -26,7 +26,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <UseDebugLibraries>false</UseDebugLibraries>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
@@ -42,7 +42,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="QtSettings">
     <QtInstall>5.14.2_msvc2017_64</QtInstall>
-    <QtModules>core;sql;gui;widgets</QtModules>
+    <QtModules>core;gui;widgets</QtModules>
     <QtBuildConfig>release</QtBuildConfig>
   </PropertyGroup>
   <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
@@ -65,23 +65,22 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile />
-    <Link />
     <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\project\CarF\sqlite3;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile />
     <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\project\CarF\sqlite3;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
@@ -113,29 +112,50 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="OrderLog.cpp" />
-    <ClCompile Include="PictureSave.cpp" />
-    <ClCompile Include="SystemSetting.cpp" />
-    <QtRcc Include="CarF.qrc" />
-    <QtUic Include="CarF.ui" />
-    <QtMoc Include="CarF.h" />
-    <ClCompile Include="CarF.cpp" />
-    <ClCompile Include="main.cpp" />
-    <QtUic Include="OrderLog.ui" />
-    <QtUic Include="PictureSave.ui" />
+    <QtRcc Include="TowerController.qrc" />
+    <QtUic Include="DeviceConnect.ui" />
+    <QtUic Include="DeviceControl.ui" />
+    <QtUic Include="HelpWidget.ui" />
+    <QtUic Include="ImageStore.ui" />
+    <QtUic Include="StreamSetting.ui" />
     <QtUic Include="SystemSetting.ui" />
+    <QtUic Include="TowerController.ui" />
+    <QtMoc Include="TowerController.h" />
+    <ClCompile Include="AngleScaleBar.cpp" />
+    <ClCompile Include="DeviceConnect.cpp" />
+    <ClCompile Include="DeviceControl.cpp" />
+    <ClCompile Include="HelpWidget.cpp" />
+    <ClCompile Include="ImageStore.cpp" />
+    <ClCompile Include="ParkPoliceRecord.cpp" />
+    <ClCompile Include="StreamSetting.cpp" />
+    <ClCompile Include="SystemSetting.cpp" />
+    <ClCompile Include="TowerController.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="DeviceControl.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="DeviceConnect.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="StreamSetting.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="HelpWidget.h" />
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="SystemSetting.h" />
   </ItemGroup>
   <ItemGroup>
-    <QtMoc Include="OrderLog.h" />
+    <QtMoc Include="ImageStore.h" />
   </ItemGroup>
   <ItemGroup>
-    <QtMoc Include="PictureSave.h" />
+    <QtMoc Include="AngleScaleBar.h" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DBHelper.h" />
+    <ClInclude Include="ParkPoliceRecord.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">

@@ -14,7 +14,13 @@ class SystemSetting : public QDialog
 public:
 	SystemSetting(QWidget *parent = nullptr);
 	~SystemSetting();
+	QString getResult() const { return m_result; } // ·µ»Ø×Ö·û´®
 
 private:
 	Ui::SystemSettingClass *ui;
+	QString m_result;
+private slots:
+	void on_pushButton_3_clicked();
+	void on_pushButton_clicked();
+	void on_pushButton_2_clicked();
 };

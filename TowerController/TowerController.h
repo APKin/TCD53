@@ -17,4 +17,10 @@ public:
 
 private:
     Ui::TowerControllerClass *ui;
+private slots:
+    void on_btnRecordQuery_clicked();
+    void on_btnSystenSettings_clicked();
+    void onBtnStreamSettingClicked();
+    void onBtnDeviceContorlClicked();
+    void onBtnHelpClicked();
 };
