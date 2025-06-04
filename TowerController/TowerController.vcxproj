@@ -97,6 +97,7 @@
     <QtUic Include="DeviceControl.ui" />
     <QtUic Include="HelpWidget.ui" />
     <QtUic Include="ImageStore.ui" />
+    <QtUic Include="recordQuery.ui" />
     <QtUic Include="StreamSetting.ui" />
     <QtUic Include="SystemSetting.ui" />
     <QtUic Include="TowerController.ui" />
@@ -106,6 +107,7 @@
     <ClCompile Include="DeviceControl.cpp" />
     <ClCompile Include="HelpWidget.cpp" />
     <ClCompile Include="ImageStore.cpp" />
+    <ClCompile Include="recordQuery.cpp" />
     <ClCompile Include="StreamSetting.cpp" />
     <ClCompile Include="SystemSetting.cpp" />
     <ClCompile Include="TowerController.cpp" />
@@ -131,6 +133,9 @@
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="AngleScaleBar.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="recordQuery.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">

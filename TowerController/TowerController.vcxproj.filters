@@ -61,6 +61,9 @@
     <ClCompile Include="AngleScaleBar.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="recordQuery.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="DeviceControl.h">
@@ -84,6 +87,9 @@
     <QtMoc Include="AngleScaleBar.h">
       <Filter>Header Files</Filter>
     </QtMoc>
+    <QtMoc Include="recordQuery.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
   </ItemGroup>
   <ItemGroup>
     <QtUic Include="DeviceControl.ui">
@@ -102,6 +108,9 @@
       <Filter>Form Files</Filter>
     </QtUic>
     <QtUic Include="ImageStore.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="recordQuery.ui">
       <Filter>Form Files</Filter>
     </QtUic>
   </ItemGroup>
