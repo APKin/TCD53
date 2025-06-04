@@ -17,4 +17,6 @@ public:
 
 private:
 	Ui::SystemSettingClass *ui;
+private slots:
+	void on_btnFloderSetting_clicked();
 };
