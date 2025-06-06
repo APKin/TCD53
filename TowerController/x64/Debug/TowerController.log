@@ -1,10 +1,1 @@
-﻿   Qt/MSBuild: 3.4.0.1
-   Qt: 5.14.2
-  SystemSetting.cpp
-  TowerController.cpp
-  main.cpp
-D:\project\TCD53\TCD53\TowerController\DBHelper.h(26): warning C4715: “DBHelper::open”: 不是所有的控件路径都返回值
-  moc_SystemSetting.cpp
-  moc_TowerController.cpp
-  LINK : 没有找到 D:\project\TCD53\TCD53\TowerController\x64\Debug\TowerController.exe 或上一个增量链接没有生成它；正在执行完全链接
-  TowerController.vcxproj -> D:\project\TCD53\TCD53\TowerController\x64\Debug\TowerController.exe
+﻿
