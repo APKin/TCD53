@@ -49,6 +49,12 @@
     <ClCompile Include="PictureSave.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="InstructLog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="InstructLogDAO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="SystemSetting.h">
@@ -74,6 +80,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DBHelper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="InstructLog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="InstructLogDAO.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -20,28 +20,28 @@
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
-    <PlatformToolset>v143</PlatformToolset>
     <UseDebugLibraries>true</UseDebugLibraries>
     <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
-    <PlatformToolset>v143</PlatformToolset>
     <UseDebugLibraries>false</UseDebugLibraries>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
     <Import Project="$(QtMsBuild)\qt_defaults.props" />
   </ImportGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="QtSettings">
-    <QtInstall>msvc2017_64</QtInstall>
+    <QtInstall>5.14.2_msvc2017_64</QtInstall>
     <QtModules>core;sql;gui;widgets</QtModules>
     <QtBuildConfig>debug</QtBuildConfig>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="QtSettings">
-    <QtInstall>msvc2017_64</QtInstall>
+    <QtInstall>5.14.2_msvc2017_64</QtInstall>
     <QtModules>core;gui;widgets</QtModules>
     <QtBuildConfig>release</QtBuildConfig>
   </PropertyGroup>
@@ -107,9 +107,13 @@
     <ClCompile Include="DeviceControl.cpp" />
     <ClCompile Include="HelpWidget.cpp" />
     <ClCompile Include="ImageStore.cpp" />
+    <ClCompile Include="InstructLog.cpp" />
+    <ClCompile Include="InstructLogDAO.cpp" />
+    <ClCompile Include="ParkPoliceRecord.cpp" />
     <ClCompile Include="recordQuery.cpp" />
     <ClCompile Include="StreamSetting.cpp" />
     <ClCompile Include="SystemSetting.cpp" />
+    <ClCompile Include="Test.cpp" />
     <ClCompile Include="TowerController.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
@@ -136,6 +140,13 @@
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="recordQuery.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DBHelper.h" />
+    <ClInclude Include="InstructLog.h" />
+    <ClInclude Include="InstructLogDAO.h" />
+    <ClInclude Include="ParkPoliceRecord.h" />
+    <ClInclude Include="Test.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">

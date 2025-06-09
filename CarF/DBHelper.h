@@ -6,14 +6,14 @@
 #include <QtSql/QSqlError>
 #include <vector>
 #include <utility>
-
+#include <QVariantMap>
 
 class DBHelper
 {
 	QSqlDatabase db;
 public:
-    DBHelper() {
-		db = QSqlDatabase::addDatabase("QSQLITE","userDB");
+	DBHelper() {
+		db = QSqlDatabase::addDatabase("QSQLITE", "userDB");
 		db.setDatabaseName("sqlite3/user.db");
 	}
 	bool open() {
@@ -24,6 +24,7 @@ public:
 		db.open();
 
 	}
+	QSqlDatabase getDatabase() { return db; }
 	//插入数据，传入参数是表名，多个字段名，多个字段值,返回插入成功与否
 	bool insertData(const QString& tableName, QVariantMap& fvMap)
 	{
@@ -70,23 +71,23 @@ public:
 	//根据表名，查询并返回id最大的一条数据
 	QVariantMap getMaxIdData(const QString& tableName)
 	{
-        this->open();
-        QSqlQuery query(db);
-        QString sql = QString("SELECT * FROM %1 WHERE id=(SELECT MAX(id) FROM %1)").arg(tableName);
-        bool success = query.exec(sql);
-        if (!success)
-        {
-            return QVariantMap();
-        }
-        QVariantMap map;
-        while (query.next())
-        {
-            for (int i = 0; i < query.record().count(); i++)
-            {
-                map[query.record().fieldName(i)] = query.value(i);
-            }
-        }
-        return map;
+		this->open();
+		QSqlQuery query(db);
+		QString sql = QString("SELECT * FROM %1 WHERE id=(SELECT MAX(id) FROM %1)").arg(tableName);
+		bool success = query.exec(sql);
+		if (!success)
+		{
+			return QVariantMap();
+		}
+		QVariantMap map;
+		while (query.next())
+		{
+			for (int i = 0; i < query.record().count(); i++)
+			{
+				map[query.record().fieldName(i)] = query.value(i);
+			}
+		}
+		return map;
 	}
 
 
@@ -116,17 +117,17 @@ public:
 	//更表内id最大的一条数据
 	bool updateMaxIdData(const QString& tableName, QVariantMap& fvMap)
 	{
-        QString maxId= getMaxId(tableName);
+		QString maxId = getMaxId(tableName);
 		QSqlQuery query(db);
 		// 处理字段名和值
 		QStringList fields = fvMap.keys();
 		QStringList updateFields;
-		for (const QString field: fields) {
+		for (const QString field : fields) {
 			// 处理字符串转义（防止 SQL 注入）
 			QString updateField = QString("%1='%2'").arg(field).arg(fvMap[field].toString());
-			updateFields<<updateField;
+			updateFields << updateField;
 		}
-        QString updateSql = QString("update %1 set %2 where id=%3").arg(tableName).arg(updateFields.join(",")).arg(maxId);
-        return query.exec(updateSql);
+		QString updateSql = QString("update %1 set %2 where id=%3").arg(tableName).arg(updateFields.join(",")).arg(maxId);
+		return query.exec(updateSql);
 	}
 };
