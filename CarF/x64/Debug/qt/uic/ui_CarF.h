@@ -39,7 +39,7 @@ public:
     QPushButton *pushButton_3;
     QLabel *label;
     QPushButton *pushButton;
-    QPushButton *pushButton_2;
+    QPushButton *btnOrderLog;
     QSpacerItem *horizontalSpacer_2;
     QHBoxLayout *horizontalLayout;
     QVBoxLayout *verticalLayout;
@@ -181,10 +181,10 @@ public:
 
         gridLayout->addWidget(pushButton, 0, 0, 1, 1);
 
-        pushButton_2 = new QPushButton(centralWidget);
-        pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
+        btnOrderLog = new QPushButton(centralWidget);
+        btnOrderLog->setObjectName(QString::fromUtf8("btnOrderLog"));
 
-        gridLayout->addWidget(pushButton_2, 0, 1, 1, 1);
+        gridLayout->addWidget(btnOrderLog, 0, 1, 1, 1);
 
         horizontalSpacer_2 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
 
@@ -753,7 +753,7 @@ public:
         pushButton_3->setText(QCoreApplication::translate("CarFClass", "PushButton", nullptr));
         label->setText(QCoreApplication::translate("CarFClass", "\346\227\240\344\272\272\350\275\246\346\216\247\345\210\266\347\225\214\351\235\242", nullptr));
         pushButton->setText(QCoreApplication::translate("CarFClass", "\347\263\273\347\273\237\350\256\276\347\275\256", nullptr));
-        pushButton_2->setText(QCoreApplication::translate("CarFClass", "\346\214\207\344\273\244\346\227\245\345\277\227", nullptr));
+        btnOrderLog->setText(QCoreApplication::translate("CarFClass", "\346\214\207\344\273\244\346\227\245\345\277\227", nullptr));
         label_2->setText(QCoreApplication::translate("CarFClass", "\344\270\255\345\244\226\347\272\242\346\263\242\345\233\276\345\203\217", nullptr));
         label_3->setText(QCoreApplication::translate("CarFClass", "\345\217\257\350\247\201\345\205\211\345\233\276\345\203\217", nullptr));
         label_4->setText(QCoreApplication::translate("CarFClass", "\345\205\211\346\226\221\346\243\200\346\265\213\345\233\276\345\203\217", nullptr));

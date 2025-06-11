@@ -34,4 +34,6 @@ private slots:
     void on_btnAutoDisplay_clicked();
     //无人车控制 停止
     void on_btnStop_clicked();
+    //指令日志
+    void on_btnOrderLog_clicked();
 };

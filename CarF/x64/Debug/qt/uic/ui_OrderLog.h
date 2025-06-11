@@ -25,10 +25,10 @@ class Ui_OrderLogClass
 public:
     QLabel *label;
     QLabel *label_2;
-    QPushButton *pushButton;
+    QPushButton *btnQueryLog;
     QPushButton *pushButton_2;
-    QTableView *tableView;
-    QLineEdit *lineEdit;
+    QTableView *tvwOrderLog;
+    QLineEdit *txtKeyWord;
 
     void setupUi(QWidget *OrderLogClass)
     {
@@ -41,18 +41,18 @@ public:
         label_2 = new QLabel(OrderLogClass);
         label_2->setObjectName(QString::fromUtf8("label_2"));
         label_2->setGeometry(QRect(240, 30, 54, 12));
-        pushButton = new QPushButton(OrderLogClass);
-        pushButton->setObjectName(QString::fromUtf8("pushButton"));
-        pushButton->setGeometry(QRect(430, 30, 75, 23));
+        btnQueryLog = new QPushButton(OrderLogClass);
+        btnQueryLog->setObjectName(QString::fromUtf8("btnQueryLog"));
+        btnQueryLog->setGeometry(QRect(430, 30, 75, 23));
         pushButton_2 = new QPushButton(OrderLogClass);
         pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
         pushButton_2->setGeometry(QRect(520, 30, 75, 23));
-        tableView = new QTableView(OrderLogClass);
-        tableView->setObjectName(QString::fromUtf8("tableView"));
-        tableView->setGeometry(QRect(60, 100, 501, 251));
-        lineEdit = new QLineEdit(OrderLogClass);
-        lineEdit->setObjectName(QString::fromUtf8("lineEdit"));
-        lineEdit->setGeometry(QRect(110, 30, 113, 20));
+        tvwOrderLog = new QTableView(OrderLogClass);
+        tvwOrderLog->setObjectName(QString::fromUtf8("tvwOrderLog"));
+        tvwOrderLog->setGeometry(QRect(60, 100, 501, 251));
+        txtKeyWord = new QLineEdit(OrderLogClass);
+        txtKeyWord->setObjectName(QString::fromUtf8("txtKeyWord"));
+        txtKeyWord->setGeometry(QRect(110, 30, 113, 20));
 
         retranslateUi(OrderLogClass);
 
@@ -64,7 +64,7 @@ public:
         OrderLogClass->setWindowTitle(QCoreApplication::translate("OrderLogClass", "OrderLog", nullptr));
         label->setText(QCoreApplication::translate("OrderLogClass", "\345\205\263\351\224\256\350\257\215", nullptr));
         label_2->setText(QCoreApplication::translate("OrderLogClass", "\346\227\266\351\227\264", nullptr));
-        pushButton->setText(QCoreApplication::translate("OrderLogClass", "\346\220\234\347\264\242", nullptr));
+        btnQueryLog->setText(QCoreApplication::translate("OrderLogClass", "\346\220\234\347\264\242", nullptr));
         pushButton_2->setText(QCoreApplication::translate("OrderLogClass", "\351\207\215\347\275\256", nullptr));
     } // retranslateUi
 

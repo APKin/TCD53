@@ -69,7 +69,6 @@ QList<InstructLog> InstructLogDAO::findAll()
 // 条件查询
 QList<InstructLog> InstructLogDAO::findByCondition(
     const QString& typeKeyword,
-    const QString& contentKeyword,
     const QDateTime& startTime,
     const QDateTime& endTime)
 {
@@ -77,17 +76,13 @@ QList<InstructLog> InstructLogDAO::findByCondition(
     QString sql = "SELECT * FROM instruct_log WHERE 1=1";
     QVariantMap params;
 
-    // 类型模糊匹配
+    // 模糊匹配
     if (!typeKeyword.isEmpty()) {
-        sql += " AND type LIKE :type";
+        sql += " AND (type LIKE :type or content LIKE :content) ";
         params[":type"] = "%" + typeKeyword + "%";
+        params[":content"] = "%" + typeKeyword + "%";
     }
 
-    // 内容模糊匹配
-    if (!contentKeyword.isEmpty()) {
-        sql += " AND content LIKE :content";
-        params[":content"] = "%" + contentKeyword + "%";
-    }
 
     // 开始时间过滤
     if (startTime.isValid()) {
@@ -102,7 +97,7 @@ QList<InstructLog> InstructLogDAO::findByCondition(
     }
 
     sql += " ORDER BY create_time DESC";
-
+    dbHelper.open();
     QSqlQuery query(dbHelper.getDatabase());
     query.prepare(sql);
 

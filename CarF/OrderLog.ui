@@ -39,7 +39,7 @@
     <string>时间</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QPushButton" name="btnQueryLog">
    <property name="geometry">
     <rect>
      <x>430</x>
@@ -65,7 +65,7 @@
     <string>重置</string>
    </property>
   </widget>
-  <widget class="QTableView" name="tableView">
+  <widget class="QTableView" name="tvwOrderLog">
    <property name="geometry">
     <rect>
      <x>60</x>
@@ -75,7 +75,7 @@
     </rect>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit">
+  <widget class="QLineEdit" name="txtKeyWord">
    <property name="geometry">
     <rect>
      <x>110</x>

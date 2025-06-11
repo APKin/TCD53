@@ -25,7 +25,6 @@ public:
 
     // 条件查询 (类型/内容模糊匹配 + 时间范围)
     QList<InstructLog> findByCondition(const QString& typeKeyword,
-        const QString& contentKeyword,
         const QDateTime& startTime,
         const QDateTime& endTime);
 

@@ -17,19 +17,6 @@ CarF::CarF(QWidget *parent)
     ui.setupUi(this);
     // 获取图片保存路径
     imageSavePath = getImagePath();
-    //QString filename = "imageSavePath.bin";
-    //QString content = readFileIfExists(filename);
-    //db = new DBHelper();
-    //if (!content.isEmpty()) {
-    //    imageSavePath = content;
-    //}
-    //else {
-    //    //初始化配置路径
-    //    imageSavePath = QCoreApplication::applicationDirPath();
-    //    saveStringToFile(imageSavePath, "imageSavePath.bin");
-
-
-    //}
 }
 
 CarF::~CarF()
@@ -52,6 +39,12 @@ void CarF::on_pushButton_clicked()
     else {
         QMessageBox::information(nullptr, "取消操作", "您取消了输入。");
     }
+}
+//打开指令记录窗口
+void CarF::on_btnOrderLog_clicked()
+{
+    OrderLog *secondWin = new OrderLog(this);
+    secondWin->exec(); // 模态显示对话框
 }
 /*
 * 查询img_path表最后一条数据，如果没有则创建一条默认数据并写入数据库，返回该数据
