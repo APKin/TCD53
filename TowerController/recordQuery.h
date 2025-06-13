@@ -1,20 +1,27 @@
 #pragma once
 
-#include <QWidget>
-#include "ui_recordQuery.h"
+#include <QDialog>
+#include "ui_RecordQuery.h"
+#include "ParkPoliceRecord.cpp"
+#include "ImgFile.cpp"
 
 QT_BEGIN_NAMESPACE
-namespace Ui { class recordQueryClass; };
+namespace Ui { class RecordQueryClass; };
 QT_END_NAMESPACE
 
-class recordQuery : public QWidget
+class RecordQuery : public QDialog
 {
 	Q_OBJECT
 
 public:
-	recordQuery(QWidget *parent = nullptr);
-	~recordQuery();
+	RecordQuery(QWidget *parent = nullptr);
+	~RecordQuery();
 
 private:
-	Ui::recordQueryClass *ui;
+	Ui::RecordQueryClass *ui;
+	ParkPoliceRecordDAL recordDAL;
+	ImgFileDAL imgDAL;
+private slots:
+	void on_btnRecordQuery_clicked();
+	void loadDataToTreeView(const QList<ParkPoliceRecord>& records);
 };

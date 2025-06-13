@@ -1,5 +1,5 @@
 /********************************************************************************
-** Form generated from reading UI file 'recordQuery.ui'
+** Form generated from reading UI file 'RecordQuery.ui'
 **
 ** Created by: Qt User Interface Compiler version 5.14.2
 **
@@ -23,30 +23,30 @@
 
 QT_BEGIN_NAMESPACE
 
-class Ui_recordQueryClass
+class Ui_RecordQueryClass
 {
 public:
     QGridLayout *gridLayout;
     QHBoxLayout *horizontalLayout_4;
     QHBoxLayout *horizontalLayout_2;
     QLabel *label;
-    QLineEdit *lineEdit;
+    QLineEdit *txtKeyWord;
     QHBoxLayout *horizontalLayout_3;
     QLabel *label_2;
-    QDateEdit *dateEdit;
+    QDateEdit *detBegin;
     QLabel *label_3;
-    QDateEdit *dateEdit_2;
+    QDateEdit *detEnd;
     QHBoxLayout *horizontalLayout;
-    QPushButton *pushButton;
+    QPushButton *btnRecordQuery;
     QPushButton *pushButton_2;
     QTreeView *treeView;
 
-    void setupUi(QWidget *recordQueryClass)
+    void setupUi(QWidget *RecordQueryClass)
     {
-        if (recordQueryClass->objectName().isEmpty())
-            recordQueryClass->setObjectName(QString::fromUtf8("recordQueryClass"));
-        recordQueryClass->resize(600, 400);
-        gridLayout = new QGridLayout(recordQueryClass);
+        if (RecordQueryClass->objectName().isEmpty())
+            RecordQueryClass->setObjectName(QString::fromUtf8("RecordQueryClass"));
+        RecordQueryClass->resize(600, 400);
+        gridLayout = new QGridLayout(RecordQueryClass);
         gridLayout->setSpacing(6);
         gridLayout->setContentsMargins(11, 11, 11, 11);
         gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
@@ -56,15 +56,15 @@ public:
         horizontalLayout_2 = new QHBoxLayout();
         horizontalLayout_2->setSpacing(6);
         horizontalLayout_2->setObjectName(QString::fromUtf8("horizontalLayout_2"));
-        label = new QLabel(recordQueryClass);
+        label = new QLabel(RecordQueryClass);
         label->setObjectName(QString::fromUtf8("label"));
 
         horizontalLayout_2->addWidget(label);
 
-        lineEdit = new QLineEdit(recordQueryClass);
-        lineEdit->setObjectName(QString::fromUtf8("lineEdit"));
+        txtKeyWord = new QLineEdit(RecordQueryClass);
+        txtKeyWord->setObjectName(QString::fromUtf8("txtKeyWord"));
 
-        horizontalLayout_2->addWidget(lineEdit);
+        horizontalLayout_2->addWidget(txtKeyWord);
 
 
         horizontalLayout_4->addLayout(horizontalLayout_2);
@@ -72,25 +72,25 @@ public:
         horizontalLayout_3 = new QHBoxLayout();
         horizontalLayout_3->setSpacing(6);
         horizontalLayout_3->setObjectName(QString::fromUtf8("horizontalLayout_3"));
-        label_2 = new QLabel(recordQueryClass);
+        label_2 = new QLabel(RecordQueryClass);
         label_2->setObjectName(QString::fromUtf8("label_2"));
 
         horizontalLayout_3->addWidget(label_2);
 
-        dateEdit = new QDateEdit(recordQueryClass);
-        dateEdit->setObjectName(QString::fromUtf8("dateEdit"));
+        detBegin = new QDateEdit(RecordQueryClass);
+        detBegin->setObjectName(QString::fromUtf8("detBegin"));
 
-        horizontalLayout_3->addWidget(dateEdit);
+        horizontalLayout_3->addWidget(detBegin);
 
-        label_3 = new QLabel(recordQueryClass);
+        label_3 = new QLabel(RecordQueryClass);
         label_3->setObjectName(QString::fromUtf8("label_3"));
 
         horizontalLayout_3->addWidget(label_3);
 
-        dateEdit_2 = new QDateEdit(recordQueryClass);
-        dateEdit_2->setObjectName(QString::fromUtf8("dateEdit_2"));
+        detEnd = new QDateEdit(RecordQueryClass);
+        detEnd->setObjectName(QString::fromUtf8("detEnd"));
 
-        horizontalLayout_3->addWidget(dateEdit_2);
+        horizontalLayout_3->addWidget(detEnd);
 
 
         horizontalLayout_4->addLayout(horizontalLayout_3);
@@ -98,12 +98,12 @@ public:
         horizontalLayout = new QHBoxLayout();
         horizontalLayout->setSpacing(6);
         horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
-        pushButton = new QPushButton(recordQueryClass);
-        pushButton->setObjectName(QString::fromUtf8("pushButton"));
+        btnRecordQuery = new QPushButton(RecordQueryClass);
+        btnRecordQuery->setObjectName(QString::fromUtf8("btnRecordQuery"));
 
-        horizontalLayout->addWidget(pushButton);
+        horizontalLayout->addWidget(btnRecordQuery);
 
-        pushButton_2 = new QPushButton(recordQueryClass);
+        pushButton_2 = new QPushButton(RecordQueryClass);
         pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
 
         horizontalLayout->addWidget(pushButton_2);
@@ -114,7 +114,7 @@ public:
 
         gridLayout->addLayout(horizontalLayout_4, 0, 0, 1, 1);
 
-        treeView = new QTreeView(recordQueryClass);
+        treeView = new QTreeView(RecordQueryClass);
         treeView->setObjectName(QString::fromUtf8("treeView"));
 
         gridLayout->addWidget(treeView, 1, 0, 1, 1);
@@ -122,25 +122,25 @@ public:
         gridLayout->setRowStretch(0, 1);
         gridLayout->setRowStretch(1, 3);
 
-        retranslateUi(recordQueryClass);
+        retranslateUi(RecordQueryClass);
 
-        QMetaObject::connectSlotsByName(recordQueryClass);
+        QMetaObject::connectSlotsByName(RecordQueryClass);
     } // setupUi
 
-    void retranslateUi(QWidget *recordQueryClass)
+    void retranslateUi(QWidget *RecordQueryClass)
     {
-        recordQueryClass->setWindowTitle(QCoreApplication::translate("recordQueryClass", "recordQuery", nullptr));
-        label->setText(QCoreApplication::translate("recordQueryClass", "\345\205\263\351\224\256\350\257\215", nullptr));
-        label_2->setText(QCoreApplication::translate("recordQueryClass", "\346\227\266\351\227\264", nullptr));
-        label_3->setText(QCoreApplication::translate("recordQueryClass", "\350\207\263", nullptr));
-        pushButton->setText(QCoreApplication::translate("recordQueryClass", "\346\220\234\347\264\242", nullptr));
-        pushButton_2->setText(QCoreApplication::translate("recordQueryClass", "\351\207\215\347\275\256", nullptr));
+        RecordQueryClass->setWindowTitle(QCoreApplication::translate("RecordQueryClass", "\350\256\260\345\275\225\346\237\245\350\257\242", nullptr));
+        label->setText(QCoreApplication::translate("RecordQueryClass", "\345\205\263\351\224\256\350\257\215", nullptr));
+        label_2->setText(QCoreApplication::translate("RecordQueryClass", "\346\227\266\351\227\264", nullptr));
+        label_3->setText(QCoreApplication::translate("RecordQueryClass", "\350\207\263", nullptr));
+        btnRecordQuery->setText(QCoreApplication::translate("RecordQueryClass", "\346\220\234\347\264\242", nullptr));
+        pushButton_2->setText(QCoreApplication::translate("RecordQueryClass", "\351\207\215\347\275\256", nullptr));
     } // retranslateUi
 
 };
 
 namespace Ui {
-    class recordQueryClass: public Ui_recordQueryClass {};
+    class RecordQueryClass: public Ui_RecordQueryClass {};
 } // namespace Ui
 
 QT_END_NAMESPACE

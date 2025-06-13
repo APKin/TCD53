@@ -6,7 +6,7 @@ SystemSetting::SystemSetting(QWidget *parent)
 	, ui(new Ui::SystemSettingClass())
 {
 	ui->setupUi(this);
-	//this->setWindowTitle("系统设置");
+	this->setWindowTitle("系统设置");
 }
 
 SystemSetting::~SystemSetting()

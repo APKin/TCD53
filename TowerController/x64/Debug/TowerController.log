@@ -1,4 +1,4 @@
 ﻿   Qt/MSBuild: 3.4.0.1
    Qt: 5.14.2
-  Test.cpp
+  RecordQuery.cpp
   TowerController.vcxproj -> D:\project\TCD53\old\TCD53\TowerController\x64\Debug\TowerController.exe

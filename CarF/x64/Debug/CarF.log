@@ -1,4 +1,28 @@
 ﻿   Qt/MSBuild: 3.4.0.1
+  Reading Qt configuration (D:/Qt/Qt5.14.2/5.14.2/msvc2017_64/bin/qmake)
    Qt: 5.14.2
+  uic CarF.ui
+  uic OrderLog.ui
+  uic PictureSave.ui
+  uic SystemSetting.ui
+  rcc CarF.qrc
+  moc CarF.h
+  moc SystemSetting.h
+  moc OrderLog.h
+   RCC: Warning: No resources in 'D:\project\TCD53\old\TCD53\CarF\CarF.qrc'.
+  moc PictureSave.h
+  InstructLog.cpp
+  InstructLogDAO.cpp
   OrderLog.cpp
+  PictureSave.cpp
+  SystemSetting.cpp
+  CarF.cpp
+  main.cpp
+D:\project\TCD53\old\TCD53\CarF\DBHelper.h(26): warning C4715: “DBHelper::open”: 不是所有的控件路径都返回值
+D:\project\TCD53\old\TCD53\CarF\DBHelper.h(26): warning C4715: “DBHelper::open”: 不是所有的控件路径都返回值
+  qrc_CarF.cpp
+  moc_CarF.cpp
+  moc_SystemSetting.cpp
+  moc_OrderLog.cpp
+  moc_PictureSave.cpp
   CarF.vcxproj -> D:\project\TCD53\old\TCD53\CarF\x64\Debug\CarF.exe

@@ -97,7 +97,7 @@
     <QtUic Include="DeviceControl.ui" />
     <QtUic Include="HelpWidget.ui" />
     <QtUic Include="ImageStore.ui" />
-    <QtUic Include="recordQuery.ui" />
+    <QtUic Include="RecordQuery.ui" />
     <QtUic Include="StreamSetting.ui" />
     <QtUic Include="SystemSetting.ui" />
     <QtUic Include="TowerController.ui" />
@@ -107,10 +107,11 @@
     <ClCompile Include="DeviceControl.cpp" />
     <ClCompile Include="HelpWidget.cpp" />
     <ClCompile Include="ImageStore.cpp" />
+    <ClCompile Include="ImgFile.cpp" />
     <ClCompile Include="InstructLog.cpp" />
     <ClCompile Include="InstructLogDAO.cpp" />
     <ClCompile Include="ParkPoliceRecord.cpp" />
-    <ClCompile Include="recordQuery.cpp" />
+    <ClCompile Include="RecordQuery.cpp" />
     <ClCompile Include="StreamSetting.cpp" />
     <ClCompile Include="SystemSetting.cpp" />
     <ClCompile Include="Test.cpp" />
@@ -139,13 +140,13 @@
     <QtMoc Include="AngleScaleBar.h" />
   </ItemGroup>
   <ItemGroup>
-    <QtMoc Include="recordQuery.h" />
+    <QtMoc Include="RecordQuery.h" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DBHelper.h" />
+    <ClInclude Include="ImgFile.h" />
     <ClInclude Include="InstructLog.h" />
     <ClInclude Include="InstructLogDAO.h" />
-    <ClInclude Include="ParkPoliceRecord.h" />
     <ClInclude Include="Test.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

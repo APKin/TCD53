@@ -61,7 +61,7 @@
     <ClCompile Include="AngleScaleBar.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="recordQuery.cpp">
+    <ClCompile Include="RecordQuery.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="ParkPoliceRecord.cpp">
@@ -74,6 +74,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ImgFile.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -99,7 +102,7 @@
     <QtMoc Include="AngleScaleBar.h">
       <Filter>Header Files</Filter>
     </QtMoc>
-    <QtMoc Include="recordQuery.h">
+    <QtMoc Include="RecordQuery.h">
       <Filter>Header Files</Filter>
     </QtMoc>
   </ItemGroup>
@@ -122,15 +125,12 @@
     <QtUic Include="ImageStore.ui">
       <Filter>Form Files</Filter>
     </QtUic>
-    <QtUic Include="recordQuery.ui">
+    <QtUic Include="RecordQuery.ui">
       <Filter>Form Files</Filter>
     </QtUic>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DBHelper.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ParkPoliceRecord.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="InstructLog.h">
@@ -140,6 +140,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ImgFile.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
