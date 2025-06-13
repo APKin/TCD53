@@ -1,4 +1,14 @@
 ﻿   Qt/MSBuild: 3.4.0.1
    Qt: 5.14.2
+  moc TowerController.h
+  ImgFile.cpp
+  InstructLogDAO.cpp
+  ParkPoliceRecord.cpp
   RecordQuery.cpp
+  SystemSetting.cpp
+  TowerController.cpp
+  main.cpp
+D:\project\TCD53\old\TCD53\TowerController\DBHelper.h(26): warning C4715: “DBHelper::open”: 不是所有的控件路径都返回值
+  moc_RecordQuery.cpp
+  moc_TowerController.cpp
   TowerController.vcxproj -> D:\project\TCD53\old\TCD53\TowerController\x64\Debug\TowerController.exe

@@ -13,6 +13,8 @@ class DBHelper
 	QSqlDatabase db;
 public:
 	DBHelper() {
+		db = QSqlDatabase::addDatabase("QSQLITE", "tower");
+		db.setDatabaseName("sqlite3/tower.db");
 	}
 	bool open() {
 		//如果db不为空并且已经打开，则直接返回true
@@ -22,16 +24,7 @@ public:
 		db.open();
 
 	}
-	QSqlDatabase getDatabase() { 
-        if (!db.isValid()) {
-			db = QSqlDatabase::addDatabase("QSQLITE", "tower");
-			db.setDatabaseName("sqlite3/tower.db");
-		}
-		if  (!db.isOpen()) {
-			db.open();
-		}
-		return db; 
-	}
+	QSqlDatabase getDatabase() { return db; }
 	//插入数据，传入参数是表名，多个字段名，多个字段值,返回插入成功与否
 	bool insertData(const QString& tableName, QVariantMap& fvMap)
 	{

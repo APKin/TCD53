@@ -68,9 +68,9 @@ QList<InstructLog> InstructLogDAO::findAll()
 
 // Ìõ¼þ²éÑ¯
 QList<InstructLog> InstructLogDAO::findByCondition(
-    const QString& typeKeyword,
-    const QDateTime& startTime,
-    const QDateTime& endTime)
+    const QString typeKeyword,
+    const QDateTime startTime,
+    const QDateTime endTime)
 {
     QList<InstructLog> logs;
     QString sql = "SELECT * FROM instruct_log WHERE 1=1";

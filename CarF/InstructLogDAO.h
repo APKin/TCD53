@@ -24,12 +24,12 @@ public:
     QList<InstructLog> findAll();
 
     // 条件查询 (类型/内容模糊匹配 + 时间范围)
-    QList<InstructLog> findByCondition(const QString& typeKeyword,
-        const QDateTime& startTime,
-        const QDateTime& endTime);
+    QList<InstructLog> findByCondition(const QString typeKeyword,
+        const QDateTime startTime,
+        const QDateTime endTime);
 
 private:
-    DBHelper& dbHelper;
+    DBHelper dbHelper;
 
     // 从查询结果构建实体对象
     InstructLog buildFromQuery(const QSqlQuery& query);
