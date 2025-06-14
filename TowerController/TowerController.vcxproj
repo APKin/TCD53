@@ -22,7 +22,7 @@
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <CharacterSet>Unicode</CharacterSet>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -63,6 +63,15 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
   </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\ProgEnv\ffmpeg-n4.4.4-89-g25841e4f90-win64-gpl-shared-4.4\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>D:\ProgEnv\ffmpeg-n4.4.4-89-g25841e4f90-win64-gpl-shared-4.4\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>avutil.lib;avcodec.lib;avformat.lib;swscale.lib;swresample.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
     <ClCompile>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
@@ -71,7 +80,7 @@
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
     <Link>
-      <SubSystem>Windows</SubSystem>
+      <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
@@ -95,6 +104,7 @@
     <QtRcc Include="TowerController.qrc" />
     <QtUic Include="DeviceConnect.ui" />
     <QtUic Include="DeviceControl.ui" />
+    <QtUic Include="FFmpegWidget.ui" />
     <QtUic Include="HelpWidget.ui" />
     <QtUic Include="ImageStore.ui" />
     <QtUic Include="RecordQuery.ui" />
@@ -105,6 +115,8 @@
     <ClCompile Include="AngleScaleBar.cpp" />
     <ClCompile Include="DeviceConnect.cpp" />
     <ClCompile Include="DeviceControl.cpp" />
+    <ClCompile Include="FFmpegThread.cpp" />
+    <ClCompile Include="FFmpegWidget.cpp" />
     <ClCompile Include="HelpWidget.cpp" />
     <ClCompile Include="ImageStore.cpp" />
     <ClCompile Include="ImgFile.cpp" />
@@ -144,6 +156,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DBHelper.h" />
+    <ClInclude Include="ffmpeghead.h" />
+    <QtMoc Include="FFmpegThread.h" />
+    <QtMoc Include="FFmpegWidget.h" />
     <ClInclude Include="ImgFile.h" />
     <ClInclude Include="InstructLog.h" />
     <ClInclude Include="InstructLogDAO.h" />

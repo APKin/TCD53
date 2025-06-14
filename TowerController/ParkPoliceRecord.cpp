@@ -3,7 +3,7 @@
 #include <QDateTime>
 #include <QString>
 #include <ImgFile.cpp>
-
+#include <QDebug>
 // 警情记录实体类
 class ParkPoliceRecord {
 public:
@@ -207,6 +207,11 @@ public:
                 record.fromVariantMap(map);
                 records.append(record);
             }
+        }
+        else
+        {
+            qDebug() << query.lastError();
+            qDebug() << "err";
         }
 
         return records;

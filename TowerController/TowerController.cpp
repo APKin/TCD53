@@ -9,6 +9,17 @@ TowerController::TowerController(QWidget *parent)
     , ui(new Ui::TowerControllerClass())
 {
     ui->setupUi(this);
+      QString urls = "rtsp://127.0.0.1:8554/mystream";
+    //FFmpegWidget fw;
+    //fw.show();
+    //fw.setUrl(urls);
+    //fw.open();
+    //ui->widget_6.setUrl
+
+      //ui->widget_6->setUrl(urls);
+      //ui->widget_6->open();
+
+
 }
 
 TowerController::~TowerController()
@@ -42,4 +53,9 @@ void TowerController::onBtnDeviceContorlClicked() {
 //帮助按钮点击事件
 void TowerController::onBtnHelpClicked() {
 
+}
+
+void TowerController::on_pushButton_7_clicked()
+{
+    ui->widget_6->setCapPic();
 }

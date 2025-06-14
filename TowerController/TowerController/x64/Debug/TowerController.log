@@ -1,5 +1,2 @@
-﻿  uic TowerController.ui
-  TowerController.cpp
-  main.cpp
-  moc_TowerController.cpp
-  TowerController.vcxproj -> D:\Project\TowerController\x64\Debug\TowerController.exe
+﻿  RecordQuery.cpp
+  TowerController.vcxproj -> D:\Temp\TCD53\TowerController\x64\Debug\TowerController.exe

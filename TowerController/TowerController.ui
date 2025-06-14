@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>906</width>
-    <height>653</height>
+    <width>1189</width>
+    <height>804</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -212,7 +212,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QWidget" name="widget_6" native="true"/>
+       <widget class="FFmpegWidget" name="widget_6" native="true"/>
       </item>
      </layout>
     </item>
@@ -237,8 +237,8 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>906</width>
-     <height>23</height>
+     <width>1189</width>
+     <height>22</height>
     </rect>
    </property>
   </widget>
@@ -257,7 +257,13 @@
   <customwidget>
    <class>AngleScaleBar</class>
    <extends>QWidget</extends>
-   <header location="global">anglescalebar.h</header>
+   <header>anglescalebar.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>FFmpegWidget</class>
+   <extends>QWidget</extends>
+   <header location="global">ffmpegwidget.h</header>
    <container>1</container>
   </customwidget>
  </customwidgets>

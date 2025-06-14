@@ -2,6 +2,7 @@
 
 #include <QtWidgets/QMainWindow>
 #include "ui_TowerController.h"
+#include "FFmpegWidget.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class TowerControllerClass; };
@@ -23,4 +24,6 @@ private slots:
     void onBtnStreamSettingClicked();
     void onBtnDeviceContorlClicked();
     void onBtnHelpClicked();
+
+    void on_pushButton_7_clicked();
 };

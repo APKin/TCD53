@@ -21,7 +21,8 @@
 #include <QtWidgets/QToolBar>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
-#include <anglescalebar.h>
+#include <ffmpegwidget.h>
+#include "anglescalebar.h"
 
 QT_BEGIN_NAMESPACE
 
@@ -32,11 +33,11 @@ public:
     QGridLayout *gridLayout_2;
     QGridLayout *gridLayout;
     QHBoxLayout *horizontalLayout;
-    QPushButton *pushButton;
-    QPushButton *pushButton_2;
-    QPushButton *pushButton_3;
-    QPushButton *pushButton_4;
-    QPushButton *pushButton_5;
+    QPushButton *btnRecordQuery;
+    QPushButton *btnSystenSettings;
+    QPushButton *btnStreamSetting;
+    QPushButton *btnDeviceControl;
+    QPushButton *btnHelp;
     QLabel *label;
     QLabel *label_2;
     QHBoxLayout *horizontalLayout_2;
@@ -64,7 +65,7 @@ public:
     QVBoxLayout *verticalLayout_5;
     AngleScaleBar *widget;
     QLabel *label_3;
-    QWidget *widget_6;
+    FFmpegWidget *widget_6;
     QVBoxLayout *verticalLayout_4;
     QLabel *label_5;
     QWidget *widget_2;
@@ -76,7 +77,7 @@ public:
     {
         if (TowerControllerClass->objectName().isEmpty())
             TowerControllerClass->setObjectName(QString::fromUtf8("TowerControllerClass"));
-        TowerControllerClass->resize(906, 653);
+        TowerControllerClass->resize(1189, 804);
         centralWidget = new QWidget(TowerControllerClass);
         centralWidget->setObjectName(QString::fromUtf8("centralWidget"));
         gridLayout_2 = new QGridLayout(centralWidget);
@@ -89,30 +90,30 @@ public:
         horizontalLayout = new QHBoxLayout();
         horizontalLayout->setSpacing(6);
         horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
-        pushButton = new QPushButton(centralWidget);
-        pushButton->setObjectName(QString::fromUtf8("pushButton"));
+        btnRecordQuery = new QPushButton(centralWidget);
+        btnRecordQuery->setObjectName(QString::fromUtf8("btnRecordQuery"));
 
-        horizontalLayout->addWidget(pushButton);
+        horizontalLayout->addWidget(btnRecordQuery);
 
-        pushButton_2 = new QPushButton(centralWidget);
-        pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
+        btnSystenSettings = new QPushButton(centralWidget);
+        btnSystenSettings->setObjectName(QString::fromUtf8("btnSystenSettings"));
 
-        horizontalLayout->addWidget(pushButton_2);
+        horizontalLayout->addWidget(btnSystenSettings);
 
-        pushButton_3 = new QPushButton(centralWidget);
-        pushButton_3->setObjectName(QString::fromUtf8("pushButton_3"));
+        btnStreamSetting = new QPushButton(centralWidget);
+        btnStreamSetting->setObjectName(QString::fromUtf8("btnStreamSetting"));
 
-        horizontalLayout->addWidget(pushButton_3);
+        horizontalLayout->addWidget(btnStreamSetting);
 
-        pushButton_4 = new QPushButton(centralWidget);
-        pushButton_4->setObjectName(QString::fromUtf8("pushButton_4"));
+        btnDeviceControl = new QPushButton(centralWidget);
+        btnDeviceControl->setObjectName(QString::fromUtf8("btnDeviceControl"));
 
-        horizontalLayout->addWidget(pushButton_4);
+        horizontalLayout->addWidget(btnDeviceControl);
 
-        pushButton_5 = new QPushButton(centralWidget);
-        pushButton_5->setObjectName(QString::fromUtf8("pushButton_5"));
+        btnHelp = new QPushButton(centralWidget);
+        btnHelp->setObjectName(QString::fromUtf8("btnHelp"));
 
-        horizontalLayout->addWidget(pushButton_5);
+        horizontalLayout->addWidget(btnHelp);
 
 
         gridLayout->addLayout(horizontalLayout, 0, 0, 1, 3);
@@ -258,7 +259,7 @@ public:
 
         verticalLayout_5->addWidget(label_3);
 
-        widget_6 = new QWidget(centralWidget);
+        widget_6 = new FFmpegWidget(centralWidget);
         widget_6->setObjectName(QString::fromUtf8("widget_6"));
 
         verticalLayout_5->addWidget(widget_6);
@@ -285,7 +286,7 @@ public:
         TowerControllerClass->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(TowerControllerClass);
         menuBar->setObjectName(QString::fromUtf8("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 906, 22));
+        menuBar->setGeometry(QRect(0, 0, 1189, 22));
         TowerControllerClass->setMenuBar(menuBar);
         mainToolBar = new QToolBar(TowerControllerClass);
         mainToolBar->setObjectName(QString::fromUtf8("mainToolBar"));
@@ -302,11 +303,11 @@ public:
     void retranslateUi(QMainWindow *TowerControllerClass)
     {
         TowerControllerClass->setWindowTitle(QCoreApplication::translate("TowerControllerClass", "TowerController", nullptr));
-        pushButton->setText(QCoreApplication::translate("TowerControllerClass", "PushButton", nullptr));
-        pushButton_2->setText(QCoreApplication::translate("TowerControllerClass", "PushButton", nullptr));
-        pushButton_3->setText(QCoreApplication::translate("TowerControllerClass", "PushButton", nullptr));
-        pushButton_4->setText(QCoreApplication::translate("TowerControllerClass", "PushButton", nullptr));
-        pushButton_5->setText(QCoreApplication::translate("TowerControllerClass", "PushButton", nullptr));
+        btnRecordQuery->setText(QCoreApplication::translate("TowerControllerClass", "\350\256\260\345\275\225\346\237\245\350\257\242", nullptr));
+        btnSystenSettings->setText(QCoreApplication::translate("TowerControllerClass", "\347\263\273\347\273\237\350\256\276\347\275\256", nullptr));
+        btnStreamSetting->setText(QCoreApplication::translate("TowerControllerClass", "\346\216\250\346\265\201\350\256\276\347\275\256", nullptr));
+        btnDeviceControl->setText(QCoreApplication::translate("TowerControllerClass", "\350\256\276\345\244\207\346\216\247\345\210\266\346\214\207\344\273\244\350\256\276\347\275\256", nullptr));
+        btnHelp->setText(QCoreApplication::translate("TowerControllerClass", "\345\270\256\345\212\251", nullptr));
         label->setText(QCoreApplication::translate("TowerControllerClass", "\345\221\250\346\211\253\350\256\276\345\244\207\346\216\247\345\210\266\347\225\214\351\235\242", nullptr));
         label_2->setText(QCoreApplication::translate("TowerControllerClass", "TextLabel", nullptr));
         pushButton_7->setText(QCoreApplication::translate("TowerControllerClass", "PushButton", nullptr));
