@@ -24,7 +24,19 @@ public:
 		db.open();
 
 	}
-	QSqlDatabase getDatabase() { return db; }
+	QSqlDatabase getDatabase() { 
+		// demo 
+		if (db.isOpen())
+		{
+			return db;
+		}
+		else {
+			db = QSqlDatabase::addDatabase("QSQLITE", "tower");
+			db.setDatabaseName("sqlite3/tower.db");
+			db.open();
+		}
+		return db; 
+	}
 	//插入数据，传入参数是表名，多个字段名，多个字段值,返回插入成功与否
 	bool insertData(const QString& tableName, QVariantMap& fvMap)
 	{

@@ -1,5 +1,5 @@
 /****************************************************************************
-** Meta object code from reading C++ file 'recordQuery.h'
+** Meta object code from reading C++ file 'RecordQuery.h'
 **
 ** Created by: The Qt Meta Object Compiler version 67 (Qt 5.14.2)
 **
@@ -7,11 +7,12 @@
 *****************************************************************************/
 
 #include <memory>
-#include "../../../../recordQuery.h"
+#include "../../../../RecordQuery.h"
 #include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
+#include <QtCore/QList>
 #if !defined(Q_MOC_OUTPUT_REVISION)
-#error "The header file 'recordQuery.h' doesn't include <QObject>."
+#error "The header file 'RecordQuery.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 67
 #error "This file was generated using the moc from 5.14.2. It"
 #error "cannot be used with the include files from this version of Qt."
@@ -21,74 +22,105 @@
 QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
-struct qt_meta_stringdata_recordQuery_t {
-    QByteArrayData data[1];
-    char stringdata0[12];
+struct qt_meta_stringdata_RecordQuery_t {
+    QByteArrayData data[6];
+    char stringdata0[90];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-    qptrdiff(offsetof(qt_meta_stringdata_recordQuery_t, stringdata0) + ofs \
+    qptrdiff(offsetof(qt_meta_stringdata_RecordQuery_t, stringdata0) + ofs \
         - idx * sizeof(QByteArrayData)) \
     )
-static const qt_meta_stringdata_recordQuery_t qt_meta_stringdata_recordQuery = {
+static const qt_meta_stringdata_RecordQuery_t qt_meta_stringdata_RecordQuery = {
     {
-QT_MOC_LITERAL(0, 0, 11) // "recordQuery"
+QT_MOC_LITERAL(0, 0, 11), // "RecordQuery"
+QT_MOC_LITERAL(1, 12, 25), // "on_btnRecordQuery_clicked"
+QT_MOC_LITERAL(2, 38, 0), // ""
+QT_MOC_LITERAL(3, 39, 18), // "loadDataToTreeView"
+QT_MOC_LITERAL(4, 58, 23), // "QList<ParkPoliceRecord>"
+QT_MOC_LITERAL(5, 82, 7) // "records"
 
     },
-    "recordQuery"
+    "RecordQuery\0on_btnRecordQuery_clicked\0"
+    "\0loadDataToTreeView\0QList<ParkPoliceRecord>\0"
+    "records"
 };
 #undef QT_MOC_LITERAL
 
-static const uint qt_meta_data_recordQuery[] = {
+static const uint qt_meta_data_RecordQuery[] = {
 
  // content:
        8,       // revision
        0,       // classname
        0,    0, // classinfo
-       0,    0, // methods
+       2,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
        0,       // signalCount
 
+ // slots: name, argc, parameters, tag, flags
+       1,    0,   24,    2, 0x08 /* Private */,
+       3,    1,   25,    2, 0x08 /* Private */,
+
+ // slots: parameters
+    QMetaType::Void,
+    QMetaType::Void, 0x80000000 | 4,    5,
+
        0        // eod
 };
 
-void recordQuery::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+void RecordQuery::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
-    Q_UNUSED(_o);
-    Q_UNUSED(_id);
-    Q_UNUSED(_c);
-    Q_UNUSED(_a);
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        auto *_t = static_cast<RecordQuery *>(_o);
+        Q_UNUSED(_t)
+        switch (_id) {
+        case 0: _t->on_btnRecordQuery_clicked(); break;
+        case 1: _t->loadDataToTreeView((*reinterpret_cast< const QList<ParkPoliceRecord>(*)>(_a[1]))); break;
+        default: ;
+        }
+    }
 }
 
-QT_INIT_METAOBJECT const QMetaObject recordQuery::staticMetaObject = { {
-    QMetaObject::SuperData::link<QWidget::staticMetaObject>(),
-    qt_meta_stringdata_recordQuery.data,
-    qt_meta_data_recordQuery,
+QT_INIT_METAOBJECT const QMetaObject RecordQuery::staticMetaObject = { {
+    QMetaObject::SuperData::link<QDialog::staticMetaObject>(),
+    qt_meta_stringdata_RecordQuery.data,
+    qt_meta_data_RecordQuery,
     qt_static_metacall,
     nullptr,
     nullptr
 } };
 
 
-const QMetaObject *recordQuery::metaObject() const
+const QMetaObject *RecordQuery::metaObject() const
 {
     return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
 }
 
-void *recordQuery::qt_metacast(const char *_clname)
+void *RecordQuery::qt_metacast(const char *_clname)
 {
     if (!_clname) return nullptr;
-    if (!strcmp(_clname, qt_meta_stringdata_recordQuery.stringdata0))
+    if (!strcmp(_clname, qt_meta_stringdata_RecordQuery.stringdata0))
         return static_cast<void*>(this);
-    return QWidget::qt_metacast(_clname);
+    return QDialog::qt_metacast(_clname);
 }
 
-int recordQuery::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+int RecordQuery::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
-    _id = QWidget::qt_metacall(_c, _id, _a);
+    _id = QDialog::qt_metacall(_c, _id, _a);
+    if (_id < 0)
+        return _id;
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        if (_id < 2)
+            qt_static_metacall(this, _c, _id, _a);
+        _id -= 2;
+    } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
+        if (_id < 2)
+            *reinterpret_cast<int*>(_a[0]) = -1;
+        _id -= 2;
+    }
     return _id;
 }
 QT_WARNING_POP

@@ -97,6 +97,12 @@ void RecordQuery::loadDataToTreeView(const QList<ParkPoliceRecord>& records)
 
         // 将ID作为隐藏数据存储在第一列
         items.first()->setData(record.id, Qt::UserRole);
+        // demo
+        QList<QStandardItem*> childItems;
+        childItems << new QStandardItem("子节点属性1");
+        childItems << new QStandardItem("子节点属性2");
+        childItems << new QStandardItem("子节点属性3");
+        items.first()->appendRow(childItems);
 
         model->appendRow(items);
     }

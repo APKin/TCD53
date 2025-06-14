@@ -29,8 +29,8 @@ public:
     QGridLayout *gridLayout;
     QHBoxLayout *horizontalLayout;
     QLabel *label;
-    QLineEdit *lineEdit_7;
-    QPushButton *pushButton;
+    QLineEdit *txtSavePath;
+    QPushButton *btnFloderSetting;
     QVBoxLayout *verticalLayout_3;
     QLabel *label_2;
     QHBoxLayout *horizontalLayout_2;
@@ -96,15 +96,15 @@ public:
 
         horizontalLayout->addWidget(label);
 
-        lineEdit_7 = new QLineEdit(SystemSettingClass);
-        lineEdit_7->setObjectName(QString::fromUtf8("lineEdit_7"));
+        txtSavePath = new QLineEdit(SystemSettingClass);
+        txtSavePath->setObjectName(QString::fromUtf8("txtSavePath"));
 
-        horizontalLayout->addWidget(lineEdit_7);
+        horizontalLayout->addWidget(txtSavePath);
 
-        pushButton = new QPushButton(SystemSettingClass);
-        pushButton->setObjectName(QString::fromUtf8("pushButton"));
+        btnFloderSetting = new QPushButton(SystemSettingClass);
+        btnFloderSetting->setObjectName(QString::fromUtf8("btnFloderSetting"));
 
-        horizontalLayout->addWidget(pushButton);
+        horizontalLayout->addWidget(btnFloderSetting);
 
 
         gridLayout->addLayout(horizontalLayout, 0, 0, 1, 2);
@@ -114,6 +114,11 @@ public:
         verticalLayout_3->setObjectName(QString::fromUtf8("verticalLayout_3"));
         label_2 = new QLabel(SystemSettingClass);
         label_2->setObjectName(QString::fromUtf8("label_2"));
+        QFont font;
+        font.setPointSize(10);
+        font.setBold(true);
+        font.setWeight(75);
+        label_2->setFont(font);
 
         verticalLayout_3->addWidget(label_2);
 
@@ -167,6 +172,7 @@ public:
         verticalLayout_4->setObjectName(QString::fromUtf8("verticalLayout_4"));
         label_5 = new QLabel(SystemSettingClass);
         label_5->setObjectName(QString::fromUtf8("label_5"));
+        label_5->setFont(font);
 
         verticalLayout_4->addWidget(label_5);
 
@@ -249,6 +255,7 @@ public:
         verticalLayout_5->setObjectName(QString::fromUtf8("verticalLayout_5"));
         label_8 = new QLabel(SystemSettingClass);
         label_8->setObjectName(QString::fromUtf8("label_8"));
+        label_8->setFont(font);
 
         verticalLayout_5->addWidget(label_8);
 
@@ -286,6 +293,7 @@ public:
         verticalLayout_6->setObjectName(QString::fromUtf8("verticalLayout_6"));
         label_11 = new QLabel(SystemSettingClass);
         label_11->setObjectName(QString::fromUtf8("label_11"));
+        label_11->setFont(font);
 
         verticalLayout_6->addWidget(label_11);
 
@@ -323,6 +331,7 @@ public:
         verticalLayout_7->setObjectName(QString::fromUtf8("verticalLayout_7"));
         label_15 = new QLabel(SystemSettingClass);
         label_15->setObjectName(QString::fromUtf8("label_15"));
+        label_15->setFont(font);
 
         verticalLayout_7->addWidget(label_15);
 
@@ -366,24 +375,24 @@ public:
 
     void retranslateUi(QDialog *SystemSettingClass)
     {
-        SystemSettingClass->setWindowTitle(QCoreApplication::translate("SystemSettingClass", "SystemSetting", nullptr));
-        label->setText(QCoreApplication::translate("SystemSettingClass", "TextLabel", nullptr));
-        pushButton->setText(QCoreApplication::translate("SystemSettingClass", "PushButton", nullptr));
-        label_2->setText(QCoreApplication::translate("SystemSettingClass", "TextLabel", nullptr));
-        label_3->setText(QCoreApplication::translate("SystemSettingClass", "TextLabel", nullptr));
-        label_4->setText(QCoreApplication::translate("SystemSettingClass", "TextLabel", nullptr));
-        label_5->setText(QCoreApplication::translate("SystemSettingClass", "TextLabel", nullptr));
-        label_17->setText(QCoreApplication::translate("SystemSettingClass", "TextLabel", nullptr));
-        label_18->setText(QCoreApplication::translate("SystemSettingClass", "TextLabel", nullptr));
-        label_20->setText(QCoreApplication::translate("SystemSettingClass", "TextLabel", nullptr));
-        label_19->setText(QCoreApplication::translate("SystemSettingClass", "TextLabel", nullptr));
-        label_8->setText(QCoreApplication::translate("SystemSettingClass", "TextLabel", nullptr));
+        SystemSettingClass->setWindowTitle(QCoreApplication::translate("SystemSettingClass", "\347\263\273\347\273\237\350\256\276\347\275\256", nullptr));
+        label->setText(QCoreApplication::translate("SystemSettingClass", "\345\233\276\345\203\217\345\255\230\345\202\250\350\267\257\345\276\204", nullptr));
+        btnFloderSetting->setText(QCoreApplication::translate("SystemSettingClass", "\346\265\217\350\247\210", nullptr));
+        label_2->setText(QCoreApplication::translate("SystemSettingClass", "\344\270\273\350\247\206\350\247\222\345\233\276\345\203\217", nullptr));
+        label_3->setText(QCoreApplication::translate("SystemSettingClass", "\344\270\273\350\247\206\350\247\222\345\233\276\345\203\217\344\275\215\347\275\256", nullptr));
+        label_4->setText(QCoreApplication::translate("SystemSettingClass", "\344\270\273\350\247\206\350\247\222\345\233\276\345\203\217\345\260\272\345\257\270", nullptr));
+        label_5->setText(QCoreApplication::translate("SystemSettingClass", "\351\207\215\347\202\271\347\233\221\350\247\206\345\214\272\345\237\237", nullptr));
+        label_17->setText(QCoreApplication::translate("SystemSettingClass", "\351\207\215\347\202\271\347\233\221\350\247\206\345\214\272\345\237\2371\344\275\215\347\275\256", nullptr));
+        label_18->setText(QCoreApplication::translate("SystemSettingClass", "\351\207\215\347\202\271\347\233\221\350\247\206\345\214\272\345\237\2371\345\256\275\345\272\246", nullptr));
+        label_20->setText(QCoreApplication::translate("SystemSettingClass", "\351\207\215\347\202\271\347\233\221\350\247\206\345\214\272\345\237\2372\344\275\215\347\275\256", nullptr));
+        label_19->setText(QCoreApplication::translate("SystemSettingClass", "\351\207\215\347\202\271\347\233\221\350\247\206\345\214\272\345\237\2372\345\256\275\345\272\246", nullptr));
+        label_8->setText(QCoreApplication::translate("SystemSettingClass", "\345\221\250\350\247\206\351\233\267\350\276\276", nullptr));
         label_9->setText(QCoreApplication::translate("SystemSettingClass", "TextLabel", nullptr));
         label_10->setText(QCoreApplication::translate("SystemSettingClass", "TextLabel", nullptr));
-        label_11->setText(QCoreApplication::translate("SystemSettingClass", "TextLabel", nullptr));
+        label_11->setText(QCoreApplication::translate("SystemSettingClass", "\346\277\200\345\205\211\351\233\267\350\276\276", nullptr));
         label_12->setText(QCoreApplication::translate("SystemSettingClass", "TextLabel", nullptr));
         label_13->setText(QCoreApplication::translate("SystemSettingClass", "TextLabel", nullptr));
-        label_15->setText(QCoreApplication::translate("SystemSettingClass", "TextLabel", nullptr));
+        label_15->setText(QCoreApplication::translate("SystemSettingClass", "\345\256\232\344\275\215\346\250\241\345\235\227", nullptr));
         label_16->setText(QCoreApplication::translate("SystemSettingClass", "TextLabel", nullptr));
         label_14->setText(QCoreApplication::translate("SystemSettingClass", "TextLabel", nullptr));
     } // retranslateUi

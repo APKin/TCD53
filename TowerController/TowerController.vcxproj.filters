@@ -79,6 +79,12 @@
     <ClCompile Include="ImgFile.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="FFmpegThread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FFmpegWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="DeviceControl.h">
@@ -105,6 +111,12 @@
     <QtMoc Include="RecordQuery.h">
       <Filter>Header Files</Filter>
     </QtMoc>
+    <QtMoc Include="FFmpegThread.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="FFmpegWidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
   </ItemGroup>
   <ItemGroup>
     <QtUic Include="DeviceControl.ui">
@@ -128,6 +140,9 @@
     <QtUic Include="RecordQuery.ui">
       <Filter>Form Files</Filter>
     </QtUic>
+    <QtUic Include="FFmpegWidget.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DBHelper.h">
@@ -143,6 +158,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="ImgFile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ffmpeghead.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

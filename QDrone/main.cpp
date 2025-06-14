@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
 
     FFmpegWidget fw;
     fw.show();
-    QString urls = "rtsp rtsp://127.0.0.1:8554/mystream";
+    QString urls = "rtsp://127.0.0.1:8554/mystream";
     fw.setUrl(urls);
     fw.open();
 
