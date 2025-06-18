@@ -13,8 +13,6 @@ class DBHelper
 	QSqlDatabase db;
 public:
 	DBHelper() {
-		db = QSqlDatabase::addDatabase("QSQLITE", "tower");
-		db.setDatabaseName("sqlite3/tower.db");
 	}
 	bool open() {
 		//如果db不为空并且已经打开，则直接返回true
@@ -25,14 +23,11 @@ public:
 
 	}
 	QSqlDatabase getDatabase() { 
-		// demo 
-		if (db.isOpen())
-		{
-			return db;
-		}
-		else {
+        if (!db.isValid()) {
 			db = QSqlDatabase::addDatabase("QSQLITE", "tower");
 			db.setDatabaseName("sqlite3/tower.db");
+		}
+		if  (!db.isOpen()) {
 			db.open();
 		}
 		return db; 

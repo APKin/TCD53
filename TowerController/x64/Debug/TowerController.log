@@ -1,14 +1,1 @@
-﻿   Qt/MSBuild: 3.4.0.1
-   Qt: 5.14.2
-  moc TowerController.h
-  ImgFile.cpp
-  InstructLogDAO.cpp
-  ParkPoliceRecord.cpp
-  RecordQuery.cpp
-  SystemSetting.cpp
-  TowerController.cpp
-  main.cpp
-D:\project\TCD53\old\TCD53\TowerController\DBHelper.h(26): warning C4715: “DBHelper::open”: 不是所有的控件路径都返回值
-  moc_RecordQuery.cpp
-  moc_TowerController.cpp
-  TowerController.vcxproj -> D:\project\TCD53\old\TCD53\TowerController\x64\Debug\TowerController.exe
+﻿d:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(439,5): error MSB8020: 无法找到 v143 的生成工具(平台工具集 =“v143”)。若要使用 v143 生成工具进行生成，请安装 v143 生成工具。或者，可以升级到当前 Visual Studio 工具，方式是通过选择“项目”菜单或右键单击该解决方案，然后选择“重定解决方案目标”。

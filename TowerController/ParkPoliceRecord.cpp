@@ -188,6 +188,7 @@ public:
         }
 
         sql += " ORDER BY record_time DESC";
+        dbHelper.open();
         QSqlQuery query(dbHelper.getDatabase());
         query.prepare(sql);
 
