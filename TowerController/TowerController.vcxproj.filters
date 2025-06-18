@@ -85,6 +85,12 @@
     <ClCompile Include="FFmpegWidget.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="SerialManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EchoServer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="DeviceControl.h">
@@ -115,6 +121,12 @@
       <Filter>Header Files</Filter>
     </QtMoc>
     <QtMoc Include="FFmpegWidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="SerialManager.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="EchoServer.h">
       <Filter>Header Files</Filter>
     </QtMoc>
   </ItemGroup>

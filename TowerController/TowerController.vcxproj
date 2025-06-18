@@ -37,7 +37,7 @@
   </ImportGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="QtSettings">
     <QtInstall>5.14.2_msvc2017_64</QtInstall>
-    <QtModules>core;sql;gui;widgets</QtModules>
+    <QtModules>core;sql;gui;widgets;serialport</QtModules>
     <QtBuildConfig>debug</QtBuildConfig>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="QtSettings">
@@ -65,11 +65,11 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\ProgEnv\ffmpeg-n4.4.4-89-g25841e4f90-win64-gpl-shared-4.4\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\ProgEnv\ffmpeg-n4.4.4-89-g25841e4f90-win64-gpl-shared-4.4\include;D:\Temp\TCD53\TowerController\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <AdditionalLibraryDirectories>D:\ProgEnv\ffmpeg-n4.4.4-89-g25841e4f90-win64-gpl-shared-4.4\lib</AdditionalLibraryDirectories>
-      <AdditionalDependencies>avutil.lib;avcodec.lib;avformat.lib;swscale.lib;swresample.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:\ProgEnv\ffmpeg-n4.4.4-89-g25841e4f90-win64-gpl-shared-4.4\lib;D:\Temp\TCD53\TowerController\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>avutil.lib;avcodec.lib;avformat.lib;swscale.lib;swresample.lib;Qt5Pdfiumd.lib;Qt5Pdfium.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
@@ -115,6 +115,7 @@
     <ClCompile Include="AngleScaleBar.cpp" />
     <ClCompile Include="DeviceConnect.cpp" />
     <ClCompile Include="DeviceControl.cpp" />
+    <ClCompile Include="EchoServer.cpp" />
     <ClCompile Include="FFmpegThread.cpp" />
     <ClCompile Include="FFmpegWidget.cpp" />
     <ClCompile Include="HelpWidget.cpp" />
@@ -124,6 +125,7 @@
     <ClCompile Include="InstructLogDAO.cpp" />
     <ClCompile Include="ParkPoliceRecord.cpp" />
     <ClCompile Include="RecordQuery.cpp" />
+    <ClCompile Include="SerialManager.cpp" />
     <ClCompile Include="StreamSetting.cpp" />
     <ClCompile Include="SystemSetting.cpp" />
     <ClCompile Include="Test.cpp" />
@@ -156,12 +158,14 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DBHelper.h" />
+    <QtMoc Include="EchoServer.h" />
     <ClInclude Include="ffmpeghead.h" />
     <QtMoc Include="FFmpegThread.h" />
     <QtMoc Include="FFmpegWidget.h" />
     <ClInclude Include="ImgFile.h" />
     <ClInclude Include="InstructLog.h" />
     <ClInclude Include="InstructLogDAO.h" />
+    <QtMoc Include="SerialManager.h" />
     <ClInclude Include="Test.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

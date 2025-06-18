@@ -41,7 +41,7 @@ void FFmpegWidget::updateImage(const QImage& image)
     this->image = image;
     static int capCal = 0;
     if (capCal < 10 && capPic == true) {
-        //QString fileName = QString::number(capCal) + ".png";
+        // QString fileName = QString::number(capCal) + ".png";
         QString filename = QString("image_%1_%2.jpg").arg(QDateTime::currentDateTime().toString("yyyyMMdd_hhmmss")).arg(capCal);
         image.save(filename,"JPG");
         qDebug() << "img save " << filename;
@@ -49,7 +49,7 @@ void FFmpegWidget::updateImage(const QImage& image)
     }
     if (capCal == 10) {
         capCal = 0;
-        capPic == false;
+        capPic = false;
     }
     
     this->update();

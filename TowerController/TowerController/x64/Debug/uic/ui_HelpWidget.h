@@ -23,7 +23,7 @@ public:
     {
         if (HelpWidgetClass->objectName().isEmpty())
             HelpWidgetClass->setObjectName(QString::fromUtf8("HelpWidgetClass"));
-        HelpWidgetClass->resize(600, 400);
+        HelpWidgetClass->resize(610, 494);
 
         retranslateUi(HelpWidgetClass);
 

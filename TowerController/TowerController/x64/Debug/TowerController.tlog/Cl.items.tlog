@@ -10,6 +10,7 @@ D:\Temp\TCD53\TowerController\InstructLog.cpp;D:\Temp\TCD53\TowerController\Towe
 D:\Temp\TCD53\TowerController\InstructLogDAO.cpp;D:\Temp\TCD53\TowerController\TowerController\x64\Debug\InstructLogDAO.obj
 D:\Temp\TCD53\TowerController\ParkPoliceRecord.cpp;D:\Temp\TCD53\TowerController\TowerController\x64\Debug\ParkPoliceRecord.obj
 D:\Temp\TCD53\TowerController\RecordQuery.cpp;D:\Temp\TCD53\TowerController\TowerController\x64\Debug\RecordQuery.obj
+D:\Temp\TCD53\TowerController\SerialManager.cpp;D:\Temp\TCD53\TowerController\TowerController\x64\Debug\SerialManager.obj
 D:\Temp\TCD53\TowerController\StreamSetting.cpp;D:\Temp\TCD53\TowerController\TowerController\x64\Debug\StreamSetting.obj
 D:\Temp\TCD53\TowerController\SystemSetting.cpp;D:\Temp\TCD53\TowerController\TowerController\x64\Debug\SystemSetting.obj
 D:\Temp\TCD53\TowerController\Test.cpp;D:\Temp\TCD53\TowerController\TowerController\x64\Debug\Test.obj
@@ -27,3 +28,4 @@ D:\Temp\TCD53\TowerController\TowerController\x64\Debug\moc\moc_AngleScaleBar.cp
 D:\Temp\TCD53\TowerController\TowerController\x64\Debug\moc\moc_RecordQuery.cpp;D:\Temp\TCD53\TowerController\TowerController\x64\Debug\moc_RecordQuery.obj
 D:\Temp\TCD53\TowerController\TowerController\x64\Debug\moc\moc_FFmpegThread.cpp;D:\Temp\TCD53\TowerController\TowerController\x64\Debug\moc_FFmpegThread.obj
 D:\Temp\TCD53\TowerController\TowerController\x64\Debug\moc\moc_FFmpegWidget.cpp;D:\Temp\TCD53\TowerController\TowerController\x64\Debug\moc_FFmpegWidget.obj
+D:\Temp\TCD53\TowerController\TowerController\x64\Debug\moc\moc_SerialManager.cpp;D:\Temp\TCD53\TowerController\TowerController\x64\Debug\moc_SerialManager.obj
