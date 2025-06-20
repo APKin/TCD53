@@ -19,8 +19,10 @@ TowerController::TowerController(QWidget *parent)
     strWgt = new StreamSetting(this);
 
     serMan = new SerialManager(this);
+    connect(serMan, &SerialManager::dataReceived, this, &TowerController::warnInfoUpdate);
 
     init();
+    initInfo();
 }
 
 TowerController::~TowerController()
@@ -46,8 +48,10 @@ TowerController::~TowerController()
 void TowerController::initInfo()
 {
     // 配置信息？
-    portName = "COM123";
+    portName = "COM1";
     serMan->setPortName(portName);
+
+    serMan->openPort();
 
 
     serverPort = "1234";
@@ -78,16 +82,19 @@ void TowerController::on_btnStreamSetting_clicked()
 }
 
 //设备控制指令设置按钮点击事件
-void TowerController::on_btnDeviceContorl_clicked()
+void TowerController::on_btnDeviceControl_clicked()
 {
     devWgt->exec();
 }
 
 
+
+
 //帮助按钮点击事件
 void TowerController::on_btnHelp_clicked()
 {
-    helpWgt->exec();
+    //helpWgt->exec();
+    helpWgt->show(); // 非模态
 }
 
 
@@ -112,11 +119,15 @@ void TowerController::on_btnStartAStop_clicked()
 
 void TowerController::on_pushButton_7_clicked()
 {
-    ui->widget_6->setCapPic();
+    //ui->widget_6->setCapPic();
+    // 确认发送
+    QByteArray data = "123";
+    serMan->sendData(data);
 }
 
-void TowerController::warnInfoUpdate()
+void TowerController::warnInfoUpdate(const QByteArray& data)
 {
+    qDebug() << "123::" << data;
 }
 
 void TowerController::init()

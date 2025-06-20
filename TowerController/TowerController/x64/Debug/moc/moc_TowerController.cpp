@@ -22,8 +22,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_TowerController_t {
-    QByteArrayData data[10];
-    char stringdata0[211];
+    QByteArrayData data[11];
+    char stringdata0[216];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -37,19 +37,21 @@ QT_MOC_LITERAL(1, 16, 25), // "on_btnRecordQuery_clicked"
 QT_MOC_LITERAL(2, 42, 0), // ""
 QT_MOC_LITERAL(3, 43, 28), // "on_btnSystenSettings_clicked"
 QT_MOC_LITERAL(4, 72, 27), // "on_btnStreamSetting_clicked"
-QT_MOC_LITERAL(5, 100, 27), // "on_btnDeviceContorl_clicked"
+QT_MOC_LITERAL(5, 100, 27), // "on_btnDeviceControl_clicked"
 QT_MOC_LITERAL(6, 128, 18), // "on_btnHelp_clicked"
 QT_MOC_LITERAL(7, 147, 24), // "on_btnStartAStop_clicked"
 QT_MOC_LITERAL(8, 172, 23), // "on_pushButton_7_clicked"
-QT_MOC_LITERAL(9, 196, 14) // "warnInfoUpdate"
+QT_MOC_LITERAL(9, 196, 14), // "warnInfoUpdate"
+QT_MOC_LITERAL(10, 211, 4) // "data"
 
     },
     "TowerController\0on_btnRecordQuery_clicked\0"
     "\0on_btnSystenSettings_clicked\0"
     "on_btnStreamSetting_clicked\0"
-    "on_btnDeviceContorl_clicked\0"
+    "on_btnDeviceControl_clicked\0"
     "on_btnHelp_clicked\0on_btnStartAStop_clicked\0"
-    "on_pushButton_7_clicked\0warnInfoUpdate"
+    "on_pushButton_7_clicked\0warnInfoUpdate\0"
+    "data"
 };
 #undef QT_MOC_LITERAL
 
@@ -74,7 +76,7 @@ static const uint qt_meta_data_TowerController[] = {
        6,    0,   58,    2, 0x08 /* Private */,
        7,    0,   59,    2, 0x08 /* Private */,
        8,    0,   60,    2, 0x08 /* Private */,
-       9,    0,   61,    2, 0x08 /* Private */,
+       9,    1,   61,    2, 0x08 /* Private */,
 
  // slots: parameters
     QMetaType::Void,
@@ -84,7 +86,7 @@ static const uint qt_meta_data_TowerController[] = {
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
-    QMetaType::Void,
+    QMetaType::Void, QMetaType::QByteArray,   10,
 
        0        // eod
 };
@@ -98,15 +100,14 @@ void TowerController::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int 
         case 0: _t->on_btnRecordQuery_clicked(); break;
         case 1: _t->on_btnSystenSettings_clicked(); break;
         case 2: _t->on_btnStreamSetting_clicked(); break;
-        case 3: _t->on_btnDeviceContorl_clicked(); break;
+        case 3: _t->on_btnDeviceControl_clicked(); break;
         case 4: _t->on_btnHelp_clicked(); break;
         case 5: _t->on_btnStartAStop_clicked(); break;
         case 6: _t->on_pushButton_7_clicked(); break;
-        case 7: _t->warnInfoUpdate(); break;
+        case 7: _t->warnInfoUpdate((*reinterpret_cast< const QByteArray(*)>(_a[1]))); break;
         default: ;
         }
     }
-    Q_UNUSED(_a);
 }
 
 QT_INIT_METAOBJECT const QMetaObject TowerController::staticMetaObject = { {

@@ -5,6 +5,8 @@ HelpWidget::HelpWidget(QWidget *parent)
 	, ui(new Ui::HelpWidgetClass())
 {
 	ui->setupUi(this);
+    setFixedWidth(1200);
+    setFixedHeight(1200);
     init();
     
 }

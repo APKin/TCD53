@@ -31,7 +31,7 @@ private slots:
     void on_btnSystenSettings_clicked();
 
     void on_btnStreamSetting_clicked();
-    void on_btnDeviceContorl_clicked();
+    void on_btnDeviceControl_clicked();
     void on_btnHelp_clicked();
     // 启动，推流
     void on_btnStartAStop_clicked();
@@ -39,7 +39,7 @@ private slots:
     void on_pushButton_7_clicked();
 
     // 界面告警树更新的槽函数，配合EchoSever使用
-    void warnInfoUpdate();
+    void warnInfoUpdate(const QByteArray& data);
 private:
     // 初始化
     void init();
