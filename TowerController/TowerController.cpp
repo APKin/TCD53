@@ -88,8 +88,6 @@ void TowerController::on_btnDeviceControl_clicked()
 }
 
 
-
-
 //帮助按钮点击事件
 void TowerController::on_btnHelp_clicked()
 {

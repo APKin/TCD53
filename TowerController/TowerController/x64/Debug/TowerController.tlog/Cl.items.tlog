@@ -18,6 +18,7 @@ D:\Temp\TCD53\TowerController\Test.cpp;D:\Temp\TCD53\TowerController\TowerContro
 D:\Temp\TCD53\TowerController\TowerController.cpp;D:\Temp\TCD53\TowerController\TowerController\x64\Debug\TowerController.obj
 D:\Temp\TCD53\TowerController\main.cpp;D:\Temp\TCD53\TowerController\TowerController\x64\Debug\main.obj
 D:\Temp\TCD53\TowerController\TowerController\x64\Debug\rcc\qrc_TowerController.cpp;D:\Temp\TCD53\TowerController\TowerController\x64\Debug\qrc_TowerController.obj
+D:\Temp\TCD53\TowerController\TowerController\x64\Debug\moc\moc_TowerController.cpp;D:\Temp\TCD53\TowerController\TowerController\x64\Debug\moc_TowerController.obj
 D:\Temp\TCD53\TowerController\TowerController\x64\Debug\moc\moc_DeviceControl.cpp;D:\Temp\TCD53\TowerController\TowerController\x64\Debug\moc_DeviceControl.obj
 D:\Temp\TCD53\TowerController\TowerController\x64\Debug\moc\moc_DeviceConnect.cpp;D:\Temp\TCD53\TowerController\TowerController\x64\Debug\moc_DeviceConnect.obj
 D:\Temp\TCD53\TowerController\TowerController\x64\Debug\moc\moc_StreamSetting.cpp;D:\Temp\TCD53\TowerController\TowerController\x64\Debug\moc_StreamSetting.obj
@@ -30,4 +31,3 @@ D:\Temp\TCD53\TowerController\TowerController\x64\Debug\moc\moc_EchoServer.cpp;D
 D:\Temp\TCD53\TowerController\TowerController\x64\Debug\moc\moc_FFmpegThread.cpp;D:\Temp\TCD53\TowerController\TowerController\x64\Debug\moc_FFmpegThread.obj
 D:\Temp\TCD53\TowerController\TowerController\x64\Debug\moc\moc_FFmpegWidget.cpp;D:\Temp\TCD53\TowerController\TowerController\x64\Debug\moc_FFmpegWidget.obj
 D:\Temp\TCD53\TowerController\TowerController\x64\Debug\moc\moc_SerialManager.cpp;D:\Temp\TCD53\TowerController\TowerController\x64\Debug\moc_SerialManager.obj
-D:\Temp\TCD53\TowerController\TowerController\x64\Debug\moc\moc_TowerController.cpp;D:\Temp\TCD53\TowerController\TowerController\x64\Debug\moc_TowerController.obj

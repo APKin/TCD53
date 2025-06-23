@@ -1,13 +1,15 @@
-﻿  Reading Qt configuration (D:/software/Qt/Qt5.14.2/5.14.2/msvc2017_64/bin/qmake)
-  uic CarF.ui
-  OrderLog.cpp
-  PictureSave.cpp
-  SystemSetting.cpp
+﻿  moc CarF.h
   CarF.cpp
   main.cpp
-  qrc_CarF.cpp
+D:\Temp\TCD53\CarF\CarF.h(10,10): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
+  (编译源文件“main.cpp”)
+  
+D:\Temp\TCD53\CarF\CarF.h(10,10): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
+  (编译源文件“CarF.cpp”)
+  
+D:\Temp\TCD53\CarF\DBHelper.h(26,1): warning C4715: “DBHelper::open”: 不是所有的控件路径都返回值
   moc_CarF.cpp
-  moc_SystemSetting.cpp
-  moc_OrderLog.cpp
-  moc_PictureSave.cpp
-  CarF.vcxproj -> D:\Project\CarF\x64\Debug\CarF.exe
+D:\Temp\TCD53\CarF\CarF.h(10,10): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
+  (编译源文件“CarF/x64/Debug/moc/moc_CarF.cpp”)
+  
+  CarF.vcxproj -> D:\Temp\TCD53\CarF\x64\Debug\CarF.exe
