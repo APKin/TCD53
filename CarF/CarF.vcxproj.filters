@@ -56,12 +56,18 @@
       <Filter>Source Files</Filter>
     </ClCompile>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <ClCompile Include="UnmannedVehicleStatus.cpp">
 =======
+=======
+>>>>>>> 2012dd93c2737bf680981fdb9779b409c2c18b44
     <ClCompile Include="CarStatus.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="SerialManager.cpp">
+<<<<<<< HEAD
+>>>>>>> 2012dd93c2737bf680981fdb9779b409c2c18b44
+=======
 >>>>>>> 2012dd93c2737bf680981fdb9779b409c2c18b44
       <Filter>Source Files</Filter>
     </ClCompile>

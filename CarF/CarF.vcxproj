@@ -72,7 +72,11 @@
     </Link>
     <ClCompile>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <AdditionalIncludeDirectories>$(ProjectDir)lib;$(ProjectDir)sqlite3;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+=======
+      <AdditionalIncludeDirectories>D:\project\CarF\sqlite3;D:\Temp\TCD53\CarF\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+>>>>>>> 2012dd93c2737bf680981fdb9779b409c2c18b44
 =======
       <AdditionalIncludeDirectories>D:\project\CarF\sqlite3;D:\Temp\TCD53\CarF\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
 >>>>>>> 2012dd93c2737bf680981fdb9779b409c2c18b44
