@@ -16,6 +16,15 @@ void EchoServer::startServer()
     }
 }
 
+void EchoServer::sendUVStatus(QByteArray data)
+{
+    qDebug() << m_clients.size();
+    for (QTcpSocket* client:m_clients)
+    {
+        client->write(data);
+    } 
+}
+
 void EchoServer::incomingConnection(qintptr socketDescriptor)
 {
     QTcpSocket* client = new QTcpSocket(this);
@@ -39,13 +48,11 @@ void EchoServer::onReadyRead()
     const uint8_t* buffer = reinterpret_cast<const uint8_t*>(data.constData());
     
     UVStatus.deserialize(buffer);
-    UVStatus_json = UVStatus.toJsonString();
-
-    // 长度:4字节
-    int size_4 = 123;
-    QByteArray data_;
-    data_.push_back(size_4);
-    data_.push_back(data);
+    UVStatus_json = UVStatus.toJsonObject();
+    if (!UVStatus_json.isEmpty())
+    {
+        emit sendJson(UVStatus_json);
+    }
 
     // 原样发回给客户端
     client->write(data);

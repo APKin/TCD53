@@ -116,7 +116,7 @@ void CarF::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void *
         case 6: _t->on_btnOrderLog_clicked(); break;
         case 7: _t->on_pbCameZBOpen_clicked(); break;
         case 8: _t->on_pbCameZBClose_clicked(); break;
-        case 9: _t->UVInfoUpdate((*reinterpret_cast< const QByteArray(*)>(_a[1]))); break;
+        case 9: _t->UVInfoUpdate((*reinterpret_cast< QByteArray(*)>(_a[1]))); break;
         default: ;
         }
     }

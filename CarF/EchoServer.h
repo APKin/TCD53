@@ -24,8 +24,13 @@ public:
     explicit EchoServer(QObject* parent = nullptr, int port = 12345);
     void startServer();
 
+    void sendUVStatus(QByteArray data);
+
 protected:
     void incomingConnection(qintptr socketDescriptor) override;
+
+signals:
+    void sendJson(QJsonObject UVStatus_json);
 
 private slots:
     void onReadyRead();
@@ -36,6 +41,6 @@ private:
     QList<QTcpSocket*> m_clients;
 
     UnmannedVehicleStatus UVStatus;
-    std::string UVStatus_json;
+    QJsonObject UVStatus_json;
 
 };

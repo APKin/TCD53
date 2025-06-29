@@ -14,6 +14,7 @@
 #include "SerialManager.h"
 #include "CameraZB.h"
 
+#include <QTcpSocket>
 // 解析
 const int MIN_FRAME_SIZE = 7;     // 最小帧长度（不含Payload）
 
@@ -87,7 +88,10 @@ private slots:
     void on_pbCameZBClose_clicked();
 
     // 无人车串口信息
-    void UVInfoUpdate(const QByteArray& data);
+    //void UVInfoUpdate_json(QJsonObject data);
+
+    void UVInfoUpdate(QByteArray data);
+
 
 private:
     // 中波相机
@@ -112,4 +116,5 @@ private:
     UVStatus uvs;
     CCUCommand cc; 
 
+    QTcpSocket* client_UVStatus;
 };

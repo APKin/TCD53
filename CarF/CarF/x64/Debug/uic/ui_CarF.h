@@ -57,11 +57,11 @@ public:
     QWidget *widget_4;
     QGridLayout *gridLayout_4;
     QLabel *label_10;
-    QLabel *label_11;
+    QLabel *UVCoor;
     QLabel *label_13;
-    QLabel *label_12;
-    QLabel *label_19;
-    QLabel *label_20;
+    QLabel *UVForw;
+    QLabel *UVup;
+    QLabel *UVbatt;
     QGroupBox *groupBox;
     QGridLayout *gridLayout_3;
     QLabel *label_24;
@@ -275,30 +275,30 @@ public:
 
         gridLayout_4->addWidget(label_10, 0, 1, 1, 1);
 
-        label_11 = new QLabel(widget_4);
-        label_11->setObjectName(QString::fromUtf8("label_11"));
+        UVCoor = new QLabel(widget_4);
+        UVCoor->setObjectName(QString::fromUtf8("UVCoor"));
 
-        gridLayout_4->addWidget(label_11, 0, 2, 1, 1);
+        gridLayout_4->addWidget(UVCoor, 0, 2, 1, 1);
 
         label_13 = new QLabel(widget_4);
         label_13->setObjectName(QString::fromUtf8("label_13"));
 
         gridLayout_4->addWidget(label_13, 1, 1, 1, 1);
 
-        label_12 = new QLabel(widget_4);
-        label_12->setObjectName(QString::fromUtf8("label_12"));
+        UVForw = new QLabel(widget_4);
+        UVForw->setObjectName(QString::fromUtf8("UVForw"));
 
-        gridLayout_4->addWidget(label_12, 1, 2, 1, 1);
+        gridLayout_4->addWidget(UVForw, 1, 2, 1, 1);
 
-        label_19 = new QLabel(widget_4);
-        label_19->setObjectName(QString::fromUtf8("label_19"));
+        UVup = new QLabel(widget_4);
+        UVup->setObjectName(QString::fromUtf8("UVup"));
 
-        gridLayout_4->addWidget(label_19, 2, 2, 1, 1);
+        gridLayout_4->addWidget(UVup, 2, 2, 1, 1);
 
-        label_20 = new QLabel(widget_4);
-        label_20->setObjectName(QString::fromUtf8("label_20"));
+        UVbatt = new QLabel(widget_4);
+        UVbatt->setObjectName(QString::fromUtf8("UVbatt"));
 
-        gridLayout_4->addWidget(label_20, 3, 2, 1, 1);
+        gridLayout_4->addWidget(UVbatt, 3, 2, 1, 1);
 
         groupBox = new QGroupBox(widget_4);
         groupBox->setObjectName(QString::fromUtf8("groupBox"));
@@ -759,11 +759,11 @@ public:
         label_4->setText(QCoreApplication::translate("CarFClass", "\345\205\211\346\226\221\346\243\200\346\265\213\345\233\276\345\203\217", nullptr));
         label_5->setText(QCoreApplication::translate("CarFClass", "\347\212\266\346\200\201\346\230\276\347\244\272\345\214\272", nullptr));
         label_10->setText(QCoreApplication::translate("CarFClass", "\346\227\240\344\272\272\350\275\246\345\235\220\346\240\207\344\275\215\347\275\256\357\274\232", nullptr));
-        label_11->setText(QCoreApplication::translate("CarFClass", "TextLabel", nullptr));
+        UVCoor->setText(QCoreApplication::translate("CarFClass", "TextLabel", nullptr));
         label_13->setText(QCoreApplication::translate("CarFClass", "\346\234\235\345\220\221\350\247\222\345\272\246\357\274\232", nullptr));
-        label_12->setText(QCoreApplication::translate("CarFClass", "TextLabel", nullptr));
-        label_19->setText(QCoreApplication::translate("CarFClass", "TextLabel", nullptr));
-        label_20->setText(QCoreApplication::translate("CarFClass", "TextLabel", nullptr));
+        UVForw->setText(QCoreApplication::translate("CarFClass", "TextLabel", nullptr));
+        UVup->setText(QCoreApplication::translate("CarFClass", "TextLabel", nullptr));
+        UVbatt->setText(QCoreApplication::translate("CarFClass", "TextLabel", nullptr));
         groupBox->setTitle(QCoreApplication::translate("CarFClass", "\346\277\200\345\205\211\345\231\250\347\212\266\346\200\201\357\274\232", nullptr));
         label_24->setText(QCoreApplication::translate("CarFClass", "\345\217\257\350\247\201\345\205\211\350\207\264\347\233\262\357\274\232", nullptr));
         label_27->setText(QCoreApplication::translate("CarFClass", "TextLabel", nullptr));

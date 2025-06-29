@@ -1,20 +1,6 @@
-﻿  CameraZB.cpp
+﻿  CarF.cpp
 D:\Temp\TCD53\CarF\CameraZB.h(3,10): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
-  (编译源文件“CameraZB.cpp”)
+  (编译源文件“CarF.cpp”)
   
-  qrc_CarF.cpp
-  moc_CarF.cpp
-  moc_SystemSetting.cpp
-  moc_OrderLog.cpp
-  moc_PictureSave.cpp
-  moc_CameraZB.cpp
-  moc_CameraKJG.cpp
-  moc_EchoServer.cpp
-  moc_SerialManager.cpp
-D:\Temp\TCD53\CarF\CameraZB.h(3,10): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
-  (编译源文件“CarF/x64/Debug/moc/moc_CameraZB.cpp”)
-  
-D:\Temp\TCD53\CarF\CameraZB.h(3,10): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
-  (编译源文件“CarF/x64/Debug/moc/moc_CarF.cpp”)
-  
+D:\Temp\TCD53\CarF\DBHelper.h(26,1): warning C4715: “DBHelper::open”: 不是所有的控件路径都返回值
   CarF.vcxproj -> D:\Temp\TCD53\CarF\x64\Debug\CarF.exe

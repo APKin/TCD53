@@ -141,7 +141,7 @@
             </widget>
            </item>
            <item row="0" column="2">
-            <widget class="QLabel" name="label_11">
+            <widget class="QLabel" name="UVCoor">
              <property name="text">
               <string>TextLabel</string>
              </property>
@@ -155,21 +155,21 @@
             </widget>
            </item>
            <item row="1" column="2">
-            <widget class="QLabel" name="label_12">
+            <widget class="QLabel" name="UVForw">
              <property name="text">
               <string>TextLabel</string>
              </property>
             </widget>
            </item>
            <item row="2" column="2">
-            <widget class="QLabel" name="label_19">
+            <widget class="QLabel" name="UVup">
              <property name="text">
               <string>TextLabel</string>
              </property>
             </widget>
            </item>
            <item row="3" column="2">
-            <widget class="QLabel" name="label_20">
+            <widget class="QLabel" name="UVbatt">
              <property name="text">
               <string>TextLabel</string>
              </property>

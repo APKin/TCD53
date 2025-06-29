@@ -24,24 +24,58 @@ CarF::CarF(QWidget *parent)
     imageSavePath = getImagePath();
 
     came_zb = new CameraZB(this);
-    // 暂时，设备启动失败则退出
-    if (!came_zb->initIPC_HDV()) {
-        // 初始化失败则退出
-        QMessageBox::warning(this, "设备tip", "中波相机初始化失败");
-        qApp->quit();
-    }
+    // 设备启动失败则退出
+    // 因为没有设备所以一定会退出
+    //if (!came_zb->initIPC_HDV()) {
+    //    // 初始化失败则退出
+    //    QMessageBox::warning(this, "设备tip", "中波相机初始化失败");
+    //    qApp->quit();
+    //}
     
     
     serMan = new SerialManager(this);
     connect(serMan, &SerialManager::dataReceived, this, &CarF::UVInfoUpdate);
+
+    // 192.168.31.222:8602
+    client_UVStatus = new QTcpSocket(this);
+    client_UVStatus->connectToHost("192.168.31.222", 8602);
+
+    connect(client_UVStatus, &QTcpSocket::connected, [&]() {
+        qDebug() << "Connected to server!";
+
+        // 连接成功后发送数据
+        //QString message = "Hello Server!";
+        //client_UVStatus->write(message.toUtf8());
+        //qDebug() << "Sent:" << message;
+        });
+
+    QObject::connect(client_UVStatus, &QTcpSocket::readyRead, [&]() {
+        // 读取所有接收到的数据
+        QByteArray data = client_UVStatus->readAll();
+        qDebug() << "Received:" << data;
+
+        // 收到数据后关闭连接（根据需求修改）
+        // socket.disconnectFromHost();
+        });
+
+    QObject::connect(client_UVStatus, &QTcpSocket::disconnected, [&]() {
+        qDebug() << "Disconnected from server";
+        //QCoreApplication::quit();  // 退出应用
+     });
+
+    //QObject::connect(client_UVStatus, QOverload<QAbstractSocket::SocketError>::of(&QAbstractSocket::errorOccurred),
+    //    [&](QAbstractSocket::SocketError error) {
+    //        qDebug() << "Error:" << client_UVStatus->errorString();
+    //    });
+
     
     portName = "COM1";
     serMan->openPort(portName);
 
-    serverPort = 8602;
-    eServer = new EchoServer(this,serverPort);
-    eServer->startServer();
-
+    //serverPort = 8602;
+    //eServer = new EchoServer(this,serverPort);
+    //eServer->startServer();
+    /*connect(eServer, &EchoServer::sendJson, this, &CarF::UVInfoUpdate);*/
 }
 
 CarF::~CarF()
@@ -92,14 +126,36 @@ void CarF::on_pbCameZBClose_clicked()
     qDebug() << "123close";
     came_zb->camStop();
 }
-void CarF::UVInfoUpdate(const QByteArray& data)
-{
-    qDebug() << "UVInfo::" << data;
-    // 转
-    QByteArray dataBuffer = data;
-    parseData(dataBuffer);
 
+//uint32_t timestamp;        // Unix时间戳(秒)
+//uint8_t vehicleId;        // 车辆ID
+//uint32_t utmEastingCm;   // UTM东向坐标(cm)
+//uint32_t utmNorthingCm;  // UTM北向坐标(cm)
+//int16_t headingAngle;     // 航向角(0.1°)
+//uint16_t speed;            // 速度(0.1 m/s)
+//uint8_t batteryLevel;     // 电量百分比(0-100)
+//int16_t horizontalInclination; // 水平倾角(0.1°)
+//uint8_t vehicleState;     // 车辆状态
+// 
+//void CarF::UVInfoUpdate(QJsonObject data)
+//{
+//    
+//    data;
+//
+//}
+void CarF::UVInfoUpdate(QByteArray data)
+{
+    qDebug() << "client_UVStatus write";
+    client_UVStatus->write(data);
 }
+//void CarF::UVInfoUpdate(const QByteArray& data)
+//{
+//    qDebug() << "UVInfo::" << data;
+//    // 转
+//    QByteArray dataBuffer = data;
+//    parseData(dataBuffer);
+//
+//}
 //quint8 CarF::calculateCRC(const QByteArray& data)
 //{
 //    quint8 crc = 0;
