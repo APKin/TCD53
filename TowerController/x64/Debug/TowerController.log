@@ -1,1 +1,69 @@
-﻿d:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(439,5): error MSB8020: 无法找到 v143 的生成工具(平台工具集 =“v143”)。若要使用 v143 生成工具进行生成，请安装 v143 生成工具。或者，可以升级到当前 Visual Studio 工具，方式是通过选择“项目”菜单或右键单击该解决方案，然后选择“重定解决方案目标”。
+﻿   Qt/MSBuild: 3.4.0.1
+  Reading Qt configuration (D:/Qt/Qt5.14.2/5.14.2/msvc2017_64/bin/qmake)
+   Qt: 5.14.2
+  uic DeviceConnect.ui
+  uic DeviceControl.ui
+  uic FFmpegWidget.ui
+  uic HelpWidget.ui
+  uic ImageStore.ui
+  uic RecordQuery.ui
+  uic StreamSetting.ui
+  uic SystemSetting.ui
+  uic TowerController.ui
+  rcc TowerController.qrc
+  moc TowerController.h
+  moc DeviceControl.h
+  moc DeviceConnect.h
+  moc StreamSetting.h
+  moc HelpWidget.h
+  moc SystemSetting.h
+  moc ImageStore.h
+   RCC: Warning: No resources in 'D:\project\TCD53\old\TCD53\TowerController\TowerController.qrc'.
+  moc AngleScaleBar.h
+  moc RecordQuery.h
+  moc FFmpegThread.h
+  moc FFmpegWidget.h
+  AngleScaleBar.cpp
+  DeviceConnect.cpp
+  DeviceControl.cpp
+  FFmpegThread.cpp
+  FFmpegWidget.cpp
+  HelpWidget.cpp
+  ImageStore.cpp
+  ImgFile.cpp
+D:\project\TCD53\old\ffmpeg-n4.4.4-89-g25841e4f90-win64-gpl-shared-4.4\include\libavutil\rational.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 FFmpegThread.cpp)
+D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\stdint.h(126,1): warning C4005: “INT64_C”: 宏重定义 (编译源文件 FFmpegThread.cpp)
+D:\project\TCD53\old\TCD53\TowerController\ffmpeghead.h(6): message : 参见“INT64_C”的前一个定义 (编译源文件 FFmpegThread.cpp)
+D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\stdint.h(131,1): warning C4005: “UINT64_C”: 宏重定义 (编译源文件 FFmpegThread.cpp)
+D:\project\TCD53\old\TCD53\TowerController\ffmpeghead.h(7): message : 参见“UINT64_C”的前一个定义 (编译源文件 FFmpegThread.cpp)
+D:\project\TCD53\old\ffmpeg-n4.4.4-89-g25841e4f90-win64-gpl-shared-4.4\include\libavutil\rational.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 FFmpegWidget.cpp)
+  InstructLog.cpp
+  InstructLogDAO.cpp
+  ParkPoliceRecord.cpp
+  RecordQuery.cpp
+  StreamSetting.cpp
+  SystemSetting.cpp
+D:\project\TCD53\old\TCD53\TowerController\FFmpegWidget.cpp(52,16): warning C4553: “==”: 未使用表达式结果；是否打算使用“=”?
+  Test.cpp
+  TowerController.cpp
+  main.cpp
+D:\project\TCD53\old\TCD53\TowerController\DBHelper.h(24): warning C4715: “DBHelper::open”: 不是所有的控件路径都返回值
+D:\project\TCD53\old\ffmpeg-n4.4.4-89-g25841e4f90-win64-gpl-shared-4.4\include\libavutil\rational.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 TowerController.cpp)
+D:\project\TCD53\old\ffmpeg-n4.4.4-89-g25841e4f90-win64-gpl-shared-4.4\include\libavutil\rational.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 main.cpp)
+D:\project\TCD53\old\TCD53\TowerController\DBHelper.h(24): warning C4715: “DBHelper::open”: 不是所有的控件路径都返回值
+  qrc_TowerController.cpp
+  moc_TowerController.cpp
+  moc_DeviceControl.cpp
+  moc_DeviceConnect.cpp
+  moc_StreamSetting.cpp
+  moc_HelpWidget.cpp
+  moc_SystemSetting.cpp
+  moc_ImageStore.cpp
+  moc_AngleScaleBar.cpp
+D:\project\TCD53\old\ffmpeg-n4.4.4-89-g25841e4f90-win64-gpl-shared-4.4\include\libavutil\rational.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 x64\Debug\qt\moc\moc_TowerController.cpp)
+  moc_RecordQuery.cpp
+  moc_FFmpegThread.cpp
+  moc_FFmpegWidget.cpp
+D:\project\TCD53\old\ffmpeg-n4.4.4-89-g25841e4f90-win64-gpl-shared-4.4\include\libavutil\rational.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 x64\Debug\qt\moc\moc_FFmpegThread.cpp)
+D:\project\TCD53\old\ffmpeg-n4.4.4-89-g25841e4f90-win64-gpl-shared-4.4\include\libavutil\rational.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 x64\Debug\qt\moc\moc_FFmpegWidget.cpp)
+  TowerController.vcxproj -> D:\project\TCD53\old\TCD53\TowerController\x64\Debug\TowerController.exe

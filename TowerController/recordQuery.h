@@ -24,4 +24,5 @@ private:
 private slots:
 	void on_btnRecordQuery_clicked();
 	void loadDataToTreeView(const QList<ParkPoliceRecord>& records);
+	void setupColumnSpans(QTreeView* view);
 };

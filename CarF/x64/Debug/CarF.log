@@ -1,11 +1,4 @@
 ﻿   Qt/MSBuild: 3.4.0.1
    Qt: 5.14.2
-  CarF.cpp
-  InstructLogDAO.cpp
-  OrderLog.cpp
-  main.cpp
-D:\project\TCD53\old\TCD53\CarF\DBHelper.h(26): warning C4715: “DBHelper::open”: 不是所有的控件路径都返回值
-D:\project\TCD53\old\TCD53\CarF\DBHelper.h(26): warning C4715: “DBHelper::open”: 不是所有的控件路径都返回值
-  moc_CarF.cpp
-  moc_OrderLog.cpp
+  UnmannedVehicleStatus.cpp
   CarF.vcxproj -> D:\project\TCD53\old\TCD53\CarF\x64\Debug\CarF.exe

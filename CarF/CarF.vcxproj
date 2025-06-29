@@ -71,7 +71,15 @@
       <AdditionalDependencies>HDVSDK_Play.lib;IPCSDK_CGI.lib;IPCSDK_Net.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <ClCompile>
+<<<<<<< HEAD
+<<<<<<< HEAD
+      <AdditionalIncludeDirectories>$(ProjectDir)lib;$(ProjectDir)sqlite3;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+=======
       <AdditionalIncludeDirectories>D:\project\CarF\sqlite3;D:\Temp\TCD53\CarF\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+>>>>>>> 2012dd93c2737bf680981fdb9779b409c2c18b44
+=======
+      <AdditionalIncludeDirectories>D:\project\CarF\sqlite3;D:\Temp\TCD53\CarF\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+>>>>>>> 2012dd93c2737bf680981fdb9779b409c2c18b44
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -123,7 +131,11 @@
     <ClCompile Include="PictureSave.cpp" />
     <ClCompile Include="SerialManager.cpp" />
     <ClCompile Include="SystemSetting.cpp" />
+<<<<<<< HEAD
     <ClCompile Include="XmlParse.cpp" />
+=======
+    <ClCompile Include="UnmannedVehicleStatus.cpp" />
+>>>>>>> 3a5a67e7ccd590f85211d67eebe81acc2aa8ad5b
     <QtRcc Include="CarF.qrc" />
     <QtUic Include="CarF.ui" />
     <QtMoc Include="CarF.h" />
