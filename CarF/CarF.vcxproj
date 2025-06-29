@@ -71,7 +71,7 @@
       <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\project\CarF\sqlite3;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)lib;$(ProjectDir)sqlite3;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -118,6 +118,7 @@
     <ClCompile Include="OrderLog.cpp" />
     <ClCompile Include="PictureSave.cpp" />
     <ClCompile Include="SystemSetting.cpp" />
+    <ClCompile Include="UnmannedVehicleStatus.cpp" />
     <QtRcc Include="CarF.qrc" />
     <QtUic Include="CarF.ui" />
     <QtMoc Include="CarF.h" />

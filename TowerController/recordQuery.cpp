@@ -97,16 +97,58 @@ void RecordQuery::loadDataToTreeView(const QList<ParkPoliceRecord>& records)
 
         // 将ID作为隐藏数据存储在第一列
         items.first()->setData(record.id, Qt::UserRole);
-        // demo
-        QList<QStandardItem*> childItems;
-        childItems << new QStandardItem("子节点属性1");
-        childItems << new QStandardItem("子节点属性2");
-        childItems << new QStandardItem("子节点属性3");
-        items.first()->appendRow(childItems);
+        // 循环images
+        for (const auto& img : record.images) {
+            QString imgPath = img.path;
+            
 
+            QList<QStandardItem*> childItems;
+            // 主项（跨两列）
+            auto* mainItem = new QStandardItem(img.number);
+            mainItem->setData(true, Qt::UserRole + 1); // 标记为需要跨列
+
+            // 创建占位空项（后面4列）
+            childItems << mainItem;
+            childItems << new QStandardItem(); // 空项（将被合并）
+            childItems << new QStandardItem(); // 空项
+            childItems << new QStandardItem(); // 空项
+            childItems << new QStandardItem(img.create_time);
+            // 操作项
+            auto* operateItem = new QStandardItem("操作");
+            operateItem->setData(img.id, Qt::UserRole); // 存储图片ID
+            childItems << operateItem;
+
+            items.first()->appendRow(childItems);
+
+        }
+        
         model->appendRow(items);
     }
 
+    // 设置列合并
+    //setupColumnSpans(ui->treeView);
     // 设置排序（默认按时间降序）
     model->sort(5, Qt::DescendingOrder);
+}
+
+// 辅助函数：设置跨列显示
+void RecordQuery::setupColumnSpans(QTreeView* view) {
+    QStandardItemModel* model = qobject_cast<QStandardItemModel*>(view->model());
+    if (!model) return;
+
+    // 遍历所有父项
+    for (int i = 0; i < model->rowCount(); ++i) {
+        QStandardItem* parentItem = model->item(i);
+        
+        // 遍历父项的所有子项
+        for (int j = 0; j < parentItem->rowCount(); ++j) {
+            QStandardItem* childItem = parentItem->child(j, 0);
+            
+            // 检查是否需要跨列（通过自定义角色标记）
+            if (childItem && childItem->data(Qt::UserRole + 1).toBool()) {
+                // 设置从列0开始跨2列
+                view->setFirstColumnSpanned(j, childItem->index().parent(), true);
+            }
+        }
+    }
 }
