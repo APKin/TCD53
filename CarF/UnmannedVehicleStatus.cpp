@@ -65,67 +65,135 @@ public:
     double getUtmNorthingM() const {
         return static_cast<double>(utmNorthingCm) / 100.0;
     }
+    // 序列化为二进制数据 (21字节) 到 QByteArray
+    void serialize(QByteArray& buffer) const {
+        // 确保有足够空间
+        if (buffer.size() < static_cast<int>(size())) {
+            buffer.resize(size());
+        }
 
-    // 序列化为二进制数据 (21字节)
-    void serialize(uint8_t* buffer) const {
+        uint8_t* data = reinterpret_cast<uint8_t*>(buffer.data());
         size_t offset = 0;
-        std::memcpy(buffer + offset, &timestamp, sizeof(timestamp));
+        std::memcpy(data + offset, &timestamp, sizeof(timestamp));
         offset += sizeof(timestamp);
 
-        std::memcpy(buffer + offset, &vehicleId, sizeof(vehicleId));
+        std::memcpy(data + offset, &vehicleId, sizeof(vehicleId));
         offset += sizeof(vehicleId);
 
-        std::memcpy(buffer + offset, &utmEastingCm, sizeof(utmEastingCm));
+        std::memcpy(data + offset, &utmEastingCm, sizeof(utmEastingCm));
         offset += sizeof(utmEastingCm);
 
-        std::memcpy(buffer + offset, &utmNorthingCm, sizeof(utmNorthingCm));
+        std::memcpy(data + offset, &utmNorthingCm, sizeof(utmNorthingCm));
         offset += sizeof(utmNorthingCm);
 
-        std::memcpy(buffer + offset, &headingAngle, sizeof(headingAngle));
+        std::memcpy(data + offset, &headingAngle, sizeof(headingAngle));
         offset += sizeof(headingAngle);
 
-        std::memcpy(buffer + offset, &speed, sizeof(speed));
+        std::memcpy(data + offset, &speed, sizeof(speed));
         offset += sizeof(speed);
 
-        std::memcpy(buffer + offset, &batteryLevel, sizeof(batteryLevel));
+        std::memcpy(data + offset, &batteryLevel, sizeof(batteryLevel));
         offset += sizeof(batteryLevel);
 
-        std::memcpy(buffer + offset, &horizontalInclination, sizeof(horizontalInclination));
+        std::memcpy(data + offset, &horizontalInclination, sizeof(horizontalInclination));
         offset += sizeof(horizontalInclination);
 
-        std::memcpy(buffer + offset, &vehicleState, sizeof(vehicleState));
+        std::memcpy(data + offset, &vehicleState, sizeof(vehicleState));
     }
 
-    // 从二进制数据反序列化
-    void deserialize(const uint8_t* buffer) {
+    // 从 QByteArray 反序列化
+    void deserialize(const QByteArray& buffer) {
+        if (buffer.size() < static_cast<int>(size())) {
+            return; // 数据不足
+        }
+
+        const uint8_t* data = reinterpret_cast<const uint8_t*>(buffer.constData());
         size_t offset = 0;
-        std::memcpy(&timestamp, buffer + offset, sizeof(timestamp));
+        std::memcpy(&timestamp, data + offset, sizeof(timestamp));
         offset += sizeof(timestamp);
 
-        std::memcpy(&vehicleId, buffer + offset, sizeof(vehicleId));
+        std::memcpy(&vehicleId, data + offset, sizeof(vehicleId));
         offset += sizeof(vehicleId);
 
-        std::memcpy(&utmEastingCm, buffer + offset, sizeof(utmEastingCm));
+        std::memcpy(&utmEastingCm, data + offset, sizeof(utmEastingCm));
         offset += sizeof(utmEastingCm);
 
-        std::memcpy(&utmNorthingCm, buffer + offset, sizeof(utmNorthingCm));
+        std::memcpy(&utmNorthingCm, data + offset, sizeof(utmNorthingCm));
         offset += sizeof(utmNorthingCm);
 
-        std::memcpy(&headingAngle, buffer + offset, sizeof(headingAngle));
+        std::memcpy(&headingAngle, data + offset, sizeof(headingAngle));
         offset += sizeof(headingAngle);
 
-        std::memcpy(&speed, buffer + offset, sizeof(speed));
+        std::memcpy(&speed, data + offset, sizeof(speed));
         offset += sizeof(speed);
 
-        std::memcpy(&batteryLevel, buffer + offset, sizeof(batteryLevel));
+        std::memcpy(&batteryLevel, data + offset, sizeof(batteryLevel));
         offset += sizeof(batteryLevel);
 
-        std::memcpy(&horizontalInclination, buffer + offset, sizeof(horizontalInclination));
+        std::memcpy(&horizontalInclination, data + offset, sizeof(horizontalInclination));
         offset += sizeof(horizontalInclination);
 
-        std::memcpy(&vehicleState, buffer + offset, sizeof(vehicleState));
+        std::memcpy(&vehicleState, data + offset, sizeof(vehicleState));
     }
 
+    // 静态方法：从二进制帧数据解析对象 (使用 QByteArray 接口)
+    static bool fromFrame(const QByteArray& frameData, UnmannedVehicleStatus& outStatus) {
+        const size_t frameLength = frameData.size();
+        const uint8_t* data = reinterpret_cast<const uint8_t*>(frameData.constData());
+
+        // 检查最小帧长度
+        constexpr size_t MIN_FRAME_SIZE = 2 + 1 + 1 + 1 + 2; // SOF+MsgType+Length+CRC+EOF
+        if (frameLength < MIN_FRAME_SIZE) {
+            return false;
+        }
+
+        // 检查SOF (Start of Frame)
+        if (data[0] != 0xAA || data[1] != 0x55) {
+            return false;
+        }
+
+        // 检查MsgType是否为状态信息 (0x01)
+        const uint8_t msgType = data[2];
+        if (msgType != 0x01) {
+            return false;
+        }
+
+        // 获取Payload长度
+        const uint8_t payloadLength = data[3];
+        constexpr size_t EXPECTED_PAYLOAD_SIZE = 21; // 状态信息大小
+        if (payloadLength != EXPECTED_PAYLOAD_SIZE) {
+            return false;
+        }
+
+        // 检查总帧长度
+        const size_t expectedFrameSize = 2 + 1 + 1 + payloadLength + 1 + 2; // SOF+MsgType+Length+Payload+CRC+EOF
+        if (frameLength < expectedFrameSize) {
+            return false;
+        }
+
+        // 计算并验证CRC
+        uint8_t calculatedCrc = 0;
+        // 计算MsgType + Length + Payload的XOR
+        for (size_t i = 2; i < 4 + payloadLength; i++) {
+            calculatedCrc ^= data[i];
+        }
+
+        const uint8_t receivedCrc = data[4 + payloadLength];
+        if (calculatedCrc != receivedCrc) {
+            return false;
+        }
+
+        // 检查EOF (End of Frame)
+        const size_t eofPos = 4 + payloadLength + 1;
+        if (data[eofPos] != 0x0D || data[eofPos + 1] != 0x0A) {
+            return false;
+        }
+
+        // 提取Payload部分并反序列化
+        QByteArray payload = frameData.mid(4, payloadLength);
+        outStatus.deserialize(payload);
+        return true;
+    }
     // 检查结构体大小
     static constexpr size_t size() {
         return sizeof(timestamp) +
