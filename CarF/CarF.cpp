@@ -23,44 +23,40 @@ CarF::CarF(QWidget *parent)
     // 获取图片保存路径
     imageSavePath = getImagePath();
 
-    if (!initIPC_HDV()) {
+    came_zb = new CameraZB(this);
+    // 暂时，设备启动失败则退出
+    if (!came_zb->initIPC_HDV()) {
         // 初始化失败则退出
+        QMessageBox::warning(this, "设备tip", "中波相机初始化失败");
         qApp->quit();
     }
-
+    
+    
     serMan = new SerialManager(this);
     connect(serMan, &SerialManager::dataReceived, this, &CarF::UVInfoUpdate);
     
     portName = "COM1";
     serMan->openPort(portName);
 
+    serverPort = 1234;
+    eServer = new EchoServer(this,serverPort);
+    eServer->startServer();
+
 }
 
 CarF::~CarF()
 {
-    stopIPC_HDV();
+    //stopIPC_HDV();
+    // 
+    delete came_zb;
+    came_zb = nullptr;
+    delete serMan;
+    serMan = nullptr;
 
-}
+    delete eServer;
+    eServer = nullptr;
+    
 
-bool CarF::initIPC_HDV()
-{
-    if (!IPCNET_Init())
-    {
-        QMessageBox::warning(this,"warning","初始化网络库失败！");
-        return false;
-    }
-    if (!HDVPLAY_Init())
-    {
-        QMessageBox::warning(this, "warning","初始化播放库失败！");
-        return false;
-    }
-    return true;
-}
-
-void CarF::stopIPC_HDV()
-{
-    IPCNET_Cleanup();
-    HDVPLAY_Cleanup();
 }
 
 // 在源文件（.cpp）中实现：
@@ -84,6 +80,17 @@ void CarF::on_btnOrderLog_clicked()
 {
     OrderLog *secondWin = new OrderLog(this);
     secondWin->exec(); // 模态显示对话框
+}
+void CarF::on_pbCameZBOpen_clicked()
+{
+    qDebug() << "123open";
+    came_zb->camPlay();
+    
+}
+void CarF::on_pbCameZBClose_clicked()
+{
+    qDebug() << "123close";
+    came_zb->camStop();
 }
 void CarF::UVInfoUpdate(const QByteArray& data)
 {

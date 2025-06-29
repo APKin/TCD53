@@ -21,8 +21,15 @@ TowerController::TowerController(QWidget *parent)
     serMan = new SerialManager(this);
     connect(serMan, &SerialManager::dataReceived, this, &TowerController::warnInfoUpdate);
 
+    
+    
+
     init();
     initInfo();
+
+    eServer = new EchoServer(nullptr, serverPort);
+    eServer->startServer();
+
 }
 
 TowerController::~TowerController()
@@ -44,6 +51,9 @@ TowerController::~TowerController()
     delete strWgt;
     strWgt = nullptr;
 
+    delete eServer;
+    eServer = nullptr;
+
 }
 void TowerController::initInfo()
 {
@@ -54,7 +64,7 @@ void TowerController::initInfo()
     serMan->openPort();
 
 
-    serverPort = "1234";
+    serverPort = 1234;
     // ÓÇÉË½Ç×ø±êÏÔÊ¾
     ui->label_site->setText("40.446¡ã, 116.391¡ã12m");
     

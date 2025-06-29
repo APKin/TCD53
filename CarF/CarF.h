@@ -7,12 +7,12 @@
 #include "PictureSave.h"
 #include "SystemSetting.h"
 
-#include "IPCSDK_Net.h";
-#include "IPCSDK_CGI.h"
-#include "HDVSDK_Play.h"
+#include "EchoServer.h"
+
 // 定时获取的无人车状态
 #include <QTimer>
 #include "SerialManager.h"
+#include "CameraZB.h"
 
 // 解析
 const int MIN_FRAME_SIZE = 7;     // 最小帧长度（不含Payload）
@@ -53,8 +53,8 @@ public:
     ~CarF();
     static QString imageSavePath; // 声明静态变量（不初始化）
 
-    bool initIPC_HDV();
-    void stopIPC_HDV();
+    //bool initIPC_HDV();
+    //void stopIPC_HDV();
 
 
 //signals:
@@ -81,15 +81,24 @@ private slots:
     void on_btnStop_clicked();
     //指令日志
     void on_btnOrderLog_clicked();
+    // 中波相机开启
+    void on_pbCameZBOpen_clicked();
+    // 中波相机 关闭
+    void on_pbCameZBClose_clicked();
 
     // 无人车串口信息
     void UVInfoUpdate(const QByteArray& data);
 
 private:
+    // 中波相机
+    CameraZB* came_zb;
     // 串口使用
     SerialManager* serMan;
     // 使用串口
     QString portName;
+
+    int serverPort;
+    EchoServer* eServer;
 
     // 计算CRC的辅助函数（
     quint8 calculateCRC(quint8 msg_type, quint8 length,const QByteArray& payload);

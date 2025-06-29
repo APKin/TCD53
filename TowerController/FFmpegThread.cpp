@@ -130,6 +130,7 @@ bool FFmpegThread::init()
             return false;
         }
 
+
         //设置加速解码
         videoCodec->lowres = videoDecoder->max_lowres;
         videoCodec->flags2 |= AV_CODEC_FLAG2_FAST;

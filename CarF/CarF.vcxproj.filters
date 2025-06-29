@@ -61,6 +61,18 @@
     <ClCompile Include="SerialManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="XmlParse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraZB.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraKJG.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EchoServer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="SystemSetting.h">
@@ -73,6 +85,15 @@
       <Filter>Header Files</Filter>
     </QtMoc>
     <QtMoc Include="SerialManager.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="CameraZB.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="CameraKJG.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="EchoServer.h">
       <Filter>Header Files</Filter>
     </QtMoc>
   </ItemGroup>
@@ -98,6 +119,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="CarStatus.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="XmlParse.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -11,6 +11,8 @@
 
 #include "SerialManager.h"
 
+#include "EchoServer.h"
+
 QT_BEGIN_NAMESPACE
 namespace Ui { class TowerControllerClass; };
 QT_END_NAMESPACE
@@ -61,6 +63,7 @@ private:
     QString portName;
 
     // echoserver¶Ë¿ÚºÅ
-    QString serverPort;
+    int serverPort;
+    EchoServer* eServer;
 
 };

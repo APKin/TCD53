@@ -14,7 +14,7 @@ SerialManager::~SerialManager()
 bool SerialManager::openPort(const QString & portName)
 {
     serial.setPortName(portName);
-    // 以下是默认数据，理应从配置文件读取 APK 618 --？
+    // 以下是默认数据，理应从配置文件读取 APK 618
     serial.setBaudRate(QSerialPort::Baud115200);
     serial.setDataBits(QSerialPort::Data8);
     serial.setParity(QSerialPort::NoParity);

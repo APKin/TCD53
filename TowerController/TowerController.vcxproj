@@ -116,6 +116,7 @@
     <ClCompile Include="DeviceConnect.cpp" />
     <ClCompile Include="DeviceControl.cpp" />
     <ClCompile Include="EchoServer.cpp" />
+    <ClCompile Include="FFmpegComFor.cpp" />
     <ClCompile Include="FFmpegThread.cpp" />
     <ClCompile Include="FFmpegWidget.cpp" />
     <ClCompile Include="HelpWidget.cpp" />
@@ -159,6 +160,7 @@
   <ItemGroup>
     <ClInclude Include="DBHelper.h" />
     <QtMoc Include="EchoServer.h" />
+    <ClInclude Include="FFmpegComFor.h" />
     <ClInclude Include="ffmpeghead.h" />
     <QtMoc Include="FFmpegThread.h" />
     <QtMoc Include="FFmpegWidget.h" />

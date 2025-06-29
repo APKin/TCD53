@@ -111,8 +111,8 @@ public:
     QPushButton *pushButton_18;
     QPushButton *pushButton_13;
     QPushButton *pushButton_16;
-    QPushButton *pushButton_9;
-    QPushButton *pushButton_11;
+    QPushButton *pbCameZBOpen;
+    QPushButton *pbCameZBClose;
     QLabel *label_37;
     QPushButton *pushButton_17;
     QPushButton *pushButton_10;
@@ -548,15 +548,15 @@ public:
 
         gridLayout_7->addWidget(pushButton_16, 5, 6, 1, 1);
 
-        pushButton_9 = new QPushButton(widget_7);
-        pushButton_9->setObjectName(QString::fromUtf8("pushButton_9"));
+        pbCameZBOpen = new QPushButton(widget_7);
+        pbCameZBOpen->setObjectName(QString::fromUtf8("pbCameZBOpen"));
 
-        gridLayout_7->addWidget(pushButton_9, 1, 0, 1, 1);
+        gridLayout_7->addWidget(pbCameZBOpen, 1, 0, 1, 1);
 
-        pushButton_11 = new QPushButton(widget_7);
-        pushButton_11->setObjectName(QString::fromUtf8("pushButton_11"));
+        pbCameZBClose = new QPushButton(widget_7);
+        pbCameZBClose->setObjectName(QString::fromUtf8("pbCameZBClose"));
 
-        gridLayout_7->addWidget(pushButton_11, 1, 6, 1, 1);
+        gridLayout_7->addWidget(pbCameZBClose, 1, 6, 1, 1);
 
         label_37 = new QLabel(widget_7);
         label_37->setObjectName(QString::fromUtf8("label_37"));
@@ -733,7 +733,7 @@ public:
         CarFClass->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(CarFClass);
         menuBar->setObjectName(QString::fromUtf8("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 1192, 23));
+        menuBar->setGeometry(QRect(0, 0, 1192, 22));
         CarFClass->setMenuBar(menuBar);
         mainToolBar = new QToolBar(CarFClass);
         mainToolBar->setObjectName(QString::fromUtf8("mainToolBar"));
@@ -798,8 +798,8 @@ public:
         pushButton_18->setText(QCoreApplication::translate("CarFClass", "\346\211\223\345\274\200", nullptr));
         pushButton_13->setText(QCoreApplication::translate("CarFClass", "\350\267\237\347\236\204\345\201\234\346\255\242", nullptr));
         pushButton_16->setText(QCoreApplication::translate("CarFClass", "\347\241\256\345\256\232", nullptr));
-        pushButton_9->setText(QCoreApplication::translate("CarFClass", "\346\211\223\345\274\200", nullptr));
-        pushButton_11->setText(QCoreApplication::translate("CarFClass", "\345\205\263\351\227\255", nullptr));
+        pbCameZBOpen->setText(QCoreApplication::translate("CarFClass", "\346\211\223\345\274\200", nullptr));
+        pbCameZBClose->setText(QCoreApplication::translate("CarFClass", "\345\205\263\351\227\255", nullptr));
         label_37->setText(QCoreApplication::translate("CarFClass", "\344\270\255\346\263\242\345\244\226\347\233\270\346\234\272", nullptr));
         pushButton_17->setText(QCoreApplication::translate("CarFClass", "\345\205\263\351\227\255", nullptr));
         pushButton_10->setText(QCoreApplication::translate("CarFClass", "\346\240\241\346\255\243", nullptr));

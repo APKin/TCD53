@@ -37,7 +37,7 @@
   </ImportGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="QtSettings">
     <QtInstall>5.14.2_msvc2017_64</QtInstall>
-    <QtModules>core;sql;gui;widgets;serialport</QtModules>
+    <QtModules>core;sql;network;gui;widgets;serialport;websockets</QtModules>
     <QtBuildConfig>debug</QtBuildConfig>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="QtSettings">
@@ -113,13 +113,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="CameraKJG.cpp" />
+    <ClCompile Include="CameraZB.cpp" />
     <ClCompile Include="CarStatus.cpp" />
+    <ClCompile Include="EchoServer.cpp" />
     <ClCompile Include="InstructLog.cpp" />
     <ClCompile Include="InstructLogDAO.cpp" />
     <ClCompile Include="OrderLog.cpp" />
     <ClCompile Include="PictureSave.cpp" />
     <ClCompile Include="SerialManager.cpp" />
     <ClCompile Include="SystemSetting.cpp" />
+    <ClCompile Include="XmlParse.cpp" />
     <QtRcc Include="CarF.qrc" />
     <QtUic Include="CarF.ui" />
     <QtMoc Include="CarF.h" />
@@ -139,10 +143,14 @@
     <QtMoc Include="PictureSave.h" />
   </ItemGroup>
   <ItemGroup>
+    <QtMoc Include="CameraZB.h" />
+    <QtMoc Include="CameraKJG.h" />
     <ClInclude Include="CarStatus.h" />
     <ClInclude Include="DBHelper.h" />
+    <QtMoc Include="EchoServer.h" />
     <ClInclude Include="InstructLog.h" />
     <ClInclude Include="InstructLogDAO.h" />
+    <ClInclude Include="XmlParse.h" />
     <QtMoc Include="SerialManager.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -1,5 +1,21 @@
-﻿  TowerController.cpp
+﻿  FFmpegComFor.cpp
 D:\ProgEnv\ffmpeg-n4.4.4-89-g25841e4f90-win64-gpl-shared-4.4\include\libavutil\rational.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
-  (编译源文件“TowerController.cpp”)
+  (编译源文件“FFmpegComFor.cpp”)
   
-  TowerController.vcxproj -> D:\Temp\TCD53\TowerController\x64\Debug\TowerController.exe
+D:\software\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.39.33519\include\stdint.h(126,1): warning C4005: “INT64_C”: 宏重定义
+  (编译源文件“FFmpegComFor.cpp”)
+  D:\Temp\TCD53\TowerController\ffmpeghead.h(6,1):
+  参见“INT64_C”的前一个定义
+  
+D:\software\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.39.33519\include\stdint.h(131,1): warning C4005: “UINT64_C”: 宏重定义
+  (编译源文件“FFmpegComFor.cpp”)
+  D:\Temp\TCD53\TowerController\ffmpeghead.h(7,1):
+  参见“UINT64_C”的前一个定义
+  
+D:\Temp\TCD53\TowerController\FFmpegComFor.cpp(16,50): warning C4819: 该文件包含不能在当前代码页(0)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+D:\Temp\TCD53\TowerController\FFmpegComFor.cpp(21,50): warning C4819: 该文件包含不能在当前代码页(0)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+D:\Temp\TCD53\TowerController\FFmpegComFor.cpp(27,23): warning C4018: “<”: 有符号/无符号不匹配
+D:\Temp\TCD53\TowerController\FFmpegComFor.cpp(42,51): warning C4819: 该文件包含不能在当前代码页(0)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+D:\Temp\TCD53\TowerController\FFmpegComFor.cpp(55,52): error C4576: 后跟初始值设定项列表的带圆括号类型是一个非标准的显式类型转换语法
+D:\Temp\TCD53\TowerController\FFmpegComFor.cpp(63,50): warning C4819: 该文件包含不能在当前代码页(0)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+D:\Temp\TCD53\TowerController\FFmpegComFor.cpp(71,56): warning C4819: 该文件包含不能在当前代码页(0)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失

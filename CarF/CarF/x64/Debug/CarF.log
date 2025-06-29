@@ -1,15 +1,1599 @@
-﻿  moc CarF.h
+﻿  Reading Qt configuration (D:/software/Qt/Qt5.14.2/5.14.2/msvc2017_64/bin/qmake)
+  uic CarF.ui
+  uic OrderLog.ui
+  uic PictureSave.ui
+  uic SystemSetting.ui
+  rcc CarF.qrc
+  moc CarF.h
+  moc SystemSetting.h
+   RCC: Warning: No resources in 'D:\Temp\TCD53\CarF\CarF.qrc'.
+  moc OrderLog.h
+  moc PictureSave.h
+  moc CameraZB.h
+  moc CameraKJG.h
+  moc EchoServer.h
+  moc SerialManager.h
+  CameraKJG.cpp
+  CameraZB.cpp
+D:\Temp\TCD53\CarF\CameraZB.h(3,10): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
+  (编译源文件“CameraZB.cpp”)
+  
+  CarStatus.cpp
+  EchoServer.cpp
+  InstructLog.cpp
+  InstructLogDAO.cpp
+  OrderLog.cpp
+  PictureSave.cpp
+  SerialManager.cpp
+  SystemSetting.cpp
+  XmlParse.cpp
   CarF.cpp
   main.cpp
-D:\Temp\TCD53\CarF\CarF.h(10,10): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
-  (编译源文件“main.cpp”)
+D:\Temp\TCD53\CarF\CameraZB.cpp(31,13): error C2027: 使用了未定义类型“QDebug”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  参见“QDebug”的声明
   
-D:\Temp\TCD53\CarF\CarF.h(10,10): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
-  (编译源文件“CarF.cpp”)
+D:\Temp\TCD53\CarF\CameraZB.cpp(31,19): error C2678: 二进制“<<”: 没有找到接受“QDebug”类型的左操作数的运算符(或没有可接受的转换)
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtWidgets\qwidget.h(891,25):
+  可能是“QDebug operator <<(QDebug,const QWidget *)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  	“QDebug operator <<(QDebug,const QWidget *)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qkeysequence.h(227,21):
+  或    “QDebug operator <<(QDebug,const QKeySequence &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  	“QDebug operator <<(QDebug,const QKeySequence &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qkeysequence.h(58,27):
+  或    “QDataStream &operator <<(QDataStream &,const QKeySequence &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  	“QDataStream &operator <<(QDataStream &,const QKeySequence &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qcursor.h(130,21):
+  或    “QDebug operator <<(QDebug,const QCursor &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  	“QDebug operator <<(QDebug,const QCursor &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qcursor.h(125,27):
+  或    “QDataStream &operator <<(QDataStream &,const QCursor &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  	“QDataStream &operator <<(QDataStream &,const QCursor &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtWidgets\qsizepolicy.h(242,25):
+  或    “QDebug operator <<(QDebug,const QSizePolicy &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  	“QDebug operator <<(QDebug,const QSizePolicy &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtWidgets\qsizepolicy.h(173,42):
+  或    “QDataStream &operator <<(QDataStream &,const QSizePolicy &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  	“QDataStream &operator <<(QDataStream &,const QSizePolicy &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qfont.h(339,32):
+  或    “QDebug operator <<(QDebug,const QFont &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  	“QDebug operator <<(QDebug,const QFont &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qfont.h(334,38):
+  或    “QDataStream &operator <<(QDataStream &,const QFont &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  	“QDataStream &operator <<(QDataStream &,const QFont &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qpalette.h(217,21):
+  或    “QDebug operator <<(QDebug,const QPalette &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  	“QDebug operator <<(QDebug,const QPalette &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qpalette.h(195,38):
+  或    “QDataStream &operator <<(QDataStream &,const QPalette &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  	“QDataStream &operator <<(QDataStream &,const QPalette &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qbrush.h(147,21):
+  或    “QDebug operator <<(QDebug,const QBrush &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  	“QDebug operator <<(QDebug,const QBrush &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qbrush.h(142,27):
+  或    “QDataStream &operator <<(QDataStream &,const QBrush &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  	“QDataStream &operator <<(QDataStream &,const QBrush &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qpixmap.h(252,21):
+  或    “QDebug operator <<(QDebug,const QPixmap &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  	“QDebug operator <<(QDebug,const QPixmap &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qpixmap.h(247,27):
+  或    “QDataStream &operator <<(QDataStream &,const QPixmap &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  	“QDataStream &operator <<(QDataStream &,const QPixmap &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qimage.h(499,21):
+  或    “QDebug operator <<(QDebug,const QImage &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  	“QDebug operator <<(QDebug,const QImage &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qimage.h(494,27):
+  或    “QDataStream &operator <<(QDataStream &,const QImage &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  	“QDataStream &operator <<(QDataStream &,const QImage &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qtransform.h(388,21):
+  或    “QDebug operator <<(QDebug,const QTransform &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  	“QDebug operator <<(QDebug,const QTransform &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qtransform.h(383,27):
+  或    “QDataStream &operator <<(QDataStream &,const QTransform &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  	“QDataStream &operator <<(QDataStream &,const QTransform &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qpainterpath.h(361,21):
+  或    “QDebug operator <<(QDebug,const QPainterPath &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  	“QDebug operator <<(QDebug,const QPainterPath &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qpainterpath.h(241,38):
+  或    “QDataStream &operator <<(QDataStream &,const QPainterPath &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  	“QDataStream &operator <<(QDataStream &,const QPainterPath &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qmatrix.h(189,21):
+  或    “QDebug operator <<(QDebug,const QMatrix &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  	“QDebug operator <<(QDebug,const QMatrix &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qmatrix.h(184,27):
+  或    “QDataStream &operator <<(QDataStream &,const QMatrix &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  	“QDataStream &operator <<(QDataStream &,const QMatrix &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qline.h(433,28):
+  或    “QDataStream &operator <<(QDataStream &,const QLineF &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  	“QDataStream &operator <<(QDataStream &,const QLineF &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qline.h(429,22):
+  或    “QDebug operator <<(QDebug,const QLineF &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  	“QDebug operator <<(QDebug,const QLineF &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qline.h(207,28):
+  或    “QDataStream &operator <<(QDataStream &,const QLine &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  	“QDataStream &operator <<(QDataStream &,const QLine &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qline.h(203,22):
+  或    “QDebug operator <<(QDebug,const QLine &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  	“QDebug operator <<(QDebug,const QLine &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qregion.h(194,21):
+  或    “QDebug operator <<(QDebug,const QRegion &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  	“QDebug operator <<(QDebug,const QRegion &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qregion.h(160,38):
+  或    “QDataStream &operator <<(QDataStream &,const QRegion &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  	“QDataStream &operator <<(QDataStream &,const QRegion &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qiodevice.h(189,22):
+  或    “QDebug operator <<(QDebug,QIODevice::OpenMode)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  	“QDebug operator <<(QDebug,QIODevice::OpenMode)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qpolygon.h(187,27):
+  或    “QDataStream &operator <<(QDataStream &,const QPolygonF &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  	“QDataStream &operator <<(QDataStream &,const QPolygonF &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qpolygon.h(180,21):
+  或    “QDebug operator <<(QDebug,const QPolygonF &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  	“QDebug operator <<(QDebug,const QPolygonF &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qpolygon.h(112,27):
+  或    “QDataStream &operator <<(QDataStream &,const QPolygon &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  	“QDataStream &operator <<(QDataStream &,const QPolygon &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qpolygon.h(105,21):
+  或    “QDebug operator <<(QDebug,const QPolygon &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  	“QDebug operator <<(QDebug,const QPolygon &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qcolor.h(60,27):
+  或    “QDataStream &operator <<(QDataStream &,const QColor &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  	“QDataStream &operator <<(QDataStream &,const QColor &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qcolor.h(57,21):
+  或    “QDebug operator <<(QDebug,const QColor &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  	“QDebug operator <<(QDebug,const QColor &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qrect.h(920,22):
+  或    “QDebug operator <<(QDebug,const QRectF &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  	“QDebug operator <<(QDebug,const QRectF &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qrect.h(636,28):
+  或    “QDataStream &operator <<(QDataStream &,const QRectF &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  	“QDataStream &operator <<(QDataStream &,const QRectF &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qrect.h(507,22):
+  或    “QDebug operator <<(QDebug,const QRect &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  	“QDebug operator <<(QDebug,const QRect &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qrect.h(176,28):
+  或    “QDataStream &operator <<(QDataStream &,const QRect &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  	“QDataStream &operator <<(QDataStream &,const QRect &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qsize.h(397,22):
+  或    “QDebug operator <<(QDebug,const QSizeF &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  	“QDebug operator <<(QDebug,const QSizeF &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qsize.h(287,28):
+  或    “QDataStream &operator <<(QDataStream &,const QSizeF &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  	“QDataStream &operator <<(QDataStream &,const QSizeF &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qsize.h(217,22):
+  或    “QDebug operator <<(QDebug,const QSize &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  	“QDebug operator <<(QDebug,const QSize &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qsize.h(114,28):
+  或    “QDataStream &operator <<(QDataStream &,const QSize &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  	“QDataStream &operator <<(QDataStream &,const QSize &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qmargins.h(487,22):
+  或    “QDebug operator <<(QDebug,const QMarginsF &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  	“QDebug operator <<(QDebug,const QMarginsF &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qmargins.h(327,28):
+  或    “QDataStream &operator <<(QDataStream &,const QMarginsF &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  	“QDataStream &operator <<(QDataStream &,const QMarginsF &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qmargins.h(278,22):
+  或    “QDebug operator <<(QDebug,const QMargins &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  	“QDebug operator <<(QDebug,const QMargins &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qmargins.h(94,28):
+  或    “QDataStream &operator <<(QDataStream &,const QMargins &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  	“QDataStream &operator <<(QDataStream &,const QMargins &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qobject.h(554,22):
+  或    “QDebug operator <<(QDebug,const QObject *)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  	“QDebug operator <<(QDebug,const QObject *)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qregexp.h(127,22):
+  或    “QDebug operator <<(QDebug,const QRegExp &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  	“QDebug operator <<(QDebug,const QRegExp &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qregexp.h(122,28):
+  或    “QDataStream &operator <<(QDataStream &,const QRegExp &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  	“QDataStream &operator <<(QDataStream &,const QRegExp &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qpoint.h(418,22):
+  或    “QDebug operator <<(QDebug,const QPointF &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  	“QDebug operator <<(QDebug,const QPointF &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qpoint.h(281,28):
+  或    “QDataStream &operator <<(QDataStream &,const QPointF &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  	“QDataStream &operator <<(QDataStream &,const QPointF &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qpoint.h(214,22):
+  或    “QDebug operator <<(QDebug,const QPoint &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  	“QDebug operator <<(QDebug,const QPoint &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qpoint.h(114,28):
+  或    “QDataStream &operator <<(QDataStream &,const QPoint &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  	“QDataStream &operator <<(QDataStream &,const QPoint &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qstring.h(1545,28):
+  或    “QDataStream &operator <<(QDataStream &,const QString &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  	“QDataStream &operator <<(QDataStream &,const QString &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qbytearray.h(737,28):
+  或    “QDataStream &operator <<(QDataStream &,const QByteArray &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  	“QDataStream &operator <<(QDataStream &,const QByteArray &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qchar.h(639,28):
+  或    “QDataStream &operator <<(QDataStream &,QChar)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  	“QDataStream &operator <<(QDataStream &,QChar)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qdatastream.h(466,21):
+  或    “QDataStream &operator <<(QDataStream &,const QPair<T1,T2> &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  	“QDataStream &operator <<(QDataStream &,const QPair<T1,T2> &)”: 无法从“QString”推导出“const QPair<T1,T2> &”的 模板 参数
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qdatastream.h(452,21):
+  或    “QDataStream &operator <<(QDataStream &,const QMap<K,V> &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  	“QDataStream &operator <<(QDataStream &,const QMap<K,V> &)”: 无法从“QString”推导出“const QMap<K,V> &”的 模板 参数
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qdatastream.h(440,21):
+  或    “QDataStream &operator <<(QDataStream &,const QHash<K,V> &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  	“QDataStream &operator <<(QDataStream &,const QHash<K,V> &)”: 无法从“QString”推导出“const QHash<K,V> &”的 模板 参数
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qdatastream.h(428,21):
+  或    “QDataStream &operator <<(QDataStream &,const QSet<T> &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  	“QDataStream &operator <<(QDataStream &,const QSet<T> &)”: 无法从“QString”推导出“const QSet<T> &”的 模板 参数
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qdatastream.h(416,21):
+  或    “QDataStream &operator <<(QDataStream &,const QVector<T> &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  	“QDataStream &operator <<(QDataStream &,const QVector<T> &)”: 无法从“QString”推导出“const QVector<T> &”的 模板 参数
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qdatastream.h(404,21):
+  或    “QDataStream &operator <<(QDataStream &,const QList<T> &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  	“QDataStream &operator <<(QDataStream &,const QList<T> &)”: 无法从“QString”推导出“const QList<T> &”的 模板 参数
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qdatastream.h(389,1):
+  或    “std::enable_if<std::is_enum<_Ty>::value,QDataStream&>::type &operator <<(QDataStream &,const T &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  	使用了未定义类型“QDebug”
+  	D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  	参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qflags.h(99,47):
+  或    “QDataStream &operator <<(QDataStream &,QFlags<T>)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  	“QDataStream &operator <<(QDataStream &,QFlags<T>)”: 无法从“QString”推导出“QFlags<T>”的 模板 参数
+  D:\Temp\TCD53\CarF\CameraZB.cpp(31,19):
+  尝试匹配参数列表“(QDebug, QString)”时
+  
+D:\Temp\TCD53\CarF\CameraZB.cpp(46,13): error C2027: 使用了未定义类型“QDebug”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  参见“QDebug”的声明
+  
+D:\Temp\TCD53\CarF\CameraZB.cpp(46,19): error C2678: 二进制“<<”: 没有找到接受“QDebug”类型的左操作数的运算符(或没有可接受的转换)
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtWidgets\qwidget.h(891,25):
+  可能是“QDebug operator <<(QDebug,const QWidget *)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  	“QDebug operator <<(QDebug,const QWidget *)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qkeysequence.h(227,21):
+  或    “QDebug operator <<(QDebug,const QKeySequence &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  	“QDebug operator <<(QDebug,const QKeySequence &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qkeysequence.h(58,27):
+  或    “QDataStream &operator <<(QDataStream &,const QKeySequence &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  	“QDataStream &operator <<(QDataStream &,const QKeySequence &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qcursor.h(130,21):
+  或    “QDebug operator <<(QDebug,const QCursor &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  	“QDebug operator <<(QDebug,const QCursor &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qcursor.h(125,27):
+  或    “QDataStream &operator <<(QDataStream &,const QCursor &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  	“QDataStream &operator <<(QDataStream &,const QCursor &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtWidgets\qsizepolicy.h(242,25):
+  或    “QDebug operator <<(QDebug,const QSizePolicy &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  	“QDebug operator <<(QDebug,const QSizePolicy &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtWidgets\qsizepolicy.h(173,42):
+  或    “QDataStream &operator <<(QDataStream &,const QSizePolicy &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  	“QDataStream &operator <<(QDataStream &,const QSizePolicy &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qfont.h(339,32):
+  或    “QDebug operator <<(QDebug,const QFont &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  	“QDebug operator <<(QDebug,const QFont &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qfont.h(334,38):
+  或    “QDataStream &operator <<(QDataStream &,const QFont &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  	“QDataStream &operator <<(QDataStream &,const QFont &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qpalette.h(217,21):
+  或    “QDebug operator <<(QDebug,const QPalette &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  	“QDebug operator <<(QDebug,const QPalette &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qpalette.h(195,38):
+  或    “QDataStream &operator <<(QDataStream &,const QPalette &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  	“QDataStream &operator <<(QDataStream &,const QPalette &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qbrush.h(147,21):
+  或    “QDebug operator <<(QDebug,const QBrush &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  	“QDebug operator <<(QDebug,const QBrush &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qbrush.h(142,27):
+  或    “QDataStream &operator <<(QDataStream &,const QBrush &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  	“QDataStream &operator <<(QDataStream &,const QBrush &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qpixmap.h(252,21):
+  或    “QDebug operator <<(QDebug,const QPixmap &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  	“QDebug operator <<(QDebug,const QPixmap &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qpixmap.h(247,27):
+  或    “QDataStream &operator <<(QDataStream &,const QPixmap &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  	“QDataStream &operator <<(QDataStream &,const QPixmap &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qimage.h(499,21):
+  或    “QDebug operator <<(QDebug,const QImage &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  	“QDebug operator <<(QDebug,const QImage &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qimage.h(494,27):
+  或    “QDataStream &operator <<(QDataStream &,const QImage &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  	“QDataStream &operator <<(QDataStream &,const QImage &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qtransform.h(388,21):
+  或    “QDebug operator <<(QDebug,const QTransform &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  	“QDebug operator <<(QDebug,const QTransform &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qtransform.h(383,27):
+  或    “QDataStream &operator <<(QDataStream &,const QTransform &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  	“QDataStream &operator <<(QDataStream &,const QTransform &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qpainterpath.h(361,21):
+  或    “QDebug operator <<(QDebug,const QPainterPath &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  	“QDebug operator <<(QDebug,const QPainterPath &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qpainterpath.h(241,38):
+  或    “QDataStream &operator <<(QDataStream &,const QPainterPath &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  	“QDataStream &operator <<(QDataStream &,const QPainterPath &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qmatrix.h(189,21):
+  或    “QDebug operator <<(QDebug,const QMatrix &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  	“QDebug operator <<(QDebug,const QMatrix &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qmatrix.h(184,27):
+  或    “QDataStream &operator <<(QDataStream &,const QMatrix &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  	“QDataStream &operator <<(QDataStream &,const QMatrix &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qline.h(433,28):
+  或    “QDataStream &operator <<(QDataStream &,const QLineF &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  	“QDataStream &operator <<(QDataStream &,const QLineF &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qline.h(429,22):
+  或    “QDebug operator <<(QDebug,const QLineF &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  	“QDebug operator <<(QDebug,const QLineF &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qline.h(207,28):
+  或    “QDataStream &operator <<(QDataStream &,const QLine &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  	“QDataStream &operator <<(QDataStream &,const QLine &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qline.h(203,22):
+  或    “QDebug operator <<(QDebug,const QLine &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  	“QDebug operator <<(QDebug,const QLine &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qregion.h(194,21):
+  或    “QDebug operator <<(QDebug,const QRegion &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  	“QDebug operator <<(QDebug,const QRegion &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qregion.h(160,38):
+  或    “QDataStream &operator <<(QDataStream &,const QRegion &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  	“QDataStream &operator <<(QDataStream &,const QRegion &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qiodevice.h(189,22):
+  或    “QDebug operator <<(QDebug,QIODevice::OpenMode)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  	“QDebug operator <<(QDebug,QIODevice::OpenMode)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qpolygon.h(187,27):
+  或    “QDataStream &operator <<(QDataStream &,const QPolygonF &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  	“QDataStream &operator <<(QDataStream &,const QPolygonF &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qpolygon.h(180,21):
+  或    “QDebug operator <<(QDebug,const QPolygonF &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  	“QDebug operator <<(QDebug,const QPolygonF &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qpolygon.h(112,27):
+  或    “QDataStream &operator <<(QDataStream &,const QPolygon &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  	“QDataStream &operator <<(QDataStream &,const QPolygon &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qpolygon.h(105,21):
+  或    “QDebug operator <<(QDebug,const QPolygon &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  	“QDebug operator <<(QDebug,const QPolygon &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qcolor.h(60,27):
+  或    “QDataStream &operator <<(QDataStream &,const QColor &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  	“QDataStream &operator <<(QDataStream &,const QColor &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qcolor.h(57,21):
+  或    “QDebug operator <<(QDebug,const QColor &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  	“QDebug operator <<(QDebug,const QColor &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qrect.h(920,22):
+  或    “QDebug operator <<(QDebug,const QRectF &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  	“QDebug operator <<(QDebug,const QRectF &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qrect.h(636,28):
+  或    “QDataStream &operator <<(QDataStream &,const QRectF &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  	“QDataStream &operator <<(QDataStream &,const QRectF &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qrect.h(507,22):
+  或    “QDebug operator <<(QDebug,const QRect &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  	“QDebug operator <<(QDebug,const QRect &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qrect.h(176,28):
+  或    “QDataStream &operator <<(QDataStream &,const QRect &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  	“QDataStream &operator <<(QDataStream &,const QRect &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qsize.h(397,22):
+  或    “QDebug operator <<(QDebug,const QSizeF &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  	“QDebug operator <<(QDebug,const QSizeF &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qsize.h(287,28):
+  或    “QDataStream &operator <<(QDataStream &,const QSizeF &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  	“QDataStream &operator <<(QDataStream &,const QSizeF &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qsize.h(217,22):
+  或    “QDebug operator <<(QDebug,const QSize &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  	“QDebug operator <<(QDebug,const QSize &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qsize.h(114,28):
+  或    “QDataStream &operator <<(QDataStream &,const QSize &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  	“QDataStream &operator <<(QDataStream &,const QSize &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qmargins.h(487,22):
+  或    “QDebug operator <<(QDebug,const QMarginsF &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  	“QDebug operator <<(QDebug,const QMarginsF &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qmargins.h(327,28):
+  或    “QDataStream &operator <<(QDataStream &,const QMarginsF &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  	“QDataStream &operator <<(QDataStream &,const QMarginsF &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qmargins.h(278,22):
+  或    “QDebug operator <<(QDebug,const QMargins &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  	“QDebug operator <<(QDebug,const QMargins &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qmargins.h(94,28):
+  或    “QDataStream &operator <<(QDataStream &,const QMargins &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  	“QDataStream &operator <<(QDataStream &,const QMargins &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qobject.h(554,22):
+  或    “QDebug operator <<(QDebug,const QObject *)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  	“QDebug operator <<(QDebug,const QObject *)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qregexp.h(127,22):
+  或    “QDebug operator <<(QDebug,const QRegExp &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  	“QDebug operator <<(QDebug,const QRegExp &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qregexp.h(122,28):
+  或    “QDataStream &operator <<(QDataStream &,const QRegExp &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  	“QDataStream &operator <<(QDataStream &,const QRegExp &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qpoint.h(418,22):
+  或    “QDebug operator <<(QDebug,const QPointF &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  	“QDebug operator <<(QDebug,const QPointF &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qpoint.h(281,28):
+  或    “QDataStream &operator <<(QDataStream &,const QPointF &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  	“QDataStream &operator <<(QDataStream &,const QPointF &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qpoint.h(214,22):
+  或    “QDebug operator <<(QDebug,const QPoint &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  	“QDebug operator <<(QDebug,const QPoint &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qpoint.h(114,28):
+  或    “QDataStream &operator <<(QDataStream &,const QPoint &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  	“QDataStream &operator <<(QDataStream &,const QPoint &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qstring.h(1545,28):
+  或    “QDataStream &operator <<(QDataStream &,const QString &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  	“QDataStream &operator <<(QDataStream &,const QString &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qbytearray.h(737,28):
+  或    “QDataStream &operator <<(QDataStream &,const QByteArray &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  	“QDataStream &operator <<(QDataStream &,const QByteArray &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qchar.h(639,28):
+  或    “QDataStream &operator <<(QDataStream &,QChar)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  	“QDataStream &operator <<(QDataStream &,QChar)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qdatastream.h(466,21):
+  或    “QDataStream &operator <<(QDataStream &,const QPair<T1,T2> &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  	“QDataStream &operator <<(QDataStream &,const QPair<T1,T2> &)”: 无法从“QString”推导出“const QPair<T1,T2> &”的 模板 参数
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qdatastream.h(452,21):
+  或    “QDataStream &operator <<(QDataStream &,const QMap<K,V> &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  	“QDataStream &operator <<(QDataStream &,const QMap<K,V> &)”: 无法从“QString”推导出“const QMap<K,V> &”的 模板 参数
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qdatastream.h(440,21):
+  或    “QDataStream &operator <<(QDataStream &,const QHash<K,V> &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  	“QDataStream &operator <<(QDataStream &,const QHash<K,V> &)”: 无法从“QString”推导出“const QHash<K,V> &”的 模板 参数
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qdatastream.h(428,21):
+  或    “QDataStream &operator <<(QDataStream &,const QSet<T> &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  	“QDataStream &operator <<(QDataStream &,const QSet<T> &)”: 无法从“QString”推导出“const QSet<T> &”的 模板 参数
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qdatastream.h(416,21):
+  或    “QDataStream &operator <<(QDataStream &,const QVector<T> &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  	“QDataStream &operator <<(QDataStream &,const QVector<T> &)”: 无法从“QString”推导出“const QVector<T> &”的 模板 参数
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qdatastream.h(404,21):
+  或    “QDataStream &operator <<(QDataStream &,const QList<T> &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  	“QDataStream &operator <<(QDataStream &,const QList<T> &)”: 无法从“QString”推导出“const QList<T> &”的 模板 参数
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qdatastream.h(389,1):
+  或    “std::enable_if<std::is_enum<_Ty>::value,QDataStream&>::type &operator <<(QDataStream &,const T &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  	使用了未定义类型“QDebug”
+  	D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  	参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qflags.h(99,47):
+  或    “QDataStream &operator <<(QDataStream &,QFlags<T>)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  	“QDataStream &operator <<(QDataStream &,QFlags<T>)”: 无法从“QString”推导出“QFlags<T>”的 模板 参数
+  D:\Temp\TCD53\CarF\CameraZB.cpp(46,19):
+  尝试匹配参数列表“(QDebug, QString)”时
+  
+D:\Temp\TCD53\CarF\CameraZB.cpp(182,13): error C2027: 使用了未定义类型“QDebug”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  参见“QDebug”的声明
   
 D:\Temp\TCD53\CarF\DBHelper.h(26,1): warning C4715: “DBHelper::open”: 不是所有的控件路径都返回值
-  moc_CarF.cpp
-D:\Temp\TCD53\CarF\CarF.h(10,10): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
-  (编译源文件“CarF/x64/Debug/moc/moc_CarF.cpp”)
+D:\Temp\TCD53\CarF\CameraZB.cpp(182,19): error C2678: 二进制“<<”: 没有找到接受“QDebug”类型的左操作数的运算符(或没有可接受的转换)
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtWidgets\qwidget.h(891,25):
+  可能是“QDebug operator <<(QDebug,const QWidget *)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  	“QDebug operator <<(QDebug,const QWidget *)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qkeysequence.h(227,21):
+  或    “QDebug operator <<(QDebug,const QKeySequence &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  	“QDebug operator <<(QDebug,const QKeySequence &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qkeysequence.h(58,27):
+  或    “QDataStream &operator <<(QDataStream &,const QKeySequence &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  	“QDataStream &operator <<(QDataStream &,const QKeySequence &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qcursor.h(130,21):
+  或    “QDebug operator <<(QDebug,const QCursor &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  	“QDebug operator <<(QDebug,const QCursor &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qcursor.h(125,27):
+  或    “QDataStream &operator <<(QDataStream &,const QCursor &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  	“QDataStream &operator <<(QDataStream &,const QCursor &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtWidgets\qsizepolicy.h(242,25):
+  或    “QDebug operator <<(QDebug,const QSizePolicy &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  	“QDebug operator <<(QDebug,const QSizePolicy &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtWidgets\qsizepolicy.h(173,42):
+  或    “QDataStream &operator <<(QDataStream &,const QSizePolicy &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  	“QDataStream &operator <<(QDataStream &,const QSizePolicy &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qfont.h(339,32):
+  或    “QDebug operator <<(QDebug,const QFont &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  	“QDebug operator <<(QDebug,const QFont &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qfont.h(334,38):
+  或    “QDataStream &operator <<(QDataStream &,const QFont &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  	“QDataStream &operator <<(QDataStream &,const QFont &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qpalette.h(217,21):
+  或    “QDebug operator <<(QDebug,const QPalette &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  	“QDebug operator <<(QDebug,const QPalette &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qpalette.h(195,38):
+  或    “QDataStream &operator <<(QDataStream &,const QPalette &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  	“QDataStream &operator <<(QDataStream &,const QPalette &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qbrush.h(147,21):
+  或    “QDebug operator <<(QDebug,const QBrush &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  	“QDebug operator <<(QDebug,const QBrush &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qbrush.h(142,27):
+  或    “QDataStream &operator <<(QDataStream &,const QBrush &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  	“QDataStream &operator <<(QDataStream &,const QBrush &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qpixmap.h(252,21):
+  或    “QDebug operator <<(QDebug,const QPixmap &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  	“QDebug operator <<(QDebug,const QPixmap &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qpixmap.h(247,27):
+  或    “QDataStream &operator <<(QDataStream &,const QPixmap &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  	“QDataStream &operator <<(QDataStream &,const QPixmap &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qimage.h(499,21):
+  或    “QDebug operator <<(QDebug,const QImage &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  	“QDebug operator <<(QDebug,const QImage &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qimage.h(494,27):
+  或    “QDataStream &operator <<(QDataStream &,const QImage &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  	“QDataStream &operator <<(QDataStream &,const QImage &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qtransform.h(388,21):
+  或    “QDebug operator <<(QDebug,const QTransform &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  	“QDebug operator <<(QDebug,const QTransform &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qtransform.h(383,27):
+  或    “QDataStream &operator <<(QDataStream &,const QTransform &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  	“QDataStream &operator <<(QDataStream &,const QTransform &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qpainterpath.h(361,21):
+  或    “QDebug operator <<(QDebug,const QPainterPath &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  	“QDebug operator <<(QDebug,const QPainterPath &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qpainterpath.h(241,38):
+  或    “QDataStream &operator <<(QDataStream &,const QPainterPath &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  	“QDataStream &operator <<(QDataStream &,const QPainterPath &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qmatrix.h(189,21):
+  或    “QDebug operator <<(QDebug,const QMatrix &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  	“QDebug operator <<(QDebug,const QMatrix &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qmatrix.h(184,27):
+  或    “QDataStream &operator <<(QDataStream &,const QMatrix &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  	“QDataStream &operator <<(QDataStream &,const QMatrix &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qline.h(433,28):
+  或    “QDataStream &operator <<(QDataStream &,const QLineF &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  	“QDataStream &operator <<(QDataStream &,const QLineF &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qline.h(429,22):
+  或    “QDebug operator <<(QDebug,const QLineF &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  	“QDebug operator <<(QDebug,const QLineF &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qline.h(207,28):
+  或    “QDataStream &operator <<(QDataStream &,const QLine &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  	“QDataStream &operator <<(QDataStream &,const QLine &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qline.h(203,22):
+  或    “QDebug operator <<(QDebug,const QLine &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  	“QDebug operator <<(QDebug,const QLine &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qregion.h(194,21):
+  或    “QDebug operator <<(QDebug,const QRegion &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  	“QDebug operator <<(QDebug,const QRegion &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qregion.h(160,38):
+  或    “QDataStream &operator <<(QDataStream &,const QRegion &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  	“QDataStream &operator <<(QDataStream &,const QRegion &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qiodevice.h(189,22):
+  或    “QDebug operator <<(QDebug,QIODevice::OpenMode)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  	“QDebug operator <<(QDebug,QIODevice::OpenMode)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qpolygon.h(187,27):
+  或    “QDataStream &operator <<(QDataStream &,const QPolygonF &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  	“QDataStream &operator <<(QDataStream &,const QPolygonF &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qpolygon.h(180,21):
+  或    “QDebug operator <<(QDebug,const QPolygonF &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  	“QDebug operator <<(QDebug,const QPolygonF &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qpolygon.h(112,27):
+  或    “QDataStream &operator <<(QDataStream &,const QPolygon &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  	“QDataStream &operator <<(QDataStream &,const QPolygon &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qpolygon.h(105,21):
+  或    “QDebug operator <<(QDebug,const QPolygon &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  	“QDebug operator <<(QDebug,const QPolygon &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qcolor.h(60,27):
+  或    “QDataStream &operator <<(QDataStream &,const QColor &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  	“QDataStream &operator <<(QDataStream &,const QColor &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qcolor.h(57,21):
+  或    “QDebug operator <<(QDebug,const QColor &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  	“QDebug operator <<(QDebug,const QColor &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qrect.h(920,22):
+  或    “QDebug operator <<(QDebug,const QRectF &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  	“QDebug operator <<(QDebug,const QRectF &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qrect.h(636,28):
+  或    “QDataStream &operator <<(QDataStream &,const QRectF &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  	“QDataStream &operator <<(QDataStream &,const QRectF &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qrect.h(507,22):
+  或    “QDebug operator <<(QDebug,const QRect &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  	“QDebug operator <<(QDebug,const QRect &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qrect.h(176,28):
+  或    “QDataStream &operator <<(QDataStream &,const QRect &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  	“QDataStream &operator <<(QDataStream &,const QRect &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qsize.h(397,22):
+  或    “QDebug operator <<(QDebug,const QSizeF &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  	“QDebug operator <<(QDebug,const QSizeF &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qsize.h(287,28):
+  或    “QDataStream &operator <<(QDataStream &,const QSizeF &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  	“QDataStream &operator <<(QDataStream &,const QSizeF &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qsize.h(217,22):
+  或    “QDebug operator <<(QDebug,const QSize &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  	“QDebug operator <<(QDebug,const QSize &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qsize.h(114,28):
+  或    “QDataStream &operator <<(QDataStream &,const QSize &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  	“QDataStream &operator <<(QDataStream &,const QSize &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qmargins.h(487,22):
+  或    “QDebug operator <<(QDebug,const QMarginsF &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  	“QDebug operator <<(QDebug,const QMarginsF &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qmargins.h(327,28):
+  或    “QDataStream &operator <<(QDataStream &,const QMarginsF &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  	“QDataStream &operator <<(QDataStream &,const QMarginsF &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qmargins.h(278,22):
+  或    “QDebug operator <<(QDebug,const QMargins &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  	“QDebug operator <<(QDebug,const QMargins &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qmargins.h(94,28):
+  或    “QDataStream &operator <<(QDataStream &,const QMargins &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  	“QDataStream &operator <<(QDataStream &,const QMargins &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qobject.h(554,22):
+  或    “QDebug operator <<(QDebug,const QObject *)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  	“QDebug operator <<(QDebug,const QObject *)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qregexp.h(127,22):
+  或    “QDebug operator <<(QDebug,const QRegExp &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  	“QDebug operator <<(QDebug,const QRegExp &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qregexp.h(122,28):
+  或    “QDataStream &operator <<(QDataStream &,const QRegExp &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  	“QDataStream &operator <<(QDataStream &,const QRegExp &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qpoint.h(418,22):
+  或    “QDebug operator <<(QDebug,const QPointF &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  	“QDebug operator <<(QDebug,const QPointF &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qpoint.h(281,28):
+  或    “QDataStream &operator <<(QDataStream &,const QPointF &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  	“QDataStream &operator <<(QDataStream &,const QPointF &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qpoint.h(214,22):
+  或    “QDebug operator <<(QDebug,const QPoint &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  	“QDebug operator <<(QDebug,const QPoint &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qpoint.h(114,28):
+  或    “QDataStream &operator <<(QDataStream &,const QPoint &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  	“QDataStream &operator <<(QDataStream &,const QPoint &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qstring.h(1545,28):
+  或    “QDataStream &operator <<(QDataStream &,const QString &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  	“QDataStream &operator <<(QDataStream &,const QString &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qbytearray.h(737,28):
+  或    “QDataStream &operator <<(QDataStream &,const QByteArray &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  	“QDataStream &operator <<(QDataStream &,const QByteArray &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qchar.h(639,28):
+  或    “QDataStream &operator <<(QDataStream &,QChar)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  	“QDataStream &operator <<(QDataStream &,QChar)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qdatastream.h(466,21):
+  或    “QDataStream &operator <<(QDataStream &,const QPair<T1,T2> &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  	“QDataStream &operator <<(QDataStream &,const QPair<T1,T2> &)”: 无法从“QString”推导出“const QPair<T1,T2> &”的 模板 参数
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qdatastream.h(452,21):
+  或    “QDataStream &operator <<(QDataStream &,const QMap<K,V> &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  	“QDataStream &operator <<(QDataStream &,const QMap<K,V> &)”: 无法从“QString”推导出“const QMap<K,V> &”的 模板 参数
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qdatastream.h(440,21):
+  或    “QDataStream &operator <<(QDataStream &,const QHash<K,V> &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  	“QDataStream &operator <<(QDataStream &,const QHash<K,V> &)”: 无法从“QString”推导出“const QHash<K,V> &”的 模板 参数
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qdatastream.h(428,21):
+  或    “QDataStream &operator <<(QDataStream &,const QSet<T> &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  	“QDataStream &operator <<(QDataStream &,const QSet<T> &)”: 无法从“QString”推导出“const QSet<T> &”的 模板 参数
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qdatastream.h(416,21):
+  或    “QDataStream &operator <<(QDataStream &,const QVector<T> &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  	“QDataStream &operator <<(QDataStream &,const QVector<T> &)”: 无法从“QString”推导出“const QVector<T> &”的 模板 参数
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qdatastream.h(404,21):
+  或    “QDataStream &operator <<(QDataStream &,const QList<T> &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  	“QDataStream &operator <<(QDataStream &,const QList<T> &)”: 无法从“QString”推导出“const QList<T> &”的 模板 参数
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qdatastream.h(389,1):
+  或    “std::enable_if<std::is_enum<_Ty>::value,QDataStream&>::type &operator <<(QDataStream &,const T &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  	使用了未定义类型“QDebug”
+  	D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  	参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qflags.h(99,47):
+  或    “QDataStream &operator <<(QDataStream &,QFlags<T>)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  	“QDataStream &operator <<(QDataStream &,QFlags<T>)”: 无法从“QString”推导出“QFlags<T>”的 模板 参数
+  D:\Temp\TCD53\CarF\CameraZB.cpp(182,19):
+  尝试匹配参数列表“(QDebug, QString)”时
   
-  CarF.vcxproj -> D:\Temp\TCD53\CarF\x64\Debug\CarF.exe
+D:\Temp\TCD53\CarF\CameraZB.cpp(186,13): error C2027: 使用了未定义类型“QDebug”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  参见“QDebug”的声明
+  
+D:\Temp\TCD53\CarF\CameraZB.cpp(186,19): error C2678: 二进制“<<”: 没有找到接受“QDebug”类型的左操作数的运算符(或没有可接受的转换)
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtWidgets\qwidget.h(891,25):
+  可能是“QDebug operator <<(QDebug,const QWidget *)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  	“QDebug operator <<(QDebug,const QWidget *)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qkeysequence.h(227,21):
+  或    “QDebug operator <<(QDebug,const QKeySequence &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  	“QDebug operator <<(QDebug,const QKeySequence &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qkeysequence.h(58,27):
+  或    “QDataStream &operator <<(QDataStream &,const QKeySequence &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  	“QDataStream &operator <<(QDataStream &,const QKeySequence &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qcursor.h(130,21):
+  或    “QDebug operator <<(QDebug,const QCursor &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  	“QDebug operator <<(QDebug,const QCursor &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qcursor.h(125,27):
+  或    “QDataStream &operator <<(QDataStream &,const QCursor &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  	“QDataStream &operator <<(QDataStream &,const QCursor &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtWidgets\qsizepolicy.h(242,25):
+  或    “QDebug operator <<(QDebug,const QSizePolicy &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  	“QDebug operator <<(QDebug,const QSizePolicy &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtWidgets\qsizepolicy.h(173,42):
+  或    “QDataStream &operator <<(QDataStream &,const QSizePolicy &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  	“QDataStream &operator <<(QDataStream &,const QSizePolicy &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qfont.h(339,32):
+  或    “QDebug operator <<(QDebug,const QFont &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  	“QDebug operator <<(QDebug,const QFont &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qfont.h(334,38):
+  或    “QDataStream &operator <<(QDataStream &,const QFont &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  	“QDataStream &operator <<(QDataStream &,const QFont &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qpalette.h(217,21):
+  或    “QDebug operator <<(QDebug,const QPalette &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  	“QDebug operator <<(QDebug,const QPalette &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qpalette.h(195,38):
+  或    “QDataStream &operator <<(QDataStream &,const QPalette &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  	“QDataStream &operator <<(QDataStream &,const QPalette &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qbrush.h(147,21):
+  或    “QDebug operator <<(QDebug,const QBrush &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  	“QDebug operator <<(QDebug,const QBrush &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qbrush.h(142,27):
+  或    “QDataStream &operator <<(QDataStream &,const QBrush &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  	“QDataStream &operator <<(QDataStream &,const QBrush &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qpixmap.h(252,21):
+  或    “QDebug operator <<(QDebug,const QPixmap &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  	“QDebug operator <<(QDebug,const QPixmap &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qpixmap.h(247,27):
+  或    “QDataStream &operator <<(QDataStream &,const QPixmap &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  	“QDataStream &operator <<(QDataStream &,const QPixmap &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qimage.h(499,21):
+  或    “QDebug operator <<(QDebug,const QImage &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  	“QDebug operator <<(QDebug,const QImage &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qimage.h(494,27):
+  或    “QDataStream &operator <<(QDataStream &,const QImage &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  	“QDataStream &operator <<(QDataStream &,const QImage &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qtransform.h(388,21):
+  或    “QDebug operator <<(QDebug,const QTransform &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  	“QDebug operator <<(QDebug,const QTransform &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qtransform.h(383,27):
+  或    “QDataStream &operator <<(QDataStream &,const QTransform &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  	“QDataStream &operator <<(QDataStream &,const QTransform &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qpainterpath.h(361,21):
+  或    “QDebug operator <<(QDebug,const QPainterPath &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  	“QDebug operator <<(QDebug,const QPainterPath &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qpainterpath.h(241,38):
+  或    “QDataStream &operator <<(QDataStream &,const QPainterPath &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  	“QDataStream &operator <<(QDataStream &,const QPainterPath &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qmatrix.h(189,21):
+  或    “QDebug operator <<(QDebug,const QMatrix &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  	“QDebug operator <<(QDebug,const QMatrix &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qmatrix.h(184,27):
+  或    “QDataStream &operator <<(QDataStream &,const QMatrix &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  	“QDataStream &operator <<(QDataStream &,const QMatrix &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qline.h(433,28):
+  或    “QDataStream &operator <<(QDataStream &,const QLineF &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  	“QDataStream &operator <<(QDataStream &,const QLineF &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qline.h(429,22):
+  或    “QDebug operator <<(QDebug,const QLineF &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  	“QDebug operator <<(QDebug,const QLineF &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qline.h(207,28):
+  或    “QDataStream &operator <<(QDataStream &,const QLine &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  	“QDataStream &operator <<(QDataStream &,const QLine &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qline.h(203,22):
+  或    “QDebug operator <<(QDebug,const QLine &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  	“QDebug operator <<(QDebug,const QLine &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qregion.h(194,21):
+  或    “QDebug operator <<(QDebug,const QRegion &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  	“QDebug operator <<(QDebug,const QRegion &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qregion.h(160,38):
+  或    “QDataStream &operator <<(QDataStream &,const QRegion &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  	“QDataStream &operator <<(QDataStream &,const QRegion &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qiodevice.h(189,22):
+  或    “QDebug operator <<(QDebug,QIODevice::OpenMode)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  	“QDebug operator <<(QDebug,QIODevice::OpenMode)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qpolygon.h(187,27):
+  或    “QDataStream &operator <<(QDataStream &,const QPolygonF &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  	“QDataStream &operator <<(QDataStream &,const QPolygonF &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qpolygon.h(180,21):
+  或    “QDebug operator <<(QDebug,const QPolygonF &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  	“QDebug operator <<(QDebug,const QPolygonF &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qpolygon.h(112,27):
+  或    “QDataStream &operator <<(QDataStream &,const QPolygon &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  	“QDataStream &operator <<(QDataStream &,const QPolygon &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qpolygon.h(105,21):
+  或    “QDebug operator <<(QDebug,const QPolygon &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  	“QDebug operator <<(QDebug,const QPolygon &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qcolor.h(60,27):
+  或    “QDataStream &operator <<(QDataStream &,const QColor &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  	“QDataStream &operator <<(QDataStream &,const QColor &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\qcolor.h(57,21):
+  或    “QDebug operator <<(QDebug,const QColor &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  	“QDebug operator <<(QDebug,const QColor &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qrect.h(920,22):
+  或    “QDebug operator <<(QDebug,const QRectF &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  	“QDebug operator <<(QDebug,const QRectF &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qrect.h(636,28):
+  或    “QDataStream &operator <<(QDataStream &,const QRectF &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  	“QDataStream &operator <<(QDataStream &,const QRectF &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qrect.h(507,22):
+  或    “QDebug operator <<(QDebug,const QRect &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  	“QDebug operator <<(QDebug,const QRect &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qrect.h(176,28):
+  或    “QDataStream &operator <<(QDataStream &,const QRect &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  	“QDataStream &operator <<(QDataStream &,const QRect &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qsize.h(397,22):
+  或    “QDebug operator <<(QDebug,const QSizeF &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  	“QDebug operator <<(QDebug,const QSizeF &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qsize.h(287,28):
+  或    “QDataStream &operator <<(QDataStream &,const QSizeF &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  	“QDataStream &operator <<(QDataStream &,const QSizeF &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qsize.h(217,22):
+  或    “QDebug operator <<(QDebug,const QSize &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  	“QDebug operator <<(QDebug,const QSize &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qsize.h(114,28):
+  或    “QDataStream &operator <<(QDataStream &,const QSize &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  	“QDataStream &operator <<(QDataStream &,const QSize &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qmargins.h(487,22):
+  或    “QDebug operator <<(QDebug,const QMarginsF &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  	“QDebug operator <<(QDebug,const QMarginsF &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qmargins.h(327,28):
+  或    “QDataStream &operator <<(QDataStream &,const QMarginsF &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  	“QDataStream &operator <<(QDataStream &,const QMarginsF &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qmargins.h(278,22):
+  或    “QDebug operator <<(QDebug,const QMargins &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  	“QDebug operator <<(QDebug,const QMargins &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qmargins.h(94,28):
+  或    “QDataStream &operator <<(QDataStream &,const QMargins &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  	“QDataStream &operator <<(QDataStream &,const QMargins &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qobject.h(554,22):
+  或    “QDebug operator <<(QDebug,const QObject *)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  	“QDebug operator <<(QDebug,const QObject *)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qregexp.h(127,22):
+  或    “QDebug operator <<(QDebug,const QRegExp &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  	“QDebug operator <<(QDebug,const QRegExp &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qregexp.h(122,28):
+  或    “QDataStream &operator <<(QDataStream &,const QRegExp &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  	“QDataStream &operator <<(QDataStream &,const QRegExp &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qpoint.h(418,22):
+  或    “QDebug operator <<(QDebug,const QPointF &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  	“QDebug operator <<(QDebug,const QPointF &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qpoint.h(281,28):
+  或    “QDataStream &operator <<(QDataStream &,const QPointF &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  	“QDataStream &operator <<(QDataStream &,const QPointF &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qpoint.h(214,22):
+  或    “QDebug operator <<(QDebug,const QPoint &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  	“QDebug operator <<(QDebug,const QPoint &)”: 无法将参数 1 从“QDebug”转换为“QDebug”
+  		D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  		未定义类型 "QDebug" 的使用
+  		D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  		参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qpoint.h(114,28):
+  或    “QDataStream &operator <<(QDataStream &,const QPoint &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  	“QDataStream &operator <<(QDataStream &,const QPoint &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qstring.h(1545,28):
+  或    “QDataStream &operator <<(QDataStream &,const QString &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  	“QDataStream &operator <<(QDataStream &,const QString &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qbytearray.h(737,28):
+  或    “QDataStream &operator <<(QDataStream &,const QByteArray &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  	“QDataStream &operator <<(QDataStream &,const QByteArray &)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qchar.h(639,28):
+  或    “QDataStream &operator <<(QDataStream &,QChar)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  	“QDataStream &operator <<(QDataStream &,QChar)”: 无法将参数 1 从“QDebug”转换为“QDataStream &”
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qdatastream.h(466,21):
+  或    “QDataStream &operator <<(QDataStream &,const QPair<T1,T2> &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  	“QDataStream &operator <<(QDataStream &,const QPair<T1,T2> &)”: 无法从“QString”推导出“const QPair<T1,T2> &”的 模板 参数
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qdatastream.h(452,21):
+  或    “QDataStream &operator <<(QDataStream &,const QMap<K,V> &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  	“QDataStream &operator <<(QDataStream &,const QMap<K,V> &)”: 无法从“QString”推导出“const QMap<K,V> &”的 模板 参数
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qdatastream.h(440,21):
+  或    “QDataStream &operator <<(QDataStream &,const QHash<K,V> &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  	“QDataStream &operator <<(QDataStream &,const QHash<K,V> &)”: 无法从“QString”推导出“const QHash<K,V> &”的 模板 参数
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qdatastream.h(428,21):
+  或    “QDataStream &operator <<(QDataStream &,const QSet<T> &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  	“QDataStream &operator <<(QDataStream &,const QSet<T> &)”: 无法从“QString”推导出“const QSet<T> &”的 模板 参数
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qdatastream.h(416,21):
+  或    “QDataStream &operator <<(QDataStream &,const QVector<T> &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  	“QDataStream &operator <<(QDataStream &,const QVector<T> &)”: 无法从“QString”推导出“const QVector<T> &”的 模板 参数
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qdatastream.h(404,21):
+  或    “QDataStream &operator <<(QDataStream &,const QList<T> &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  	“QDataStream &operator <<(QDataStream &,const QList<T> &)”: 无法从“QString”推导出“const QList<T> &”的 模板 参数
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qdatastream.h(389,1):
+  或    “std::enable_if<std::is_enum<_Ty>::value,QDataStream&>::type &operator <<(QDataStream &,const T &)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  	使用了未定义类型“QDebug”
+  	D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qlogging.h(57,7):
+  	参见“QDebug”的声明
+  D:\software\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qflags.h(99,47):
+  或    “QDataStream &operator <<(QDataStream &,QFlags<T>)”
+  	D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  	“QDataStream &operator <<(QDataStream &,QFlags<T>)”: 无法从“QString”推导出“QFlags<T>”的 模板 参数
+  D:\Temp\TCD53\CarF\CameraZB.cpp(186,19):
+  尝试匹配参数列表“(QDebug, QString)”时
+  
+D:\Temp\TCD53\CarF\CameraZB.h(3,10): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
+  (编译源文件“CarF.cpp”)
+  
+D:\Temp\TCD53\CarF\CameraZB.h(3,10): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
+  (编译源文件“main.cpp”)
+  
+D:\Temp\TCD53\CarF\DBHelper.h(26,1): warning C4715: “DBHelper::open”: 不是所有的控件路径都返回值
