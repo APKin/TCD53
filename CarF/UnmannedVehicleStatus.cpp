@@ -4,9 +4,9 @@
 #include <iomanip>
 #include <sstream>
 #include <cstring>
-#include <nlohmann/json.hpp> // 需要包含 nlohmann/json 库
+#include <QJsonObject>   // 替换为 Qt JSON 头文件
+#include <QJsonDocument> // 可选：用于调试输出
 
-using json = nlohmann::json;
 
 class UnmannedVehicleStatus {
 public:
@@ -139,29 +139,29 @@ public:
             sizeof(vehicleState);
     }
 
-    // 将对象转为JSON字符串
-    std::string toJsonString() const {
-        json j;
-        j["timestamp"] = timestamp;
-        //j["formattedTime"] = getFormattedTime();
-        j["vehicleId"] = vehicleId;
-        j["utmEastingCm"] = utmEastingCm;
-        j["utmNorthingCm"] = utmNorthingCm;
-        //j["utmEastingM"] = getUtmEastingM();
-        //j["utmNorthingM"] = getUtmNorthingM();
-        j["headingAngle"] = headingAngle;
-        //j["actualHeading"] = getActualHeading();
-        j["speed"] = speed;
-        //j["actualSpeed"] = getActualSpeed();
-        j["batteryLevel"] = batteryLevel;
-        j["horizontalInclination"] = horizontalInclination;
-        //j["actualInclination"] = getActualInclination();
-        j["vehicleState"] = vehicleState;
+    // 将对象转为 QJsonObject
+    QJsonObject toJsonObject() const {
+        QJsonObject json;
+        json["timestamp"] = static_cast<qint64>(timestamp);
+        json["vehicleId"] = vehicleId;
+        json["utmEastingCm"] = static_cast<qint64>(utmEastingCm);
+        json["utmNorthingCm"] = static_cast<qint64>(utmNorthingCm);
+        json["headingAngle"] = headingAngle;
+        json["speed"] = speed;
+        json["batteryLevel"] = batteryLevel;
+        json["horizontalInclination"] = horizontalInclination;
+        json["vehicleState"] = vehicleState;
+        return json;
+    }
 
-        return j.dump(4); // 使用4个空格缩进，美化输出
+    // 可选：保留字符串输出功能（如果需要）
+    std::string toJsonString() const {
+        QJsonObject json = toJsonObject();
+        QJsonDocument doc(json);
+        return doc.toJson(QJsonDocument::Indented).toStdString();
     }
 };
 
-// 确保结构体紧密排列（无填充）
+// 确保结构体大小不变
 static_assert(UnmannedVehicleStatus::size() == 21,
     "UnmannedVehicleStatus size must be 21 bytes");
