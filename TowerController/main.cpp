@@ -8,6 +8,7 @@ int main(int argc, char *argv[])
     QApplication a(argc, argv);
     TowerController w;
     w.show();
+    //w.showFullScreen();
 
     //FFmpegWidget fw;
     //fw.show();

@@ -39,7 +39,7 @@ public:
     QPushButton *pushButton_3;
     QLabel *label;
     QPushButton *pushButton;
-    QPushButton *pushButton_2;
+    QPushButton *btnOrderLog;
     QSpacerItem *horizontalSpacer_2;
     QHBoxLayout *horizontalLayout;
     QVBoxLayout *verticalLayout;
@@ -82,8 +82,8 @@ public:
     QSpinBox *spinBox;
     QLabel *label_33;
     QLineEdit *lineEdit;
-    QPushButton *pushButton_5;
-    QPushButton *pushButton_4;
+    QPushButton *btnStop;
+    QPushButton *btnAutoDisplay;
     QLabel *label_7;
     QWidget *widget_6;
     QGridLayout *gridLayout_6;
@@ -181,10 +181,10 @@ public:
 
         gridLayout->addWidget(pushButton, 0, 0, 1, 1);
 
-        pushButton_2 = new QPushButton(centralWidget);
-        pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
+        btnOrderLog = new QPushButton(centralWidget);
+        btnOrderLog->setObjectName(QString::fromUtf8("btnOrderLog"));
 
-        gridLayout->addWidget(pushButton_2, 0, 1, 1, 1);
+        gridLayout->addWidget(btnOrderLog, 0, 1, 1, 1);
 
         horizontalSpacer_2 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
 
@@ -400,15 +400,15 @@ public:
 
         gridLayout_5->addWidget(lineEdit, 0, 1, 1, 2);
 
-        pushButton_5 = new QPushButton(widget_5);
-        pushButton_5->setObjectName(QString::fromUtf8("pushButton_5"));
+        btnStop = new QPushButton(widget_5);
+        btnStop->setObjectName(QString::fromUtf8("btnStop"));
 
-        gridLayout_5->addWidget(pushButton_5, 2, 3, 1, 1);
+        gridLayout_5->addWidget(btnStop, 2, 3, 1, 1);
 
-        pushButton_4 = new QPushButton(widget_5);
-        pushButton_4->setObjectName(QString::fromUtf8("pushButton_4"));
+        btnAutoDisplay = new QPushButton(widget_5);
+        btnAutoDisplay->setObjectName(QString::fromUtf8("btnAutoDisplay"));
 
-        gridLayout_5->addWidget(pushButton_4, 2, 0, 1, 3);
+        gridLayout_5->addWidget(btnAutoDisplay, 2, 0, 1, 3);
 
 
         verticalLayout_5->addWidget(widget_5);
@@ -733,7 +733,7 @@ public:
         CarFClass->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(CarFClass);
         menuBar->setObjectName(QString::fromUtf8("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 1192, 22));
+        menuBar->setGeometry(QRect(0, 0, 1192, 23));
         CarFClass->setMenuBar(menuBar);
         mainToolBar = new QToolBar(CarFClass);
         mainToolBar->setObjectName(QString::fromUtf8("mainToolBar"));
@@ -753,7 +753,7 @@ public:
         pushButton_3->setText(QCoreApplication::translate("CarFClass", "PushButton", nullptr));
         label->setText(QCoreApplication::translate("CarFClass", "\346\227\240\344\272\272\350\275\246\346\216\247\345\210\266\347\225\214\351\235\242", nullptr));
         pushButton->setText(QCoreApplication::translate("CarFClass", "\347\263\273\347\273\237\350\256\276\347\275\256", nullptr));
-        pushButton_2->setText(QCoreApplication::translate("CarFClass", "\346\214\207\344\273\244\346\227\245\345\277\227", nullptr));
+        btnOrderLog->setText(QCoreApplication::translate("CarFClass", "\346\214\207\344\273\244\346\227\245\345\277\227", nullptr));
         label_2->setText(QCoreApplication::translate("CarFClass", "\344\270\255\345\244\226\347\272\242\346\263\242\345\233\276\345\203\217", nullptr));
         label_3->setText(QCoreApplication::translate("CarFClass", "\345\217\257\350\247\201\345\205\211\345\233\276\345\203\217", nullptr));
         label_4->setText(QCoreApplication::translate("CarFClass", "\345\205\211\346\226\221\346\243\200\346\265\213\345\233\276\345\203\217", nullptr));
@@ -777,8 +777,8 @@ public:
         label_28->setText(QCoreApplication::translate("CarFClass", "\350\256\276\345\256\232\345\235\220\346\240\207", nullptr));
         label_29->setText(QCoreApplication::translate("CarFClass", "\350\256\276\345\256\232\346\234\235\345\220\221", nullptr));
         label_33->setText(QCoreApplication::translate("CarFClass", "\302\260", nullptr));
-        pushButton_5->setText(QCoreApplication::translate("CarFClass", "\345\201\234\346\255\242", nullptr));
-        pushButton_4->setText(QCoreApplication::translate("CarFClass", "\350\207\252\345\212\250\345\211\215\350\277\233", nullptr));
+        btnStop->setText(QCoreApplication::translate("CarFClass", "\345\201\234\346\255\242", nullptr));
+        btnAutoDisplay->setText(QCoreApplication::translate("CarFClass", "\350\207\252\345\212\250\345\211\215\350\277\233", nullptr));
         label_7->setText(QCoreApplication::translate("CarFClass", "\350\275\254\345\217\260\346\216\247\345\210\266", nullptr));
         label_36->setText(QCoreApplication::translate("CarFClass", "\302\260", nullptr));
         pushButton_6->setText(QCoreApplication::translate("CarFClass", "\347\241\256\345\256\232", nullptr));

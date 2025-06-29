@@ -8,20 +8,59 @@
 #include <QFileInfo>
 #include <QDebug>
 
+const QByteArray CarF::SOF_BYTES = QByteArray::fromHex("AA55");
+const QByteArray CarF::EOF_BYTES = QByteArray::fromHex("0D0A");
+
 // 定义并初始化静态变量
 QString CarF::imageSavePath = NULL;
 DBHelper* db = new DBHelper();
+
+
 CarF::CarF(QWidget *parent)
     : QMainWindow(parent)
 {
     ui.setupUi(this);
     // 获取图片保存路径
     imageSavePath = getImagePath();
+
+    if (!initIPC_HDV()) {
+        // 初始化失败则退出
+        qApp->quit();
+    }
+
+    serMan = new SerialManager(this);
+    connect(serMan, &SerialManager::dataReceived, this, &CarF::UVInfoUpdate);
+    
+    portName = "COM1";
+    serMan->openPort(portName);
+
 }
 
 CarF::~CarF()
 {
-    
+    stopIPC_HDV();
+
+}
+
+bool CarF::initIPC_HDV()
+{
+    if (!IPCNET_Init())
+    {
+        QMessageBox::warning(this,"warning","初始化网络库失败！");
+        return false;
+    }
+    if (!HDVPLAY_Init())
+    {
+        QMessageBox::warning(this, "warning","初始化播放库失败！");
+        return false;
+    }
+    return true;
+}
+
+void CarF::stopIPC_HDV()
+{
+    IPCNET_Cleanup();
+    HDVPLAY_Cleanup();
 }
 
 // 在源文件（.cpp）中实现：
@@ -45,6 +84,90 @@ void CarF::on_btnOrderLog_clicked()
 {
     OrderLog *secondWin = new OrderLog(this);
     secondWin->exec(); // 模态显示对话框
+}
+void CarF::UVInfoUpdate(const QByteArray& data)
+{
+    qDebug() << "UVInfo::" << data;
+    // 转
+    QByteArray dataBuffer = data;
+    parseData(dataBuffer);
+
+}
+//quint8 CarF::calculateCRC(const QByteArray& data)
+//{
+//    quint8 crc = 0;
+//    for (char byte : data) {
+//        crc += static_cast<quint8>(byte);
+//    }
+//    return crc;
+//}
+quint8 CarF::calculateCRC(quint8 msg_type, quint8 length, const QByteArray& payload)
+{
+    uint8_t crc = 0;
+    crc ^= msg_type;
+    crc ^= length;
+    for (int i = 0; i < length; i++) { // length指定payload长度
+        crc ^= payload[i];
+    }
+    return crc;
+    //return quint8();
+}
+void CarF::parseData(QByteArray& dataBuffer)
+{
+    while (dataBuffer.size() >= MIN_FRAME_SIZE) {
+        // 步骤1：查找SOF
+        //int startIdx = dataBuffer.indexOf(reinterpret_cast<const char*>(&SOF_), 2);
+        int startIdx = dataBuffer.indexOf(SOF_BYTES);
+        if (startIdx == -1) {
+            dataBuffer.clear(); // 无有效帧头，清空缓冲区
+            return;
+        }
+
+        // 移除SOF前的无效数据
+        if (startIdx > 0) {
+            dataBuffer.remove(0, startIdx);
+        }
+
+        // 步骤2：检查长度是否足够
+        if (dataBuffer.size() < MIN_FRAME_SIZE) break;
+
+        // 提取Length字段（位置：SOF后第3字节）
+        quint8 payloadLen = static_cast<quint8>(dataBuffer[3]);
+        int totalFrameSize = 6 + payloadLen; // SOF(2)+Type(1)+Len(1)+Payload(n)+CRC(1)+EOF(2)
+
+        // 检查完整帧是否已接收
+        if (dataBuffer.size() < totalFrameSize) break;
+
+        // 步骤3：验证EOF
+
+        QByteArray eofInData = dataBuffer.mid(5 + payloadLen, 2);
+        if (eofInData != EOF_BYTES) {
+            qWarning() << "Invalid EOF. Expected:" << EOF_BYTES.toHex()
+                << "Received:" << eofInData.toHex();
+            dataBuffer.remove(0, 2);  // 跳过当前SOF，继续搜索
+            continue;
+        }
+
+        // 步骤4：提取关键字段
+        quint8 msgType = static_cast<quint8>(dataBuffer[2]);
+        QByteArray payload = dataBuffer.mid(4, payloadLen);
+        quint8 receivedCRC = static_cast<quint8>(dataBuffer[4 + payloadLen]);
+
+        // 步骤5：校验CRC（范围：MsgType+Length+Payload）
+        QByteArray crcData = dataBuffer.mid(2, 2 + payloadLen); // 从MsgType开始
+        quint8 calculatedCRC = calculateCRC(msgType,payloadLen,payload);
+
+        if (receivedCRC != calculatedCRC) {
+            dataBuffer.remove(0, totalFrameSize); // 移除错误帧
+            continue;
+        }
+
+        // --- 成功解析一帧 ---
+        //emit frameReceived(msgType, payload); // 发送信号处理有效数据
+
+        // 步骤6：从缓冲区移除已处理帧
+        dataBuffer.remove(0, totalFrameSize);
+    }
 }
 /*
 * 查询img_path表最后一条数据，如果没有则创建一条默认数据并写入数据库，返回该数据
