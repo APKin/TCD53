@@ -23,8 +23,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_RecordQuery_t {
-    QByteArrayData data[6];
-    char stringdata0[90];
+    QByteArrayData data[9];
+    char stringdata0[123];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -38,12 +38,16 @@ QT_MOC_LITERAL(1, 12, 25), // "on_btnRecordQuery_clicked"
 QT_MOC_LITERAL(2, 38, 0), // ""
 QT_MOC_LITERAL(3, 39, 18), // "loadDataToTreeView"
 QT_MOC_LITERAL(4, 58, 23), // "QList<ParkPoliceRecord>"
-QT_MOC_LITERAL(5, 82, 7) // "records"
+QT_MOC_LITERAL(5, 82, 7), // "records"
+QT_MOC_LITERAL(6, 90, 16), // "setupColumnSpans"
+QT_MOC_LITERAL(7, 107, 10), // "QTreeView*"
+QT_MOC_LITERAL(8, 118, 4) // "view"
 
     },
     "RecordQuery\0on_btnRecordQuery_clicked\0"
     "\0loadDataToTreeView\0QList<ParkPoliceRecord>\0"
-    "records"
+    "records\0setupColumnSpans\0QTreeView*\0"
+    "view"
 };
 #undef QT_MOC_LITERAL
 
@@ -53,7 +57,7 @@ static const uint qt_meta_data_RecordQuery[] = {
        8,       // revision
        0,       // classname
        0,    0, // classinfo
-       2,   14, // methods
+       3,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -61,12 +65,14 @@ static const uint qt_meta_data_RecordQuery[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags
-       1,    0,   24,    2, 0x08 /* Private */,
-       3,    1,   25,    2, 0x08 /* Private */,
+       1,    0,   29,    2, 0x08 /* Private */,
+       3,    1,   30,    2, 0x08 /* Private */,
+       6,    1,   33,    2, 0x08 /* Private */,
 
  // slots: parameters
     QMetaType::Void,
     QMetaType::Void, 0x80000000 | 4,    5,
+    QMetaType::Void, 0x80000000 | 7,    8,
 
        0        // eod
 };
@@ -79,7 +85,19 @@ void RecordQuery::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id,
         switch (_id) {
         case 0: _t->on_btnRecordQuery_clicked(); break;
         case 1: _t->loadDataToTreeView((*reinterpret_cast< const QList<ParkPoliceRecord>(*)>(_a[1]))); break;
+        case 2: _t->setupColumnSpans((*reinterpret_cast< QTreeView*(*)>(_a[1]))); break;
         default: ;
+        }
+    } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
+        switch (_id) {
+        default: *reinterpret_cast<int*>(_a[0]) = -1; break;
+        case 2:
+            switch (*reinterpret_cast<int*>(_a[1])) {
+            default: *reinterpret_cast<int*>(_a[0]) = -1; break;
+            case 0:
+                *reinterpret_cast<int*>(_a[0]) = qRegisterMetaType< QTreeView* >(); break;
+            }
+            break;
         }
     }
 }
@@ -113,13 +131,13 @@ int RecordQuery::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 2)
+        if (_id < 3)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 2;
+        _id -= 3;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 2)
-            *reinterpret_cast<int*>(_a[0]) = -1;
-        _id -= 2;
+        if (_id < 3)
+            qt_static_metacall(this, _c, _id, _a);
+        _id -= 3;
     }
     return _id;
 }

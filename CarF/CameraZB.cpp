@@ -1,6 +1,6 @@
 #include "CameraZB.h"
 #include <QMessageBox>
-
+#include <QDebug>
 // 解码后数据回调
 void CALLBACK _CBDecodeFun(long               lPlayHandle,
 	const unsigned char* pBuf,

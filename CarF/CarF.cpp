@@ -38,7 +38,7 @@ CarF::CarF(QWidget *parent)
     portName = "COM1";
     serMan->openPort(portName);
 
-    serverPort = 1234;
+    serverPort = 8602;
     eServer = new EchoServer(this,serverPort);
     eServer->startServer();
 

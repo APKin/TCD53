@@ -5,6 +5,7 @@
 #include <QTcpServer>
 #include <QTcpSocket>
 
+
 QT_FORWARD_DECLARE_CLASS(QWebSocketServer)
 QT_FORWARD_DECLARE_CLASS(QWebSocket)
 
@@ -13,6 +14,8 @@ QT_FORWARD_DECLARE_CLASS(QWebSocket)
 #include <QObject>
 #include <QDebug>
 #include <QList>
+
+#include "UnmannedVehicleStatus.cpp"
 
 class EchoServer : public QTcpServer
 {
@@ -31,4 +34,8 @@ private slots:
 private:
     int m_port;
     QList<QTcpSocket*> m_clients;
+
+    UnmannedVehicleStatus UVStatus;
+    std::string UVStatus_json;
+
 };

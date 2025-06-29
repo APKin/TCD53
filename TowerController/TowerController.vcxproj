@@ -22,7 +22,7 @@
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <CharacterSet>Unicode</CharacterSet>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -65,27 +65,11 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-<<<<<<< HEAD
-<<<<<<< HEAD
-      <AdditionalIncludeDirectories>D:\project\TCD53\old\ffmpeg-n4.4.4-89-g25841e4f90-win64-gpl-shared-4.4\include;D:\ProgEnv\ffmpeg-n4.4.4-89-g25841e4f90-win64-gpl-shared-4.4\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-    </ClCompile>
-    <Link>
-      <AdditionalLibraryDirectories>D:\project\TCD53\old\ffmpeg-n4.4.4-89-g25841e4f90-win64-gpl-shared-4.4\lib</AdditionalLibraryDirectories>
-      <AdditionalDependencies>avutil.lib;avcodec.lib;avformat.lib;swscale.lib;swresample.lib;%(AdditionalDependencies)</AdditionalDependencies>
-=======
       <AdditionalIncludeDirectories>D:\ProgEnv\ffmpeg-n4.4.4-89-g25841e4f90-win64-gpl-shared-4.4\include;D:\Temp\TCD53\TowerController\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <AdditionalLibraryDirectories>D:\ProgEnv\ffmpeg-n4.4.4-89-g25841e4f90-win64-gpl-shared-4.4\lib;D:\Temp\TCD53\TowerController\lib</AdditionalLibraryDirectories>
       <AdditionalDependencies>avutil.lib;avcodec.lib;avformat.lib;swscale.lib;swresample.lib;Qt5Pdfiumd.lib;Qt5Pdfium.lib;%(AdditionalDependencies)</AdditionalDependencies>
->>>>>>> 2012dd93c2737bf680981fdb9779b409c2c18b44
-=======
-      <AdditionalIncludeDirectories>D:\ProgEnv\ffmpeg-n4.4.4-89-g25841e4f90-win64-gpl-shared-4.4\include;D:\Temp\TCD53\TowerController\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-    </ClCompile>
-    <Link>
-      <AdditionalLibraryDirectories>D:\ProgEnv\ffmpeg-n4.4.4-89-g25841e4f90-win64-gpl-shared-4.4\lib;D:\Temp\TCD53\TowerController\lib</AdditionalLibraryDirectories>
-      <AdditionalDependencies>avutil.lib;avcodec.lib;avformat.lib;swscale.lib;swresample.lib;Qt5Pdfiumd.lib;Qt5Pdfium.lib;%(AdditionalDependencies)</AdditionalDependencies>
->>>>>>> 2012dd93c2737bf680981fdb9779b409c2c18b44
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">

@@ -3,6 +3,7 @@
 EchoServer::EchoServer(QObject* parent, int port)
     : QTcpServer(parent), m_port(port)
 {
+    //UVStatus;
 }
 
 void EchoServer::startServer()
@@ -34,6 +35,11 @@ void EchoServer::onReadyRead()
 
     QByteArray data = client->readAll();
     qDebug() << "Received:" << data;
+    //
+    const uint8_t* buffer = reinterpret_cast<const uint8_t*>(data.constData());
+    
+    UVStatus.deserialize(buffer);
+    UVStatus_json = UVStatus.toJsonString();
 
     // 长度:4字节
     int size_4 = 123;
@@ -42,7 +48,7 @@ void EchoServer::onReadyRead()
     data_.push_back(data);
 
     // 原样发回给客户端
-    client->write(data_);
+    client->write(data);
 }
 
 void EchoServer::onDisconnected()
