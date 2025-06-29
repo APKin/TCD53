@@ -153,6 +153,19 @@ public:
         json["vehicleState"] = vehicleState;
         return json;
     }
+    // 创建外层包装的 QJsonObject
+    QJsonObject toWrappedJsonObject() const {
+        QJsonObject wrapper;
+        wrapper["type"] = "status";  // 固定值
+
+        // 将内层对象转为 JSON 字符串
+        QJsonObject inner = toJsonObject();
+        QJsonDocument doc(inner);
+        QString contentStr = doc.toJson(QJsonDocument::Compact);
+
+        wrapper["content"] = contentStr;
+        return wrapper;
+    }
 
     // 可选：保留字符串输出功能（如果需要）
     std::string toJsonString() const {
