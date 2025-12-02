@@ -10,13 +10,13 @@ RecordQuery::RecordQuery(QWidget *parent)
     ui->detEnd->setDate(QDate::currentDate());
 	// 初始化treeView
 	QStandardItemModel* model = new QStandardItemModel(this);
-	model->setHorizontalHeaderLabels({ "目标", "方向", "俯仰", "距离", "经纬高", "时间" });
+	model->setHorizontalHeaderLabels({ u8"目标", u8"方向", u8"俯仰", u8"距离", u8"经纬高", u8"时间" });
 	ui->treeView->setModel(model);
 	ui->treeView->setEditTriggers(QAbstractItemView::NoEditTriggers); // 禁止编辑
 }
 
 RecordQuery::~RecordQuery()
-{
+{ 
 	delete ui;
 }
 void RecordQuery::on_btnRecordQuery_clicked() {

@@ -45,7 +45,7 @@ public:
     {
         if (RecordQueryClass->objectName().isEmpty())
             RecordQueryClass->setObjectName(QString::fromUtf8("RecordQueryClass"));
-        RecordQueryClass->resize(600, 400);
+        RecordQueryClass->resize(822, 582);
         gridLayout = new QGridLayout(RecordQueryClass);
         gridLayout->setSpacing(6);
         gridLayout->setContentsMargins(11, 11, 11, 11);

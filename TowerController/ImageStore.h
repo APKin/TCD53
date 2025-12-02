@@ -14,7 +14,16 @@ class ImageStore : public QDialog
 public:
 	ImageStore(QWidget *parent = nullptr);
 	~ImageStore();
+	// ∂‘Õ‚ «get
+	QString getMainName();
+	QString getCurMoni();
+
+	
 
 private:
 	Ui::ImageStoreClass *ui;
+	QString nameMain;
+	QString nameCurMoni;
+
+	
 };

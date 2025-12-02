@@ -1,5 +1,5 @@
 #pragma once
-
+#include <QObject>
 #include <QtWidgets/QMainWindow>
 #include <QString>
 #include "ui_CarF.h"
@@ -12,9 +12,15 @@
 // 定时获取的无人车状态
 #include <QTimer>
 #include "SerialManager.h"
-#include "CameraZB.h"
-
+//#include "CameraZB.h"
+#include "QtWidgetsClass.h"
 #include <QTcpSocket>
+
+#include "IPCSDK_Net.h";
+#include "IPCSDK_CGI.h"
+#include "HDVSDK_Play.h"
+#include "Configure.h"
+#include "LaserComand.h"
 // 解析
 const int MIN_FRAME_SIZE = 7;     // 最小帧长度（不含Payload）
 
@@ -57,9 +63,29 @@ public:
     //bool initIPC_HDV();
     //void stopIPC_HDV();
 
-
+    void init();
+    QtWidgetsClass* qwc;
 //signals:
 //    void updateUVStatus();
+
+    // 开启关闭播放设置
+        // 初始化网络和播放
+    bool initIPC_HDV();
+
+    void stopIPC_HDV();
+    // 登录
+    bool loginDev();
+
+    void camPlay();
+
+    void camPlay(HWND wid);
+
+    void camStop();
+
+    void OnDecodeFun(long lPlayHandle, const unsigned char* pBuf, unsigned long nBufSize, S_FRAMEINFO* pFrameInfo);
+
+    // 解析数据
+    void carPayLoad(quint8 msgType, QByteArray payload);
 
 private:
     Ui::CarFClass ui;
@@ -68,8 +94,7 @@ private:
     std::unique_ptr<PictureSave> PictureSave_;
     std::unique_ptr<SystemSetting> SystemSetting_;
 private slots:
-    //打开系统设置界面
-    void on_pushButton_clicked();
+    
     //void saveStringToFile(   QString& text, const QString& filename);
     QString getImagePath();
     //保存图像存储路径
@@ -80,6 +105,18 @@ private slots:
     void on_btnAutoDisplay_clicked();
     //无人车控制 停止
     void on_btnStop_clicked();
+    // 转台方向
+    void on_pbTurnFw_clicked();
+    // 转台俯仰
+    void on_pbTurnUD_clicked();
+    // 快反镜
+    void on_pbKFJ_clicked();
+    // 
+    void on_pbKF_clicked();
+    // 系统
+    void on_btnSystem_clicked();
+    // 图像保存
+    void on_btnImage_clicked();
     //指令日志
     void on_btnOrderLog_clicked();
     // 中波相机开启
@@ -87,34 +124,109 @@ private slots:
     // 中波相机 关闭
     void on_pbCameZBClose_clicked();
 
+    void on_pbCarmGBOpen_clicked();
+    void on_pbCarmGBClose_clicked();
+     
+    // 可见光
+    void on_pbCameLightOpen_clicked();
+    void on_pbCameLightClose_clicked();
+    
+    // mrad 
+    void on_cbMrad_currentIndexChanged(int index);
+    // 蓝光
+    void on_pbLightRate_clicked();
+    void on_pblightOutL_clicked();
+    void on_pblightCL_clicked();
+    
+    // 可见光
+    void on_pbLightRate1_clicked();
+    void on_pblightOutL1_clicked();
+    void on_pblightCL1_clicked();
+
+    // 长波
+    void on_pbLongBauRate_clicked();
+    void on_pbLongBauoutL_clicked();
+    void on_pbLongBauCL_clicked();
+    
     // 无人车串口信息
     //void UVInfoUpdate_json(QJsonObject data);
 
     void UVInfoUpdate(QByteArray data);
 
+    // 惯导信息解析
+    void parseGD(QByteArray data);
 
 private:
+    Configure cf;
     // 中波相机
-    CameraZB* came_zb;
-    // 串口使用
+    /*CameraZB* came_zb;*/
+    // 串口使用 - 无人车
     SerialManager* serMan;
+    // 转台
+    SerialManager* serManZT;
+
+    // 蓝光< - >干扰
+    SerialManager* serManlar;
+
+    // 可见光 调焦
+    SerialManager* serManKJG;
+    // 脉冲 致盲 可见光
+    SerialManager* serManMC;
+
+    SerialManager* serManGD;
+    // 
+    SerialManager* serManKF;
     // 使用串口
     QString portName;
+    // 转台串口
+    QString portNameZT;
 
+    QString portNameKJG;
+    
+    // 致盲
+    QString portNameMC;
+
+
+    // 激光
+    bool larIsInit;
+    QString portNameLarse;
+    // 惯导
+    QString portNameGD;
+
+    QString portNameKF;
+
+    LaserComand larCommand;
     int serverPort;
     EchoServer* eServer;
 
     // 计算CRC的辅助函数（
     quint8 calculateCRC(quint8 msg_type, quint8 length,const QByteArray& payload);
 
+   
+
     // 解析主函数（dataBuffer是累积数据的缓冲区）
     void parseData(QByteArray& dataBuffer); 
 
     static const QByteArray SOF_BYTES;   // 存储为 AA 55
+    static const QByteArray SOF_BYTES_GD;   // 存储为 AA 55
     static const QByteArray EOF_BYTES;   // 存储为 0D 0A
     // 负责记录无人车传输信息
     UVStatus uvs;
     CCUCommand cc; 
 
     QTcpSocket* client_UVStatus;
+public:
+    // kjg
+    int m_iChanNum;
+    // encode类型
+    E_ENCODE_TYPE m_EncodeType;
+    // 用户ID值 -1为失败
+    long m_lUserID;
+    long m_lPlayHandle;
+    long m_lRealDataID;
+    long m_lRawDataID;
+    HWND lightWid;
+
+    // 本车ID ，来源未知
+    qint8 vec_id; 
 };

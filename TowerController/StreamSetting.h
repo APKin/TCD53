@@ -15,6 +15,21 @@ public:
 	StreamSetting(QWidget *parent = nullptr);
 	~StreamSetting();
 
+	void setMainView(QString url);
+
+	void setMoiView(QString url);
+
+	void setWarnInfo(QString url);
+	
+private slots:
+	//
+	void on_pbSure_clicked();
+
+	void on_pbCan_clicked();
+
+	// È¡ÏûtextChange²Û
+	//void on_XXX_textChanged(const QString& arg1);
+
 private:
 	Ui::StreamSettingClass *ui;
 };

@@ -1,4 +1,21 @@
 <RCC>
-    <qresource prefix="TowerController">
+    <qresource prefix="/">
+        <file>Resource/label360.png</file>
+        <file>Resource/labelMainView.png</file>
+        <file>Resource/labelMoniView.png</file>
+        <file>Resource/labelRad.png</file>
+        <file>Resource/labelWarn.png</file>
+        <file>Resource/MainPusbButton.png</file>
+        <file>Resource/label5G.png</file>
+        <file>Resource/labelLightIcon.png</file>
+        <file>Resource/labelLocIcon.png</file>
+        <file>Resource/labelRadIcon.png</file>
+        <file>Resource/t1.png</file>
+        <file>Resource/back.png</file>
+        <file>Resource/device.png</file>
+        <file>Resource/flush.png</file>
+        <file>Resource/Picture.png</file>
+        <file>Resource/pause.png</file>
+        <file>Resource/start.png</file>
     </qresource>
 </RCC>

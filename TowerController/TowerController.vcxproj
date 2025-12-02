@@ -21,7 +21,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <CharacterSet>Unicode</CharacterSet>
+    <CharacterSet>MultiByte</CharacterSet>
     <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="Configuration">
@@ -65,11 +65,11 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\ProgEnv\ffmpeg-n4.4.4-89-g25841e4f90-win64-gpl-shared-4.4\include;D:\Temp\TCD53\TowerController\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)include;$(SolutionDir)IPRSDK\include;$(SolutionDir)MS06SDK\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <AdditionalLibraryDirectories>D:\ProgEnv\ffmpeg-n4.4.4-89-g25841e4f90-win64-gpl-shared-4.4\lib;D:\Temp\TCD53\TowerController\lib</AdditionalLibraryDirectories>
-      <AdditionalDependencies>avutil.lib;avcodec.lib;avformat.lib;swscale.lib;swresample.lib;Qt5Pdfiumd.lib;Qt5Pdfium.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib;$(SolutionDir)IPRSDK\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Qt5Pdfiumd.lib;Qt5Pdfium.lib;IPRControlCenterSdkd.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -109,27 +109,32 @@
     <QtRcc Include="TowerController.qrc" />
     <QtUic Include="DeviceConnect.ui" />
     <QtUic Include="DeviceControl.ui" />
-    <QtUic Include="FFmpegWidget.ui" />
     <QtUic Include="HelpWidget.ui" />
     <QtUic Include="ImageStore.ui" />
+    <QtUic Include="PaintWidget.ui" />
     <QtUic Include="RecordQuery.ui" />
     <QtUic Include="StreamSetting.ui" />
     <QtUic Include="SystemSetting.ui" />
     <QtUic Include="TowerController.ui" />
     <QtMoc Include="TowerController.h" />
     <ClCompile Include="AngleScaleBar.cpp" />
+    <ClCompile Include="Configure.cpp" />
     <ClCompile Include="DeviceConnect.cpp" />
     <ClCompile Include="DeviceControl.cpp" />
+    <ClCompile Include="DraggableLabel.cpp" />
     <ClCompile Include="EchoServer.cpp" />
-    <ClCompile Include="FFmpegComFor.cpp" />
-    <ClCompile Include="FFmpegThread.cpp" />
-    <ClCompile Include="FFmpegWidget.cpp" />
     <ClCompile Include="HelpWidget.cpp" />
+    <ClCompile Include="httpNetInfo.cpp" />
     <ClCompile Include="ImageStore.cpp" />
     <ClCompile Include="ImgFile.cpp" />
     <ClCompile Include="InstructLog.cpp" />
     <ClCompile Include="InstructLogDAO.cpp" />
+    <ClCompile Include="LaserRadar.cpp" />
+    <ClCompile Include="MS06SDK\Include\GetLidarData.cpp" />
+    <ClCompile Include="MS06SDK\Include\GetLidarData_MS06.cpp" />
+    <ClCompile Include="PaintWidget.cpp" />
     <ClCompile Include="ParkPoliceRecord.cpp" />
+    <ClCompile Include="RadarJson.cpp" />
     <ClCompile Include="RecordQuery.cpp" />
     <ClCompile Include="SerialManager.cpp" />
     <ClCompile Include="StreamSetting.cpp" />
@@ -163,16 +168,22 @@
     <QtMoc Include="RecordQuery.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Configure.h" />
     <ClInclude Include="DBHelper.h" />
     <QtMoc Include="EchoServer.h" />
-    <ClInclude Include="FFmpegComFor.h" />
-    <ClInclude Include="ffmpeghead.h" />
-    <QtMoc Include="FFmpegThread.h" />
-    <QtMoc Include="FFmpegWidget.h" />
+    <QtMoc Include="DraggableLabel.h" />
+    <QtMoc Include="httpNetInfo.h" />
+    <ClInclude Include="Global.h" />
     <ClInclude Include="ImgFile.h" />
     <ClInclude Include="InstructLog.h" />
     <ClInclude Include="InstructLogDAO.h" />
     <QtMoc Include="SerialManager.h" />
+    <QtMoc Include="PaintWidget.h" />
+    <ClInclude Include="LaserRadar.h" />
+    <ClInclude Include="MS06SDK\Include\GetLidarData.h" />
+    <ClInclude Include="MS06SDK\Include\GetLidarData_MS06.h" />
+    <ClInclude Include="MS06SDK\Include\IncludeFile.h" />
+    <ClInclude Include="RadarJson.h" />
     <ClInclude Include="Test.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

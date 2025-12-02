@@ -1,6 +1,36 @@
-﻿  CarF.cpp
-D:\Temp\TCD53\CarF\CameraZB.h(3,10): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
+﻿  Reading Qt configuration (D:/software/Qt/Qt5.14.2/5.14.2/msvc2017_64/bin/qmake)
+  CarF.cpp
+  SerialManager.cpp
+  main.cpp
+D:\Temp\TCD53\CarF\FFMPEG44\include\libavutil\rational.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  (编译源文件“CarF.cpp”)
+  
+D:\Temp\TCD53\CarF\FFMPEG44\include\libavutil\rational.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  (编译源文件“main.cpp”)
+  
+D:\Temp\TCD53\CarF\UnmannedVehicleStatus.cpp(72,31): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+  (编译源文件“CarF.cpp”)
+  
+D:\Temp\TCD53\CarF\UnmannedVehicleStatus.cpp(72,31): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+  (编译源文件“main.cpp”)
+  
+D:\Temp\TCD53\CarF\CarF.h(19,10): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
+  (编译源文件“main.cpp”)
+  
+D:\Temp\TCD53\CarF\CarF.h(19,10): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
   (编译源文件“CarF.cpp”)
   
 D:\Temp\TCD53\CarF\DBHelper.h(26,1): warning C4715: “DBHelper::open”: 不是所有的控件路径都返回值
+  moc_CarF.cpp
+  moc_SerialManager.cpp
+D:\Temp\TCD53\CarF\FFMPEG44\include\libavutil\rational.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  (编译源文件“CarF/x64/Debug/moc/moc_CarF.cpp”)
+  
+D:\Temp\TCD53\CarF\UnmannedVehicleStatus.cpp(72,31): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+  (编译源文件“CarF/x64/Debug/moc/moc_CarF.cpp”)
+  
+D:\Temp\TCD53\CarF\CarF.h(19,10): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
+  (编译源文件“CarF/x64/Debug/moc/moc_CarF.cpp”)
+  
+  LINK : 没有找到 D:\Temp\TCD53\CarF\x64\Debug\CarF.exe 或上一个增量链接没有生成它；正在执行完全链接
   CarF.vcxproj -> D:\Temp\TCD53\CarF\x64\Debug\CarF.exe

@@ -1,45 +1,165 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="CameraKJG.cpp" />
-    <ClCompile Include="CameraZB.cpp" />
-    <ClCompile Include="CarStatus.cpp" />
-    <ClCompile Include="EchoServer.cpp" />
-    <ClCompile Include="InstructLog.cpp" />
-    <ClCompile Include="InstructLogDAO.cpp" />
-    <ClCompile Include="OrderLog.cpp" />
-    <ClCompile Include="PictureSave.cpp" />
-    <ClCompile Include="SerialManager.cpp" />
-    <ClCompile Include="SystemSetting.cpp" />
-    <ClCompile Include="XmlParse.cpp" />
-    <ClCompile Include="UnmannedVehicleStatus.cpp" />
-    <ClCompile Include="CarF.cpp" />
-    <ClCompile Include="main.cpp" />
+    <ClCompile Include="CameraKJG.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraZB.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CarF.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CarStatus.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Configure.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EchoServer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="InstructLog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="InstructLogDAO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LaserComand.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OrderLog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PictureSave.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="QtWidgetsClass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SerialManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SystemSetting.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UnmannedVehicleStatus.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="XmlParse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ffmpeg_decode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="videothread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="videowindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="CarStatus.h" />
-    <ClInclude Include="DBHelper.h" />
-    <ClInclude Include="InstructLog.h" />
-    <ClInclude Include="InstructLogDAO.h" />
-    <ClInclude Include="XmlParse.h" />
+    <ClInclude Include="CameraZB.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CarStatus.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Configure.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DBHelper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="InstructLog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="InstructLogDAO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LaserComand.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="XmlParse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ffmpeg_decode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <QtMoc Include="CarF.h" />
-    <QtMoc Include="SystemSetting.h" />
-    <QtMoc Include="OrderLog.h" />
-    <QtMoc Include="PictureSave.h" />
-    <QtMoc Include="CameraZB.h" />
-    <QtMoc Include="CameraKJG.h" />
-    <QtMoc Include="EchoServer.h" />
-    <QtMoc Include="SerialManager.h" />
+    <QtMoc Include="CameraKJG.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="CarF.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="EchoServer.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="OrderLog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="PictureSave.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="QtWidgetsClass.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="SerialManager.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="SystemSetting.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="videothread.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="videowindow.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
   </ItemGroup>
   <ItemGroup>
-    <QtRcc Include="CarF.qrc" />
+    <QtUic Include="CarF.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="OrderLog.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="SystemSetting.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="QtWidgetsClass.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="PictureSave.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="videowindow.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
   </ItemGroup>
   <ItemGroup>
-    <QtUic Include="CarF.ui" />
-    <QtUic Include="OrderLog.ui" />
-    <QtUic Include="PictureSave.ui" />
-    <QtUic Include="SystemSetting.ui" />
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{e7da4738-b0cf-48e9-89d3-8fd4845db344}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{10518a14-5401-421c-81a7-a56f713dd5c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{4a8cd0fc-c751-4418-9f0b-b25a75490736}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{abc0b467-95e4-46fd-9870-36f2f82501d0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="CarF.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
   </ItemGroup>
 </Project>

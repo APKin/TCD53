@@ -67,12 +67,16 @@
     <ClCompile />
     <Link />
     <Link>
-      <AdditionalLibraryDirectories>D:\Temp\TCD53\CarF\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>HDVSDK_Play.lib;IPCSDK_CGI.lib;IPCSDK_Net.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir)lib;$(ProjectDir)FFMPEG44\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>avcodec.lib;avdevice.lib;avfilter.lib;avformat.lib;avutil.lib;postproc.lib;swscale.lib;swresample.lib;HDVSDK_Play.lib;IPCSDK_CGI.lib;IPCSDK_Net.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\Temp\TCD53\CarF\lib;D:\Temp\TCD53\CarF\sqlite3;D:\Temp\TCD53\CarF\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)lib;$(ProjectDir)sqlite3;$(ProjectDir)FFMPEG44\include;$(ProjectDir)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BrowseInformation>true</BrowseInformation>
     </ClCompile>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile />
@@ -92,7 +96,7 @@
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
     <Link>
-      <SubSystem>Console</SubSystem>
+      <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
@@ -116,13 +120,19 @@
     <ClCompile Include="CameraKJG.cpp" />
     <ClCompile Include="CameraZB.cpp" />
     <ClCompile Include="CarStatus.cpp" />
+    <ClCompile Include="Configure.cpp" />
     <ClCompile Include="EchoServer.cpp" />
+    <ClCompile Include="ffmpeg_decode.cpp" />
     <ClCompile Include="InstructLog.cpp" />
     <ClCompile Include="InstructLogDAO.cpp" />
+    <ClCompile Include="LaserComand.cpp" />
     <ClCompile Include="OrderLog.cpp" />
     <ClCompile Include="PictureSave.cpp" />
+    <ClCompile Include="QtWidgetsClass.cpp" />
     <ClCompile Include="SerialManager.cpp" />
     <ClCompile Include="SystemSetting.cpp" />
+    <ClCompile Include="videothread.cpp" />
+    <ClCompile Include="videowindow.cpp" />
     <ClCompile Include="XmlParse.cpp" />
     <ClCompile Include="UnmannedVehicleStatus.cpp" />
     <QtRcc Include="CarF.qrc" />
@@ -132,7 +142,9 @@
     <ClCompile Include="main.cpp" />
     <QtUic Include="OrderLog.ui" />
     <QtUic Include="PictureSave.ui" />
+    <QtUic Include="QtWidgetsClass.ui" />
     <QtUic Include="SystemSetting.ui" />
+    <QtUic Include="videowindow.ui" />
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="SystemSetting.h" />
@@ -144,13 +156,19 @@
     <QtMoc Include="PictureSave.h" />
   </ItemGroup>
   <ItemGroup>
-    <QtMoc Include="CameraZB.h" />
+    <ClInclude Include="CameraZB.h" />
     <QtMoc Include="CameraKJG.h" />
     <ClInclude Include="CarStatus.h" />
+    <ClInclude Include="Configure.h" />
     <ClInclude Include="DBHelper.h" />
     <QtMoc Include="EchoServer.h" />
+    <ClInclude Include="ffmpeg_decode.h" />
     <ClInclude Include="InstructLog.h" />
     <ClInclude Include="InstructLogDAO.h" />
+    <QtMoc Include="QtWidgetsClass.h" />
+    <ClInclude Include="LaserComand.h" />
+    <QtMoc Include="videothread.h" />
+    <QtMoc Include="videowindow.h" />
     <ClInclude Include="XmlParse.h" />
     <QtMoc Include="SerialManager.h" />
   </ItemGroup>

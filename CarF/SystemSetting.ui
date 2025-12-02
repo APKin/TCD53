@@ -37,10 +37,10 @@
       </widget>
      </item>
      <item>
-      <widget class="QLineEdit" name="lineEdit"/>
+      <widget class="QLineEdit" name="lePath"/>
      </item>
      <item>
-      <widget class="QPushButton" name="pushButton_3">
+      <widget class="QPushButton" name="pbBrowse">
        <property name="text">
         <string>浏览</string>
        </property>
@@ -77,14 +77,14 @@
       </spacer>
      </item>
      <item>
-      <widget class="QPushButton" name="pushButton">
+      <widget class="QPushButton" name="pbOut">
        <property name="text">
         <string>取消</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="pushButton_2">
+      <widget class="QPushButton" name="pbSure">
        <property name="text">
         <string>确定</string>
        </property>

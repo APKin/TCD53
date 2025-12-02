@@ -31,53 +31,15 @@
      </item>
      <item row="0" column="1">
       <layout class="QGridLayout" name="gridLayout_5">
-       <item row="0" column="0">
-        <layout class="QGridLayout" name="gridLayout">
-         <item row="1" column="0">
-          <widget class="QLabel" name="label_2">
-           <property name="text">
-            <string>服务器</string>
-           </property>
-          </widget>
-         </item>
-         <item row="1" column="1">
-          <widget class="QLineEdit" name="lineEdit"/>
-         </item>
-         <item row="1" column="2">
-          <widget class="QLabel" name="label_3">
-           <property name="text">
-            <string>串流密钥</string>
-           </property>
-          </widget>
-         </item>
-         <item row="1" column="3">
-          <widget class="QLineEdit" name="lineEdit_2"/>
-         </item>
-         <item row="0" column="0" colspan="2">
-          <widget class="QLabel" name="label">
-           <property name="text">
-            <string>主视角图像</string>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </item>
        <item row="1" column="0">
         <layout class="QGridLayout" name="gridLayout_2">
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="leMoiView"/>
+         </item>
          <item row="0" column="0" colspan="2">
           <widget class="QLabel" name="label_4">
            <property name="text">
             <string>重点监视区域</string>
-           </property>
-          </widget>
-         </item>
-         <item row="1" column="1">
-          <widget class="QLineEdit" name="lineEdit_3"/>
-         </item>
-         <item row="1" column="2">
-          <widget class="QLabel" name="label_6">
-           <property name="text">
-            <string>串流密钥</string>
            </property>
           </widget>
          </item>
@@ -88,13 +50,17 @@
            </property>
           </widget>
          </item>
-         <item row="1" column="3">
-          <widget class="QLineEdit" name="lineEdit_4"/>
-         </item>
         </layout>
        </item>
        <item row="2" column="0">
         <layout class="QGridLayout" name="gridLayout_3">
+         <item row="0" column="0" colspan="2">
+          <widget class="QLabel" name="label_7">
+           <property name="text">
+            <string>告警信息</string>
+           </property>
+          </widget>
+         </item>
          <item row="1" column="0">
           <widget class="QLabel" name="label_8">
            <property name="text">
@@ -103,53 +69,26 @@
           </widget>
          </item>
          <item row="1" column="1">
-          <widget class="QLineEdit" name="lineEdit_5"/>
-         </item>
-         <item row="1" column="2">
-          <widget class="QLabel" name="label_9">
-           <property name="text">
-            <string>串流密钥</string>
-           </property>
-          </widget>
-         </item>
-         <item row="1" column="3">
-          <widget class="QLineEdit" name="lineEdit_6"/>
-         </item>
-         <item row="0" column="0" colspan="2">
-          <widget class="QLabel" name="label_7">
-           <property name="text">
-            <string>告警信息</string>
-           </property>
-          </widget>
+          <widget class="QLineEdit" name="leWarnInfo"/>
          </item>
         </layout>
        </item>
-       <item row="3" column="0">
-        <layout class="QGridLayout" name="gridLayout_4">
-         <item row="1" column="4">
-          <widget class="QSpinBox" name="spinBox_2"/>
+       <item row="0" column="0">
+        <layout class="QGridLayout" name="gridLayout">
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_2">
+           <property name="text">
+            <string>服务器</string>
+           </property>
+          </widget>
          </item>
          <item row="1" column="1">
-          <widget class="QSpinBox" name="spinBox"/>
+          <widget class="QLineEdit" name="leMainView"/>
          </item>
          <item row="0" column="0" colspan="2">
-          <widget class="QLabel" name="label_10">
+          <widget class="QLabel" name="label">
            <property name="text">
-            <string>其他设置</string>
-           </property>
-          </widget>
-         </item>
-         <item row="1" column="0">
-          <widget class="QLabel" name="label_11">
-           <property name="text">
-            <string>视频比特率</string>
-           </property>
-          </widget>
-         </item>
-         <item row="1" column="3">
-          <widget class="QLabel" name="label_12">
-           <property name="text">
-            <string>常用FPS值（帧率）</string>
+            <string>主视角图像</string>
            </property>
           </widget>
          </item>
@@ -186,16 +125,16 @@
         </spacer>
        </item>
        <item>
-        <widget class="QPushButton" name="pushButton">
+        <widget class="QPushButton" name="pbSure">
          <property name="text">
-          <string>PushButton</string>
+          <string>确定</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QPushButton" name="pushButton_2">
+        <widget class="QPushButton" name="pbCan">
          <property name="text">
-          <string>PushButton</string>
+          <string>取消</string>
          </property>
         </widget>
        </item>

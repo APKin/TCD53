@@ -1,0 +1,109 @@
+QWidget{
+	background-color:  #00196A ;  
+}
+
+QWidget#widget_moni{  
+	border-image: url(:/Resource/back.png);
+}
+
+QWidget#widget_widget3D{
+	border-image: url(:/Resource/back.png);
+}
+
+QWidget#widgetTitle{
+	border-image: url(:/Resource/t1.png);
+}
+
+QLabel{
+	color:rgba(219, 250, 255, 1);
+}
+
+AngleScaleBar{
+	background-color: rgba(0, 25, 106, 128); 
+	border: 2px solid black;
+}
+QPushButton#btnRecordQuery {
+	border-image: url(:/Resource/MainPusbButton.png);
+	background-color:#FF0A6EB1;
+	border:1px solid #0A6EB1;
+}
+
+QPushButton #pbSaveImage{
+	border-image: url(:/Resource/Picture.png);
+	background-color:#FF0A6EB1;
+	border:1px solid #0A6EB1;
+}
+
+QPushButton #pbLink{
+	border-image: url(:/Resource/device.png);
+	background-color:#FF0A6EB1;
+	border:1px solid #0A6EB1;
+}
+
+QPushButton #pbRefresh{
+	border-image: url(:/Resource/flush.png);
+	background-color:#FF0A6EB1;
+	border:1px solid #0A6EB1;
+}
+
+QPushButton #btnStartAStop{
+	border-image: url(:/Resource/start.png);
+	background-color:#FF0A6EB1;
+	border:1px solid #0A6EB1;
+}
+
+QPushButton {
+	background-color:#FF0A6EB1;
+	border:1px solid #0A6EB1;
+}
+
+QLabel#label_title{
+	background-color: rgba(0, 25, 106, 0); 
+	font-size: 30px;
+}
+QLabel#label_site{
+	background-color: rgba(0, 25, 106, 0); 
+}
+QLabel#labelRadar{
+	border-image: url(:/Resource/labelRadIcon.png);
+	width: 12px;
+    height: 12px;
+}
+QLabel#labelLight1{
+	border-image: url(:/Resource/labelLightIcon.png);
+}
+QLabel#labelLocal{
+	border-image: url(:/Resource/labelLocIcon.png);
+}
+QLabel#labelNet{
+	border-image: url(:/Resource/label5G.png);
+}
+
+QLabel#label360Pic{
+	border-image: url(:/Resource/label360.png);
+}
+
+QLabel#labelMain{
+	border-image: url(:/Resource/labelMainView.png);
+}
+
+QLabel#labelMoni{
+	border-image: url(:/Resource/labelMoniView.png);
+}
+
+QLabel#labelRadarInfo{
+	border-image: url(:/Resource/labelRad.png);
+}
+QLabel#labelWarn{
+	border-image: url(:/Resource/labelWarn.png);
+}
+
+QLineEdit { 
+	color: gray; 
+	border: 1px solid gray;
+	padding: 5px;
+}
+
+QDialog#SystemSetting{
+	background-color:Black；
+}

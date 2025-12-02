@@ -79,19 +79,34 @@
     <ClCompile Include="ImgFile.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="FFmpegThread.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="FFmpegWidget.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="SerialManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="EchoServer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="FFmpegComFor.cpp">
+    <ClCompile Include="DraggableLabel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Configure.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="httpNetInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RadarJson.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PaintWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LaserRadar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MS06SDK\Include\GetLidarData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MS06SDK\Include\GetLidarData_MS06.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -120,16 +135,19 @@
     <QtMoc Include="RecordQuery.h">
       <Filter>Header Files</Filter>
     </QtMoc>
-    <QtMoc Include="FFmpegThread.h">
-      <Filter>Header Files</Filter>
-    </QtMoc>
-    <QtMoc Include="FFmpegWidget.h">
-      <Filter>Header Files</Filter>
-    </QtMoc>
     <QtMoc Include="SerialManager.h">
       <Filter>Header Files</Filter>
     </QtMoc>
     <QtMoc Include="EchoServer.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="DraggableLabel.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="httpNetInfo.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="PaintWidget.h">
       <Filter>Header Files</Filter>
     </QtMoc>
   </ItemGroup>
@@ -155,7 +173,7 @@
     <QtUic Include="RecordQuery.ui">
       <Filter>Form Files</Filter>
     </QtUic>
-    <QtUic Include="FFmpegWidget.ui">
+    <QtUic Include="PaintWidget.ui">
       <Filter>Form Files</Filter>
     </QtUic>
   </ItemGroup>
@@ -175,10 +193,25 @@
     <ClInclude Include="ImgFile.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ffmpeghead.h">
+    <ClInclude Include="Configure.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="FFmpegComFor.h">
+    <ClInclude Include="RadarJson.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LaserRadar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MS06SDK\Include\GetLidarData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MS06SDK\Include\GetLidarData_MS06.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MS06SDK\Include\IncludeFile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Global.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -96,7 +96,7 @@ QList<InstructLog> InstructLogDAO::findByCondition(
         params[":end_time"] = endTime.toString("yyyy-MM-dd HH:mm:ss");
     }
 
-    sql += " ORDER BY create_time DESC";
+    sql += " ORDER BY create_time C";
     dbHelper.open();
     QSqlQuery query(dbHelper.getDatabase());
     query.prepare(sql);

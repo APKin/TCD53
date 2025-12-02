@@ -28,13 +28,13 @@ public:
     QHBoxLayout *horizontalLayout_2;
     QSpacerItem *horizontalSpacer_2;
     QLabel *label;
-    QLineEdit *lineEdit;
-    QPushButton *pushButton_3;
+    QLineEdit *lePath;
+    QPushButton *pbBrowse;
     QSpacerItem *horizontalSpacer_3;
     QHBoxLayout *horizontalLayout;
     QSpacerItem *horizontalSpacer;
-    QPushButton *pushButton;
-    QPushButton *pushButton_2;
+    QPushButton *pbOut;
+    QPushButton *pbSure;
 
     void setupUi(QDialog *SystemSettingClass)
     {
@@ -57,15 +57,15 @@ public:
 
         horizontalLayout_2->addWidget(label);
 
-        lineEdit = new QLineEdit(SystemSettingClass);
-        lineEdit->setObjectName(QString::fromUtf8("lineEdit"));
+        lePath = new QLineEdit(SystemSettingClass);
+        lePath->setObjectName(QString::fromUtf8("lePath"));
 
-        horizontalLayout_2->addWidget(lineEdit);
+        horizontalLayout_2->addWidget(lePath);
 
-        pushButton_3 = new QPushButton(SystemSettingClass);
-        pushButton_3->setObjectName(QString::fromUtf8("pushButton_3"));
+        pbBrowse = new QPushButton(SystemSettingClass);
+        pbBrowse->setObjectName(QString::fromUtf8("pbBrowse"));
 
-        horizontalLayout_2->addWidget(pushButton_3);
+        horizontalLayout_2->addWidget(pbBrowse);
 
         horizontalSpacer_3 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
 
@@ -81,15 +81,15 @@ public:
 
         horizontalLayout->addItem(horizontalSpacer);
 
-        pushButton = new QPushButton(SystemSettingClass);
-        pushButton->setObjectName(QString::fromUtf8("pushButton"));
+        pbOut = new QPushButton(SystemSettingClass);
+        pbOut->setObjectName(QString::fromUtf8("pbOut"));
 
-        horizontalLayout->addWidget(pushButton);
+        horizontalLayout->addWidget(pbOut);
 
-        pushButton_2 = new QPushButton(SystemSettingClass);
-        pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
+        pbSure = new QPushButton(SystemSettingClass);
+        pbSure->setObjectName(QString::fromUtf8("pbSure"));
 
-        horizontalLayout->addWidget(pushButton_2);
+        horizontalLayout->addWidget(pbSure);
 
 
         gridLayout->addLayout(horizontalLayout, 1, 0, 1, 1);
@@ -106,9 +106,9 @@ public:
     {
         SystemSettingClass->setWindowTitle(QCoreApplication::translate("SystemSettingClass", "SystemSetting", nullptr));
         label->setText(QCoreApplication::translate("SystemSettingClass", "\345\233\276\345\203\217\345\255\230\345\202\250\350\267\257\345\276\204", nullptr));
-        pushButton_3->setText(QCoreApplication::translate("SystemSettingClass", "\346\265\217\350\247\210", nullptr));
-        pushButton->setText(QCoreApplication::translate("SystemSettingClass", "\345\217\226\346\266\210", nullptr));
-        pushButton_2->setText(QCoreApplication::translate("SystemSettingClass", "\347\241\256\345\256\232", nullptr));
+        pbBrowse->setText(QCoreApplication::translate("SystemSettingClass", "\346\265\217\350\247\210", nullptr));
+        pbOut->setText(QCoreApplication::translate("SystemSettingClass", "\345\217\226\346\266\210", nullptr));
+        pbSure->setText(QCoreApplication::translate("SystemSettingClass", "\347\241\256\345\256\232", nullptr));
     } // retranslateUi
 
 };

@@ -34,17 +34,17 @@ public:
     QHBoxLayout *horizontalLayout;
     QSpacerItem *horizontalSpacer_5;
     QLabel *label;
-    QLineEdit *lineEdit;
+    QLineEdit *leHB;
     QSpacerItem *horizontalSpacer_2;
     QHBoxLayout *horizontalLayout_2;
     QSpacerItem *horizontalSpacer_6;
     QLabel *label_2;
-    QLineEdit *lineEdit_2;
+    QLineEdit *leKJG;
     QSpacerItem *horizontalSpacer_3;
     QHBoxLayout *horizontalLayout_3;
     QSpacerItem *horizontalSpacer_7;
     QLabel *label_3;
-    QLineEdit *lineEdit_3;
+    QLineEdit *leGB;
     QSpacerItem *horizontalSpacer_4;
 
     void setupUi(QDialog *PictureSaveClass)
@@ -91,10 +91,10 @@ public:
 
         horizontalLayout->addWidget(label);
 
-        lineEdit = new QLineEdit(PictureSaveClass);
-        lineEdit->setObjectName(QString::fromUtf8("lineEdit"));
+        leHB = new QLineEdit(PictureSaveClass);
+        leHB->setObjectName(QString::fromUtf8("leHB"));
 
-        horizontalLayout->addWidget(lineEdit);
+        horizontalLayout->addWidget(leHB);
 
         horizontalSpacer_2 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
 
@@ -119,10 +119,10 @@ public:
 
         horizontalLayout_2->addWidget(label_2);
 
-        lineEdit_2 = new QLineEdit(PictureSaveClass);
-        lineEdit_2->setObjectName(QString::fromUtf8("lineEdit_2"));
+        leKJG = new QLineEdit(PictureSaveClass);
+        leKJG->setObjectName(QString::fromUtf8("leKJG"));
 
-        horizontalLayout_2->addWidget(lineEdit_2);
+        horizontalLayout_2->addWidget(leKJG);
 
         horizontalSpacer_3 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
 
@@ -147,10 +147,10 @@ public:
 
         horizontalLayout_3->addWidget(label_3);
 
-        lineEdit_3 = new QLineEdit(PictureSaveClass);
-        lineEdit_3->setObjectName(QString::fromUtf8("lineEdit_3"));
+        leGB = new QLineEdit(PictureSaveClass);
+        leGB->setObjectName(QString::fromUtf8("leGB"));
 
-        horizontalLayout_3->addWidget(lineEdit_3);
+        horizontalLayout_3->addWidget(leGB);
 
         horizontalSpacer_4 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
 

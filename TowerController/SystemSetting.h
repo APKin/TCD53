@@ -15,8 +15,25 @@ public:
 	SystemSetting(QWidget *parent = nullptr);
 	~SystemSetting();
 
+	QString getstorePath();
+
 private:
-	Ui::SystemSettingClass *ui;
+	void init();
+
+public:
+signals:
+	void plusMoni(int index);
+	void reduceMoni(int index);
+	// 重设大小
+	void resizeMoni(int index, int height);
+
 private slots:
 	void on_btnFloderSetting_clicked();
+
+	void on_pbPlus_clicked();
+	void on_pbReduce_clicked();
+
+private:
+	Ui::SystemSettingClass* ui;
+	int viewNum;
 };

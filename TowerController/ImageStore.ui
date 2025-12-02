@@ -39,7 +39,7 @@
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit"/>
+        <widget class="QLineEdit" name="mainImgeName"/>
        </item>
       </layout>
      </item>
@@ -53,7 +53,7 @@
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_2"/>
+        <widget class="QLineEdit" name="curImageSave"/>
        </item>
       </layout>
      </item>
@@ -67,7 +67,7 @@
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_3"/>
+        <widget class="QLineEdit" name="curImageSave2"/>
        </item>
       </layout>
      </item>

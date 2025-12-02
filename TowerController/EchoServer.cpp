@@ -3,6 +3,12 @@
 EchoServer::EchoServer(QObject* parent, int port)
     : QTcpServer(parent), m_port(port)
 {
+    mRemoteClient = new QTcpSocket;
+}
+
+EchoServer::~EchoServer()
+{
+    delete mRemoteClient;
 }
 
 void EchoServer::startServer()
@@ -14,6 +20,40 @@ void EchoServer::startServer()
         qCritical() << "Error starting server:" << errorString();
     }
 }
+
+void EchoServer::connectRemote(QString ip, int port)
+{
+    mRemoteClient->connectToHost(ip,port);
+}
+
+void EchoServer::sendInfo2Remote(QByteArray info)
+{
+    
+    if (mRemoteClient->waitForConnected()) {
+        mRemoteClient->write(info);
+        mRemoteClient->flush(); // 可选，确保数据立即发送
+    }
+    else
+    {
+        qDebug() << "client send info to Remote error";
+    }
+}
+
+void EchoServer::sendInfo(QString ip, int port, QByteArray info)
+{
+    QTcpSocket client;
+    client.connectToHost(ip, port);
+    if (client.waitForConnected()) {
+        client.write(info);
+        client.flush(); // 可选，确保数据立即发送
+    }
+    else
+    {
+        qDebug() << "client send info error: ip:"<< ip << "port:" << port;
+    }
+}
+
+
 
 void EchoServer::incomingConnection(qintptr socketDescriptor)
 {

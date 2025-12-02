@@ -5,6 +5,7 @@
 #include <QtSerialPort/QSerialPortInfo>
 #include <QtSerialPort/QSerialPort>
 
+#include "Global.h"
 
 class SerialManager  : public QObject
 {
@@ -17,6 +18,8 @@ public:
     bool openPort(const QString& portName);
     // 重载函数为了配合portName使用，大概率不会使用重载前的open
     bool openPort();
+    
+    
 
     void sendData(const QByteArray& data);
 
@@ -24,11 +27,12 @@ public:
 
     void setPortName(const QString& value);
 
+    void processDataBuffer();
+
 private slots:
-    void readData() {
-        QByteArray data = serial.readAll();
-        emit dataReceived(data);
-    }
+    void readData(); 
+public slots:
+    bool isResetPortInf0(portInfo_ info);
 
 signals:
     void dataReceived(const QByteArray& data);
@@ -37,4 +41,8 @@ private:
 	QSerialPort serial;
     // 改为维护一个portName
 	QString portName;
+    // 充当缓冲
+    QByteArray dataBuffer;
+    const int PACKET_SIZE = 78;
+    const QByteArray HEADER = QByteArray::fromHex("DA6A"); // 包头
 };

@@ -11,6 +11,8 @@ public:
     explicit AngleScaleBar(QWidget* parent = nullptr)
         : QWidget(parent), m_min(0), m_max(360)
     {
+        //setStyleSheet("background-color: rgba(0, 25, 106, 128); border: 2px solid black;");
+     
         setFixedHeight(80);  // 增加高度以容纳角度符号
     }
 
@@ -83,7 +85,7 @@ private:
         // 绘制主刻度标签（带度数符号）
         for (int i = m_min; i <= m_max; i += MAJOR_TICK_INTERVAL) {
             int xPos = static_cast<double>(i - m_min) / (m_max - m_min) * width;
-            QString text = QString::number(i) + "°";
+            QString text = QString::number(i) + u8"°";
 
             QRect textRect = painter->fontMetrics().boundingRect(text);
             int textX = xPos - textRect.width() / 2;

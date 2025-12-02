@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1189</width>
+    <width>1251</width>
     <height>798</height>
    </rect>
   </property>
@@ -14,80 +14,54 @@
    <string>TowerController</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <layout class="QGridLayout" name="gridLayout_2" columnstretch="1,1,1">
-    <item row="0" column="0" colspan="3">
-     <layout class="QGridLayout" name="gridLayout">
-      <item row="0" column="0" colspan="3">
-       <layout class="QHBoxLayout" name="horizontalLayout">
-        <item>
-         <widget class="QPushButton" name="btnRecordQuery">
-          <property name="text">
-           <string>记录查询</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QPushButton" name="btnSystenSettings">
-          <property name="text">
-           <string>系统设置</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QPushButton" name="btnStreamSetting">
-          <property name="text">
-           <string>推流设置</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QPushButton" name="btnDeviceControl">
-          <property name="text">
-           <string>设备控制指令设置</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QPushButton" name="btnHelp">
-          <property name="text">
-           <string>帮助</string>
-          </property>
-         </widget>
-        </item>
-       </layout>
-      </item>
-      <item row="0" column="3">
-       <widget class="QLabel" name="label">
+   <layout class="QGridLayout" name="gridLayout" rowstretch="1,1,4,4,4">
+    <item row="4" column="1">
+     <layout class="QGridLayout" name="gridLayout_6" rowstretch="1,4" columnstretch="1,1">
+      <item row="0" column="0">
+       <widget class="QLabel" name="labelRadarInfo">
         <property name="text">
-         <string>周扫设备控制界面</string>
+         <string/>
         </property>
        </widget>
       </item>
-      <item row="0" column="4">
-       <widget class="QLabel" name="label_site">
-        <property name="text">
-         <string>TextLabel</string>
+      <item row="0" column="1">
+       <spacer name="horizontalSpacer_9">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
         </property>
-       </widget>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
       </item>
-      <item row="1" column="0">
+      <item row="1" column="0" colspan="2">
+       <widget class="QWidget" name="widget3D" native="true"/>
+      </item>
+     </layout>
+    </item>
+    <item row="1" column="0" colspan="3">
+     <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,5,1">
+      <item>
        <layout class="QHBoxLayout" name="horizontalLayout_2">
         <item>
-         <widget class="QPushButton" name="pushButton_6">
+         <widget class="QPushButton" name="pbSaveImage">
           <property name="text">
-           <string>保存</string>
+           <string>保存图像</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QPushButton" name="pushButton_7">
+         <widget class="QPushButton" name="pbLink">
           <property name="text">
-           <string>PushButton</string>
+           <string>连接</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QPushButton" name="pushButton_8">
+         <widget class="QPushButton" name="pbRefresh">
           <property name="text">
            <string>刷新</string>
           </property>
@@ -102,54 +76,101 @@
         </item>
        </layout>
       </item>
-      <item row="1" column="1">
-       <widget class="QLabel" name="label_9">
-        <property name="text">
-         <string>TextLabel</string>
+      <item>
+       <spacer name="horizontalSpacer_12">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
         </property>
-       </widget>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
       </item>
-      <item row="1" column="2" colspan="3">
-       <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="3,1,1,1,1">
         <item>
-         <widget class="QLabel" name="label_4">
+         <widget class="QLabel" name="label_devstatus">
           <property name="text">
            <string>设备连接状态：</string>
           </property>
          </widget>
         </item>
-        <item>
-         <widget class="QLabel" name="label_14">
+        <item alignment="Qt::AlignVCenter">
+         <widget class="QLabel" name="labelRadar">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>16</width>
+            <height>16</height>
+           </size>
+          </property>
           <property name="text">
-           <string>TextLabel</string>
+           <string/>
           </property>
          </widget>
         </item>
-        <item>
-         <widget class="QLabel" name="label_13">
+        <item alignment="Qt::AlignVCenter">
+         <widget class="QLabel" name="labelLight1">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>16</width>
+            <height>16</height>
+           </size>
+          </property>
           <property name="text">
-           <string>TextLabel</string>
+           <string/>
           </property>
          </widget>
         </item>
-        <item>
-         <widget class="QLabel" name="label_12">
+        <item alignment="Qt::AlignVCenter">
+         <widget class="QLabel" name="labelLocal">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>16</width>
+            <height>16</height>
+           </size>
+          </property>
           <property name="text">
-           <string>TextLabel</string>
+           <string/>
           </property>
          </widget>
         </item>
-        <item>
-         <widget class="QLabel" name="label_11">
-          <property name="text">
-           <string>TextLabel</string>
+        <item alignment="Qt::AlignVCenter">
+         <widget class="QLabel" name="labelNet">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
           </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="label_10">
+          <property name="minimumSize">
+           <size>
+            <width>16</width>
+            <height>16</height>
+           </size>
+          </property>
           <property name="text">
-           <string>TextLabel</string>
+           <string/>
           </property>
          </widget>
         </item>
@@ -157,76 +178,405 @@
       </item>
      </layout>
     </item>
-    <item row="3" column="0">
-     <layout class="QVBoxLayout" name="verticalLayout" stretch="1,5">
-      <item>
-       <widget class="QLabel" name="label_6">
+    <item row="4" column="0">
+     <layout class="QGridLayout" name="gridLayout_8" rowstretch="1,4" columnstretch="1,1">
+      <item row="0" column="0">
+       <widget class="QLabel" name="labelMoni">
         <property name="text">
-         <string>重点监视区域</string>
+         <string/>
         </property>
        </widget>
       </item>
-      <item>
-       <widget class="QWidget" name="widget_3" native="true"/>
-      </item>
-     </layout>
-    </item>
-    <item row="1" column="0" colspan="3">
-     <layout class="QVBoxLayout" name="verticalLayout_5" stretch="1,1,4">
-      <item>
-       <widget class="QLabel" name="label_3">
-        <property name="text">
-         <string>红外周视雷达360°环视图像</string>
+      <item row="0" column="1">
+       <spacer name="horizontalSpacer_11">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
         </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="AngleScaleBar" name="widget" native="true"/>
-      </item>
-      <item>
-       <widget class="FFmpegWidget" name="widget_6" native="true"/>
-      </item>
-     </layout>
-    </item>
-    <item row="3" column="2">
-     <layout class="QVBoxLayout" name="verticalLayout_3" stretch="1,5">
-      <item>
-       <widget class="QLabel" name="label_8">
-        <property name="text">
-         <string>告警信息</string>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
         </property>
+       </spacer>
+      </item>
+      <item row="1" column="0" colspan="2">
+       <widget class="PaintWidget" name="widget_moni" native="true">
+        <layout class="QGridLayout" name="gridLayout_3" rowstretch="5,2,1">
+         <item row="1" column="0">
+          <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="5,2,1,2,1,2,1,2,1,2,5">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <item>
+            <spacer name="horizontalSpacer">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pbMonitor1">
+             <property name="text">
+              <string>1</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_2">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pbMonitor2">
+             <property name="text">
+              <string>2</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_3">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pbMonitor3">
+             <property name="text">
+              <string>3</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_4">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pbMonitor4">
+             <property name="text">
+              <string>4</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_5">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pbMonitor5">
+             <property name="text">
+              <string>5</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_6">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </item>
+         <item row="0" column="0">
+          <spacer name="verticalSpacer">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>57</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="2" column="0">
+          <spacer name="verticalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>56</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
        </widget>
-      </item>
-      <item>
-       <widget class="QTreeView" name="treeView"/>
-      </item>
-     </layout>
-    </item>
-    <item row="3" column="1">
-     <layout class="QVBoxLayout" name="verticalLayout_2" stretch="1,5">
-      <item>
-       <widget class="QLabel" name="label_7">
-        <property name="text">
-         <string>雷达信息</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QWidget" name="widget_4" native="true"/>
       </item>
      </layout>
     </item>
     <item row="2" column="0" colspan="3">
-     <layout class="QVBoxLayout" name="verticalLayout_4" stretch="1,6">
-      <item>
-       <widget class="QLabel" name="label_5">
+     <layout class="QGridLayout" name="gridLayout_4" rowstretch="2,1,8" columnstretch="1,4">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label360Pic">
         <property name="text">
-         <string>主视角图像</string>
+         <string/>
         </property>
        </widget>
       </item>
+      <item row="0" column="1">
+       <spacer name="horizontalSpacer_7">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="1" column="0" colspan="2">
+       <widget class="AngleScaleBar" name="widget" native="true"/>
+      </item>
+      <item row="2" column="0" colspan="2">
+       <widget class="PaintWidget" name="widget360" native="true">
+        <widget class="DraggableLabel" name="mainView">
+         <property name="geometry">
+          <rect>
+           <x>33</x>
+           <y>20</y>
+           <width>101</width>
+           <height>71</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>主视角图像</string>
+         </property>
+        </widget>
+        <widget class="DraggableLabel" name="monitorView1">
+         <property name="geometry">
+          <rect>
+           <x>150</x>
+           <y>20</y>
+           <width>101</width>
+           <height>71</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>重点监视视角1</string>
+         </property>
+        </widget>
+        <widget class="DraggableLabel" name="monitorView2">
+         <property name="geometry">
+          <rect>
+           <x>300</x>
+           <y>30</y>
+           <width>101</width>
+           <height>71</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>重点监视视角2</string>
+         </property>
+        </widget>
+        <widget class="DraggableLabel" name="monitorView3">
+         <property name="geometry">
+          <rect>
+           <x>430</x>
+           <y>30</y>
+           <width>101</width>
+           <height>71</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>重点监视视角3</string>
+         </property>
+        </widget>
+        <widget class="DraggableLabel" name="monitorView4">
+         <property name="geometry">
+          <rect>
+           <x>540</x>
+           <y>30</y>
+           <width>101</width>
+           <height>71</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>重点监视视角4</string>
+         </property>
+        </widget>
+        <widget class="DraggableLabel" name="monitorView5">
+         <property name="geometry">
+          <rect>
+           <x>670</x>
+           <y>30</y>
+           <width>101</width>
+           <height>71</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>重点监视视角5</string>
+         </property>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="3" column="0" colspan="3">
+     <layout class="QGridLayout" name="gridLayout_5" rowstretch="1,4" columnstretch="1,4">
+      <item row="0" column="0">
+       <widget class="QLabel" name="labelMain">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <spacer name="horizontalSpacer_8">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="1" column="0" colspan="2">
+       <widget class="PaintWidget" name="widget_main" native="true"/>
+      </item>
+     </layout>
+    </item>
+    <item row="4" column="2">
+     <layout class="QGridLayout" name="gridLayout_7" rowstretch="1,4" columnstretch="1,1">
+      <item row="0" column="0">
+       <widget class="QLabel" name="labelWarn">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <spacer name="horizontalSpacer_10">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="1" column="0" colspan="2">
+       <widget class="QTableWidget" name="tableWidget"/>
+      </item>
+     </layout>
+    </item>
+    <item row="0" column="0" colspan="3">
+     <layout class="QHBoxLayout" name="horizontalLayout_6">
       <item>
-       <widget class="QWidget" name="widget_2" native="true"/>
+       <widget class="QWidget" name="widgetTitle" native="true">
+        <layout class="QHBoxLayout" name="horizontalLayout_7" stretch="1,1,1">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_5">
+           <item>
+            <widget class="QPushButton" name="btnRecordQuery">
+             <property name="text">
+              <string>记录查询</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btnSystenSettings">
+             <property name="text">
+              <string>系统设置</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btnStreamSetting">
+             <property name="text">
+              <string>推流设置</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btnDeviceControl">
+             <property name="text">
+              <string>设备控制指令设置</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btnHelp">
+             <property name="text">
+              <string>帮助</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+          <widget class="QLabel" name="label_title">
+           <property name="text">
+            <string>周扫设备控制界面</string>
+           </property>
+          </widget>
+         </item>
+         <item alignment="Qt::AlignRight">
+          <widget class="QLabel" name="label_site">
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
       </item>
      </layout>
     </item>
@@ -237,7 +587,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1189</width>
+     <width>1251</width>
      <height>22</height>
     </rect>
    </property>
@@ -261,9 +611,14 @@
    <container>1</container>
   </customwidget>
   <customwidget>
-   <class>FFmpegWidget</class>
+   <class>DraggableLabel</class>
+   <extends>QLabel</extends>
+   <header location="global">draggablelabel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>PaintWidget</class>
    <extends>QWidget</extends>
-   <header location="global">ffmpegwidget.h</header>
+   <header location="global">paintwidget.h</header>
    <container>1</container>
   </customwidget>
  </customwidgets>

@@ -28,13 +28,31 @@ void SystemSetting::on_pushButton_3_clicked()
         QFileDialog::ShowDirsOnly | QFileDialog::DontResolveSymlinks
     );
     // 查找 QLineEdit 控件并设置值
-    ui->lineEdit->setText(folder);
+    ui->lePath->setText(folder);
 }
 void SystemSetting::on_pushButton_clicked() {
     this->close();
 }
 void SystemSetting::on_pushButton_2_clicked() {
     //保存配置
-    m_result = ui->lineEdit->text();
+    m_result = ui->lePath->text();
     accept();
+}
+
+void SystemSetting::on_pbBrowse_clicked()
+{
+    QString dirPath = QFileDialog::getExistingDirectory(nullptr, "选择目录", "");
+
+    qDebug() << dirPath;
+    ui->lePath->setText(dirPath);
+}
+
+void SystemSetting::on_pbSure_clicked()
+{
+    this->hide();
+}
+
+void SystemSetting::on_pbOut_clicked()
+{
+    this->hide();
 }

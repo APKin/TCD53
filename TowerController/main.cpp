@@ -1,21 +1,27 @@
-#include "TowerController.h"
 #include <QtWidgets/QApplication>
+#include <QTextCodec>
+#include <QFile>
 
-#include "FFmpegWidget.h"
+#include "TowerController.h"
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    TowerController w;
-    w.show();
-    //w.showFullScreen();
+    
+    QFile file("ini//style.qss"); // 指定qss文件路径
+    if (file.open(QIODevice::ReadOnly | QIODevice::Text)) {
+        QString styleSheet = QLatin1String(file.readAll());
+        a.setStyleSheet(styleSheet);
+        file.close();
+    }
+    else
+    {
+        std::cout << "QSS load fail" <<std::endl;
+    }
 
-    //FFmpegWidget fw;
-    //fw.show();
-    //QString urls = "rtsp://127.0.0.1:8554/mystream";
-    //fw.setUrl(urls);
-    //fw.open();
-    // fw.close();
+    TowerController w;
+
+    w.showMaximized();
 
     return a.exec();
 }

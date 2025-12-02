@@ -47,7 +47,7 @@ void EchoServer::onReadyRead()
     //
     const uint8_t* buffer = reinterpret_cast<const uint8_t*>(data.constData());
     
-    UVStatus.deserialize(buffer);
+    //UVStatus.deserialize(buffer);
     UVStatus_json = UVStatus.toJsonObject();
     if (!UVStatus_json.isEmpty())
     {

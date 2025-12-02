@@ -29,13 +29,13 @@ public:
     QGridLayout *gridLayout;
     QHBoxLayout *horizontalLayout_2;
     QLabel *label;
-    QLineEdit *lineEdit;
+    QLineEdit *mainImgeName;
     QHBoxLayout *horizontalLayout_3;
     QLabel *label_2;
-    QLineEdit *lineEdit_2;
+    QLineEdit *curImageSave;
     QHBoxLayout *horizontalLayout_4;
     QLabel *label_3;
-    QLineEdit *lineEdit_3;
+    QLineEdit *curImageSave2;
     QSpacerItem *horizontalSpacer_2;
     QHBoxLayout *horizontalLayout;
     QSpacerItem *horizontalSpacer_3;
@@ -66,10 +66,10 @@ public:
 
         horizontalLayout_2->addWidget(label);
 
-        lineEdit = new QLineEdit(ImageStoreClass);
-        lineEdit->setObjectName(QString::fromUtf8("lineEdit"));
+        mainImgeName = new QLineEdit(ImageStoreClass);
+        mainImgeName->setObjectName(QString::fromUtf8("mainImgeName"));
 
-        horizontalLayout_2->addWidget(lineEdit);
+        horizontalLayout_2->addWidget(mainImgeName);
 
 
         gridLayout->addLayout(horizontalLayout_2, 0, 0, 1, 1);
@@ -82,10 +82,10 @@ public:
 
         horizontalLayout_3->addWidget(label_2);
 
-        lineEdit_2 = new QLineEdit(ImageStoreClass);
-        lineEdit_2->setObjectName(QString::fromUtf8("lineEdit_2"));
+        curImageSave = new QLineEdit(ImageStoreClass);
+        curImageSave->setObjectName(QString::fromUtf8("curImageSave"));
 
-        horizontalLayout_3->addWidget(lineEdit_2);
+        horizontalLayout_3->addWidget(curImageSave);
 
 
         gridLayout->addLayout(horizontalLayout_3, 1, 0, 1, 1);
@@ -98,10 +98,10 @@ public:
 
         horizontalLayout_4->addWidget(label_3);
 
-        lineEdit_3 = new QLineEdit(ImageStoreClass);
-        lineEdit_3->setObjectName(QString::fromUtf8("lineEdit_3"));
+        curImageSave2 = new QLineEdit(ImageStoreClass);
+        curImageSave2->setObjectName(QString::fromUtf8("curImageSave2"));
 
-        horizontalLayout_4->addWidget(lineEdit_3);
+        horizontalLayout_4->addWidget(curImageSave2);
 
 
         gridLayout->addLayout(horizontalLayout_4, 2, 0, 1, 1);
