@@ -73,7 +73,7 @@ public:
     QGridLayout *gridLayout_4;
     QLabel *label360Pic;
     QSpacerItem *horizontalSpacer_7;
-    AngleScaleBar *widget;
+    AngleScaleBar *widgetScaleBar;
     PaintWidget *widget360;
     DraggableLabel *mainView;
     DraggableLabel *monitorView1;
@@ -346,10 +346,15 @@ public:
 
         gridLayout_4->addItem(horizontalSpacer_7, 0, 1, 1, 1);
 
-        widget = new AngleScaleBar(centralWidget);
-        widget->setObjectName(QString::fromUtf8("widget"));
+        widgetScaleBar = new AngleScaleBar(centralWidget);
+        widgetScaleBar->setObjectName(QString::fromUtf8("widgetScaleBar"));
+        QSizePolicy sizePolicy1(QSizePolicy::MinimumExpanding, QSizePolicy::MinimumExpanding);
+        sizePolicy1.setHorizontalStretch(0);
+        sizePolicy1.setVerticalStretch(0);
+        sizePolicy1.setHeightForWidth(widgetScaleBar->sizePolicy().hasHeightForWidth());
+        widgetScaleBar->setSizePolicy(sizePolicy1);
 
-        gridLayout_4->addWidget(widget, 1, 0, 1, 2);
+        gridLayout_4->addWidget(widgetScaleBar, 1, 0, 1, 2);
 
         widget360 = new PaintWidget(centralWidget);
         widget360->setObjectName(QString::fromUtf8("widget360"));
@@ -376,7 +381,7 @@ public:
 
         gridLayout_4->setRowStretch(0, 2);
         gridLayout_4->setRowStretch(1, 1);
-        gridLayout_4->setRowStretch(2, 8);
+        gridLayout_4->setRowStretch(2, 14);
         gridLayout_4->setColumnStretch(0, 1);
         gridLayout_4->setColumnStretch(1, 4);
 

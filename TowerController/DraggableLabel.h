@@ -7,6 +7,8 @@
 #include <QVBoxLayout>
 #include <QPushButton>
 
+#include <random>
+
 class DraggableLabel : public QLabel
 {
     Q_OBJECT
@@ -17,7 +19,13 @@ public:
     explicit DraggableLabel(QWidget* parent = nullptr, Qt::WindowFlags f = Qt::WindowFlags())
         : QLabel(parent, f)
     {
-        setStyleSheet("background-color: rgba(0, 100, 100, 128); border: 2px solid black;");
+        int colorR = rand() % 255;
+        int colorG = rand() % 255;
+        int colorB = rand() % 255;
+        QString deColor = QString("background-color: rgba(%1, %2, %3, 128); border: 2px solid black;").arg(colorR).arg(colorG).arg(colorB);
+
+        setStyleSheet(deColor);
+        //setStyleSheet("background-color: rgba(0, 100, 100, 128); border: 2px solid black;");
         setText("可拖动的标签\n透明度: 50%");
         setAlignment(Qt::AlignCenter);
         setMinimumSize(150, 80);

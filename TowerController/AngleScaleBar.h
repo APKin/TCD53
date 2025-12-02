@@ -11,7 +11,7 @@ public:
     explicit AngleScaleBar(QWidget* parent = nullptr)
         : QWidget(parent), m_min(0), m_max(360)
     {
-        //setStyleSheet("background-color: rgba(0, 25, 106, 128); border: 2px solid black;");
+        // setStyleSheet("background-color: rgba(0, 25, 106, 128); border: 2px solid black;");
      
         setFixedHeight(80);  // 增加高度以容纳角度符号
     }
@@ -47,7 +47,8 @@ private:
 
     void drawBackground(QPainter* painter)
     {
-        painter->fillRect(rect(), Qt::white);
+        //painter->fillRect(rect(), Qt::white);
+        painter->fillRect(rect(), QColor(34, 51, 105, 255));
     }
 
     void drawTicks(QPainter* painter)

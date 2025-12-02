@@ -18,15 +18,41 @@ QLabel{
 	color:rgba(219, 250, 255, 1);
 }
 
-AngleScaleBar{
-	background-color: rgba(0, 25, 106, 128); 
-	border: 2px solid black;
-}
+QPushButton{color:rgb(125,155,178);}
+
 QPushButton#btnRecordQuery {
 	border-image: url(:/Resource/MainPusbButton.png);
-	background-color:#FF0A6EB1;
+	background-color:#00196A;
+	border:1px solid #0A6EB1;
+	
+}
+
+QPushButton#btnSystenSettings {
+	border-image: url(:/Resource/MainPusbButton.png);
+	background-color:#00196A;
 	border:1px solid #0A6EB1;
 }
+
+QPushButton#btnStreamSetting {
+	border-image: url(:/Resource/MainPusbButton.png);
+	background-color:#00196A;
+	border:1px solid #0A6EB1;
+}
+
+QPushButton#btnDeviceControl {
+	border-image: url(:/Resource/MainPusbButton.png);
+	background-color:#00196A;
+	border:1px solid #0A6EB1;
+}
+
+QPushButton#btnHelp {
+	border-image: url(:/Resource/MainPusbButton.png);
+	background-color:#00196A;
+	border:1px solid #0A6EB1;
+}
+
+
+
 
 QPushButton #pbSaveImage{
 	border-image: url(:/Resource/Picture.png);

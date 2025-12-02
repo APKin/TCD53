@@ -1,21 +1,8 @@
-﻿  uic DeviceControl.ui
-  DeviceControl.cpp
-  ImgFile.cpp
-  GetLidarData.cpp
-  SerialManager.cpp
+﻿  uic TowerController.ui
+  moc DraggableLabel.h
+  DraggableLabel.cpp
   TowerController.cpp
   main.cpp
-D:\Temp\TCD53\TowerController\MS06SDK\Include\GetLidarData.cpp(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
-D:\Temp\TCD53\TowerController\MS06SDK\Include\GetLidarData.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
-  (编译源文件“MS06SDK/Include/GetLidarData.cpp”)
-  
-D:\Temp\TCD53\TowerController\MS06SDK\Include\GetLidarData.h(287,20): warning C4267: “初始化”: 从“size_t”转换到“long”，可能丢失数据
-  (编译源文件“MS06SDK/Include/GetLidarData.cpp”)
-  
-D:\Temp\TCD53\TowerController\MS06SDK\Include\GetLidarData.cpp(408,44): warning C4244: “参数”: 从“DWORD”转换到“uint16_t”，可能丢失数据
-D:\Temp\TCD53\TowerController\MS06SDK\Include\GetLidarData.cpp(418,44): warning C4244: “参数”: 从“DWORD”转换到“uint16_t”，可能丢失数据
-D:\Temp\TCD53\TowerController\MS06SDK\Include\GetLidarData.cpp(464,27): warning C4244: “初始化”: 从“int”转换到“float”，可能丢失数据
-D:\Temp\TCD53\TowerController\MS06SDK\Include\GetLidarData.cpp(588,16): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
 D:\Temp\TCD53\TowerController\MS06SDK\Include\GetLidarData_MS06.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
   (编译源文件“TowerController.cpp”)
   
@@ -35,7 +22,7 @@ D:\Temp\TCD53\TowerController\MS06SDK\Include\GetLidarData.h(287,20): warning C4
   (编译源文件“TowerController.cpp”)
   
 D:\Temp\TCD53\TowerController\TowerController.cpp(225,21): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
-  moc_DeviceControl.cpp
+  moc_DraggableLabel.cpp
   moc_TowerController.cpp
 D:\Temp\TCD53\TowerController\MS06SDK\Include\GetLidarData_MS06.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
   (编译源文件“TowerController/x64/Debug/moc/moc_TowerController.cpp”)
